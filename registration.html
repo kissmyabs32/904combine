@@ -241,8 +241,7 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:60px 0 
 <h3 style="font-size:1.4rem;margin-bottom:8px">Mom Tackle Add-On</h3>
 <div class="pricing-price"><span style="color:var(--gold)">$20</span><span style="font-size:.7rem;color:var(--muted)">/parent</span></div>
 <ul class="pricing-features">
-<li><span>✓ Full Safety Gear Provided</span>Professionally fitted tackle equipment</li>
-<li><span>✓ High Jump Pit Landing Zone</span>Safe, padded competition area</li>
+<li><span>✓ High Jump Pit Landing Zone</span>Padded competition area</li>
 <li><span>✓ Professional Video Capture</span>Your moment immortalized</li>
 <li><span>✓ Scheduled at 1:30 PM</span>Prime time during event day</li>
 <li><span>✓ Family-Friendly Spectacle</span>Biggest laugh of the day</li>
@@ -456,39 +455,6 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:60px 0 
 </div>
 </div>
 
-<div class="form-group">
-<label class="form-label" for="momTshirtSize">Mom's T-Shirt Size</label>
-<select class="form-select" id="momTshirtSize" name="momTshirtSize">
-<option value="">Select Size</option>
-<option value="xs">Extra Small</option>
-<option value="s">Small</option>
-<option value="m">Medium</option>
-<option value="l">Large</option>
-<option value="xl">Extra Large</option>
-<option value="2xl">2X Large</option>
-</select>
-</div>
-</div>
-
-<!-- ADDITIONAL DONATION -->
-<div class="form-section-title">Additional Donation (Optional)</div>
-<p style="color:var(--muted);margin-bottom:16px;font-size:.9rem">100% of proceeds support the Atlantic Coast Stingray Boosters Club, a registered 501(c)(3) nonprofit.</p>
-
-<div class="form-group">
-<label class="form-label" for="donation">Choose Donation Amount</label>
-<select class="form-select" id="donation" name="donation">
-<option value="0">No Additional Donation</option>
-<option value="10">Additional $10</option>
-<option value="25">Additional $25</option>
-<option value="50">Additional $50</option>
-<option value="100">Additional $100</option>
-<option value="custom">Custom Amount</option>
-</select>
-</div>
-
-<div class="form-group" id="customDonationGroup" style="display:none;">
-<label class="form-label" for="customAmount">Custom Donation Amount</label>
-<input type="number" class="form-input" id="customAmount" name="customAmount" min="1" placeholder="Enter amount ($)">
 </div>
 
 <!-- WAIVERS & AGREEMENTS -->
@@ -497,13 +463,6 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:60px 0 
 <div style="background:rgba(255,215,0,.05);border:1px solid rgba(255,215,0,.2);padding:20px;margin-bottom:24px;clip-path:polygon(0 0,calc(100% - 12px) 0,100% 12px,100% 100%,12px 100%,0 calc(100% - 12px))">
 <p style="color:var(--muted);font-size:.9rem;margin-bottom:12px">Before submitting, you must review and accept our Terms & Conditions, which include the Liability Waiver, Assumption of Risk, Photo/Video Release, Refund Policy, and Medical Authorization.</p>
 <span class="tc-link" onclick="openTC()">Read Full Terms & Conditions →</span>
-</div>
-
-<div class="checkbox-group">
-<label class="checkbox-label">
-<input type="checkbox" name="gradeConfirm" required>
-I confirm that the athlete is currently enrolled in grades 9–12 at an eligible high school.
-</label>
 </div>
 
 <div class="checkbox-group">
@@ -817,15 +776,6 @@ document.addEventListener('keydown', function(e){
   if(e.key === 'Escape') closeTC();
 });
 
-// Custom donation amount
-document.getElementById('donation').addEventListener('change', function(){
-  const customGroup = document.getElementById('customDonationGroup');
-  if(this.value === 'custom'){
-    customGroup.style.display = 'block';
-  } else {
-    customGroup.style.display = 'none';
-  }
-});
 
 // ============================================
 // CONFIGURATION
@@ -861,11 +811,7 @@ document.getElementById('registrationForm').addEventListener('submit', function(
   // Add timestamp and calculate total
   data.timestamp = new Date().toLocaleString();
   const hasMomTackle = document.getElementById('station9').checked;
-  const donationAmount = document.getElementById('donation').value === 'custom'
-    ? (document.getElementById('customAmount').value || 0)
-    : document.getElementById('donation').value;
   data.momTackle = hasMomTackle ? 'Yes' : 'No';
-  data.donationAmount = '$' + donationAmount;
   data.totalDue = hasMomTackle ? '$80' : '$60';
   data.termsAcceptedAt = new Date().toISOString();
 
