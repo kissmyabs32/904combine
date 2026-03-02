@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mom Tackle Challenge | The 904 Combine | Jacksonville</title>
-<meta name="description" content="Mom runs up, son stands still at the high jump pit — she makes the tackle, he lands safe. Jacksonville's most viral sports moment. $20 add-on.">
-<meta property="og:title" content="Mom Tackle Challenge | The 904 Combine | Jacksonville">
-<meta property="og:description" content="Mom runs up, son stands still at the high jump pit — she makes the tackle, he lands safe. Jacksonville's most viral sports moment. $20 add-on.">
+<title>Register | The 904 Combine | Jacksonville Football Combine</title>
+<meta name="description" content="Register for The 904 Combine—$60 covers all 9 NFL combine-style stations. Coached by former Jacksonville Jaguars. Spring 2025, Jacksonville FL.">
+<meta property="og:title" content="Register | The 904 Combine | Jacksonville Football Combine">
+<meta property="og:description" content="Register for The 904 Combine—$60 covers all 9 NFL combine-style stations. Coached by former Jacksonville Jaguars. Spring 2025, Jacksonville FL.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://904combine.com/mom-tackle.html">
-<link rel="canonical" href="https://904combine.com/mom-tackle.html">
+<meta property="og:url" content="https://904combine.com/registration.html">
+<link rel="canonical" href="https://904combine.com/registration.html">
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700;800&family=Barlow:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
@@ -56,14 +56,14 @@ nav{position:sticky;top:0;width:100%;height:64px;background:rgba(10,10,15,.92);b
 }
 
 /* HERO */
-.hero{position:relative;min-height:800px;display:flex;align-items:center;overflow:hidden;padding-top:64px}
+.hero{position:relative;min-height:60vh;display:flex;align-items:center;overflow:hidden;padding-top:64px}
 .hero-bg{position:absolute;inset:0;z-index:0}
 .hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(0,240,255,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(0,240,255,.06) 1px,transparent 1px);background-size:60px 60px;animation:gridPulse 4s ease-in-out infinite}
 @keyframes gridPulse{0%,100%{opacity:.05}50%{opacity:.1}}
 .hero-scanlines{position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(255,255,255,.03) 2px,rgba(255,255,255,.03) 3px);pointer-events:none}
 .hero-gradient{position:absolute;inset:0;background:radial-gradient(ellipse at 20% 50%,rgba(0,240,255,.12) 0%,transparent 60%),radial-gradient(ellipse at 80% 40%,rgba(255,215,0,.06) 0%,transparent 50%)}
 .hero-content{position:relative;z-index:1;max-width:900px;margin:0 auto;padding:0 24px;text-align:center}
-.hero h1{font-size:clamp(4rem,9vw,8rem);margin-bottom:24px}
+.hero h1{font-size:clamp(3rem,7vw,6rem);margin-bottom:24px}
 .hero h1 .electric{color:var(--electric);text-shadow:0 0 40px rgba(0,240,255,.3);animation:glowPulse 3s ease-in-out infinite}
 @keyframes glowPulse{0%,100%{text-shadow:0 0 40px rgba(0,240,255,.3)}50%{text-shadow:0 0 60px rgba(0,240,255,.5)}}
 .hero-sub{font-size:1.15rem;color:var(--muted);max-width:650px;margin:0 auto 32px;line-height:1.8}
@@ -71,42 +71,78 @@ nav{position:sticky;top:0;width:100%;height:64px;background:rgba(10,10,15,.92);b
 .badge{padding:8px 18px;border:1px solid var(--border);color:var(--muted);font-size:.8rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;clip-path:polygon(0 0,calc(100% - 8px) 0,100% 8px,100% 100%,8px 100%,0 calc(100% - 8px))}
 .hero-btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
 
-/* HOW IT WORKS */
-.steps-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:48px}
-@media(max-width:768px){.steps-grid{grid-template-columns:1fr 1fr}}
-@media(max-width:500px){.steps-grid{grid-template-columns:1fr}}
-.step-card{background:var(--card);border:1px solid var(--border);padding:32px;clip-path:polygon(0 0,calc(100% - 16px) 0,100% 16px,100% 100%,16px 100%,0 calc(100% - 16px));transition:border-color .3s,transform .3s;text-align:center}
-.step-card:hover{border-color:rgba(0,240,255,.3);transform:translateY(-5px)}
-.step-num{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:3.5rem;color:var(--electric);margin-bottom:12px}
-.step-card h4{font-family:'Barlow Condensed',sans-serif;font-weight:800;text-transform:uppercase;font-size:1.1rem;margin-bottom:12px}
-.step-card p{color:var(--muted);font-size:.9rem;line-height:1.6}
+/* PRICING CARDS */
+.pricing-section{background:var(--dark);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.pricing-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:48px}
+@media(max-width:768px){.pricing-grid{grid-template-columns:1fr}}
+.pricing-card{background:var(--card);border:2px solid var(--border);padding:40px;clip-path:polygon(0 0,calc(100% - 20px) 0,100% 20px,100% 100%,20px 100%,0 calc(100% - 20px));transition:border-color .3s,transform .3s}
+.pricing-card:hover{border-color:var(--electric);transform:translateY(-5px)}
+.pricing-badge{display:inline-block;padding:6px 14px;background:rgba(0,240,255,.1);border:1px solid var(--electric);color:var(--electric);font-size:.7rem;font-weight:800;text-transform:uppercase;letter-spacing:.1em;margin-bottom:16px;clip-path:polygon(0 0,calc(100% - 6px) 0,100% 6px,100% 100%,6px 100%,0 calc(100% - 6px))}
+.pricing-badge.gold{background:rgba(255,215,0,.1);border-color:var(--gold);color:var(--gold)}
+.pricing-price{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:2.5rem;color:var(--electric);margin-bottom:20px}
+.pricing-price .gold{color:var(--gold)}
+.pricing-features{list-style:none;margin-bottom:28px}
+.pricing-features li{padding:10px 0;border-bottom:1px solid var(--border);color:var(--muted);font-size:.9rem}
+.pricing-features li span{color:var(--white);display:block;font-weight:600}
+.pricing-card .btn-primary{width:100%;text-align:center}
 
-/* WHATS PROVIDED */
-.provided-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px}
-@media(max-width:768px){.provided-grid{grid-template-columns:1fr 1fr}}
-@media(max-width:500px){.provided-grid{grid-template-columns:1fr}}
-.provided-card{background:var(--card);border:1px solid var(--border);padding:28px;clip-path:polygon(0 0,calc(100% - 16px) 0,100% 16px,100% 100%,16px 100%,0 calc(100% - 16px));transition:border-color .3s,transform .3s}
-.provided-card:hover{border-color:rgba(0,240,255,.3);transform:translateY(-5px)}
-.provided-icon{font-size:2rem;margin-bottom:12px}
-.provided-card h4{font-family:'Barlow Condensed',sans-serif;font-weight:800;text-transform:uppercase;font-size:1.05rem;margin-bottom:8px}
-.provided-card p{color:var(--muted);font-size:.88rem;line-height:1.6}
+/* FORM STYLES */
+.form-section{background:var(--black)}
+.form-container{background:var(--card);border:1px solid var(--border);padding:40px;clip-path:polygon(0 0,calc(100% - 20px) 0,100% 20px,100% 100%,20px 100%,0 calc(100% - 20px));max-width:1000px;margin:0 auto}
+.form-group{margin-bottom:28px}
+.form-group.half{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+@media(max-width:600px){.form-group.half{grid-template-columns:1fr}}
+.form-label{display:block;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.95rem;text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px;color:var(--white)}
+.form-input,.form-select,.form-textarea{width:100%;padding:12px 16px;background:rgba(255,255,255,.05);border:1px solid var(--border);color:var(--white);font-family:'Barlow',sans-serif;font-size:.95rem;transition:border-color .2s,background .2s;clip-path:polygon(0 0,calc(100% - 8px) 0,100% 8px,100% 100%,8px 100%,0 calc(100% - 8px))}
+.form-input::placeholder{color:var(--muted)}
+.form-input:focus,.form-select:focus,.form-textarea:focus{outline:none;border-color:var(--electric);background:rgba(0,240,255,.08)}
+.form-select{cursor:pointer;appearance:none;background-image:url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%2300f0ff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");background-repeat:no-repeat;background-position:right 10px center;background-size:20px;padding-right:36px}
+.form-section-title{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.3rem;text-transform:uppercase;color:var(--electric);margin-bottom:20px;padding-top:20px;border-top:2px solid var(--border)}
+.form-section-title:first-child{border-top:none;padding-top:0}
+.checkbox-group{margin-bottom:20px}
+.checkbox-label{display:flex;align-items:center;gap:12px;cursor:pointer;color:var(--muted);font-size:.95rem;margin-bottom:12px}
+.checkbox-label input[type="checkbox"]{width:20px;height:20px;cursor:pointer;accent-color:var(--electric)}
+.checkbox-label:hover{color:var(--white)}
+.station-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:20px}
+@media(max-width:768px){.station-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:500px){.station-grid{grid-template-columns:1fr}}
+.station-checkbox{display:flex;align-items:center;gap:10px}
+.station-checkbox input[type="checkbox"]{width:18px;height:18px;cursor:pointer;accent-color:var(--electric)}
+.station-checkbox label{cursor:pointer;color:var(--muted);font-size:.9rem}
+.station-checkbox input[type="checkbox"]:checked+label{color:var(--electric);font-weight:600}
+.conditional-section{display:none;margin-top:28px;padding-top:28px;border-top:2px solid var(--border)}
+.conditional-section.active{display:block}
 
-/* WHY PEOPLE LOVE IT */
-.love-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px}
-@media(max-width:768px){.love-grid{grid-template-columns:1fr 1fr}}
-@media(max-width:500px){.love-grid{grid-template-columns:1fr}}
-.love-card{background:var(--card);border:1px solid var(--border);padding:28px;clip-path:polygon(0 0,calc(100% - 16px) 0,100% 16px,100% 100%,16px 100%,0 calc(100% - 16px));transition:border-color .3s,transform .3s}
-.love-card:hover{border-color:rgba(0,240,255,.3);transform:translateY(-5px)}
-.love-card h4{font-family:'Barlow Condensed',sans-serif;font-weight:800;text-transform:uppercase;font-size:1.15rem;margin-bottom:12px;color:var(--electric)}
-.love-card p{color:var(--muted);font-size:.9rem;line-height:1.6}
+/* T&C MODAL */
+.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.85);backdrop-filter:blur(6px);z-index:2000;display:none;align-items:center;justify-content:center;padding:24px}
+.modal-overlay.open{display:flex}
+.modal{background:var(--card);border:2px solid var(--electric);max-width:800px;width:100%;max-height:85vh;display:flex;flex-direction:column;clip-path:polygon(0 0,calc(100% - 20px) 0,100% 20px,100% 100%,20px 100%,0 calc(100% - 20px))}
+.modal-header{display:flex;justify-content:space-between;align-items:center;padding:24px 32px;border-bottom:1px solid var(--border);flex-shrink:0}
+.modal-header h3{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.3rem;text-transform:uppercase;color:var(--electric)}
+.modal-close{background:none;border:none;color:var(--muted);font-size:1.5rem;cursor:pointer;padding:4px 8px;transition:color .2s}
+.modal-close:hover{color:var(--white)}
+.modal-body{padding:32px;overflow-y:auto;flex:1}
+.modal-body h4{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.1rem;text-transform:uppercase;color:var(--gold);margin:28px 0 12px;padding-top:20px;border-top:1px solid var(--border)}
+.modal-body h4:first-child{margin-top:0;padding-top:0;border-top:none}
+.modal-body p{color:var(--muted);font-size:.88rem;line-height:1.8;margin-bottom:12px}
+.modal-body ol{counter-reset:tc-counter;list-style:none;padding:0;margin:0 0 16px}
+.modal-body ol li{counter-increment:tc-counter;padding:10px 0 10px 36px;color:var(--muted);font-size:.88rem;line-height:1.7;border-bottom:1px solid rgba(255,255,255,.04);position:relative}
+.modal-body ol li::before{content:counter(tc-counter) ".";position:absolute;left:0;color:var(--electric);font-weight:700;font-size:.85rem}
+.modal-footer{padding:20px 32px;border-top:1px solid var(--border);display:flex;gap:16px;justify-content:flex-end;flex-shrink:0}
+.tc-link{color:var(--electric);text-decoration:underline;cursor:pointer;font-size:.9rem;font-weight:600}
+.tc-link:hover{color:var(--gold)}
+@media(max-width:600px){.modal{max-height:90vh}.modal-body{padding:20px}.modal-header{padding:16px 20px}.modal-footer{padding:16px 20px}}
 
-/* SAFETY CALLOUT */
-.safety-box{background:rgba(0,240,255,.08);border:2px solid var(--electric);border-radius:8px;padding:32px;margin:48px 0;clip-path:polygon(0 0,calc(100% - 12px) 0,100% 12px,100% 100%,12px 100%,0 calc(100% - 12px))}
-.safety-box h3{font-size:1.3rem;margin-bottom:16px;color:var(--electric)}
-.safety-box ul{list-style:none;margin:0}
-.safety-box li{padding:10px 0;color:var(--muted);font-size:.95rem;border-bottom:1px solid rgba(0,240,255,.1)}
-.safety-box li:last-child{border-bottom:none}
-.safety-box li strong{color:var(--white)}
+/* ELIGIBILITY & INFO BOXES */
+.info-box{background:var(--dark);border:1px solid var(--border);padding:24px;clip-path:polygon(0 0,calc(100% - 12px) 0,100% 12px,100% 100%,12px 100%,0 calc(100% - 12px));margin-bottom:32px}
+.info-box h4{font-size:1.1rem;color:var(--electric);margin-bottom:12px}
+.info-box ul{list-style:none;padding-left:0}
+.info-box li{padding:8px 0;color:var(--muted);font-size:.9rem;padding-left:24px;position:relative}
+.info-box li:before{content:'✓';position:absolute;left:0;color:var(--electric);font-weight:800}
+.location-box{background:var(--card);border:2px solid var(--border);padding:32px;clip-path:polygon(0 0,calc(100% - 16px) 0,100% 16px,100% 100%,16px 100%,0 calc(100% - 16px));text-align:center;margin-top:48px}
+.location-box h3{font-size:1.3rem;margin-bottom:12px}
+.location-box p{color:var(--muted);margin-bottom:20px;font-size:.95rem}
+.location-box .btn-secondary{margin-top:12px}
 
 /* FINAL CTA */
 .final-cta{background:var(--electric);padding:100px 0;text-align:center;clip-path:polygon(0 30px,100% 0,100% calc(100% - 30px),0 100%);margin:40px 0 0}
@@ -137,9 +173,9 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:60px 0 
 <div class="nav-links">
 <a href="stations.html">Stations</a>
 <a href="coaches.html">Coaches</a>
-<a href="registration.html">Register</a>
+<a href="registration.html" class="active">Register</a>
 <a href="sponsors.html">Sponsors</a>
-<a href="mom-tackle.html" class="active">Mom Tackle</a>
+<a href="mom-tackle.html">Mom Tackle</a>
 <a href="leaderboard.html">Leaderboard</a>
 <a href="about.html">About</a>
 <a href="registration.html" class="nav-cta">Register Now</a>
@@ -169,109 +205,367 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:60px 0 
 <div class="hero-gradient"></div>
 </div>
 <div class="hero-content">
-<p class="eyebrow reveal">$20 Add-On · The Most Viral Moment in Jacksonville Sports</p>
-<h1 class="reveal reveal-delay-1">MOMS HIT <br><span class="electric">DIFFERENT.</span></h1>
-<p class="hero-sub reveal reveal-delay-2">High jump pit. Son standing still. Mom runs in and makes the tackle — he lands safe, she gets the credit. $20 and you're on the field.</p>
-<div class="badges reveal reveal-delay-3">
-<span class="badge">High Jump Pit Landing</span>
-<span class="badge">Video Captured</span>
-<span class="badge">On-Field</span>
-<span class="badge">Spring 2025</span>
-</div>
-<div class="hero-btns reveal reveal-delay-4">
-<a href="registration.html" class="btn-primary">Add Mom Tackle to Registration →</a>
+<p class="eyebrow reveal">Register to Compete</p>
+<h1 class="reveal reveal-delay-1">SECURE YOUR <span class="electric">SPOT</span> IN THE <span class="electric">904</span></h1>
+<p class="hero-sub reveal reveal-delay-2">Open to all high school athletes (grades 9–12) from Duval, St. Johns, and Nassau County. One entry fee. Every station.</p>
+<div class="hero-btns reveal reveal-delay-3">
+<a href="#pricing" class="btn-primary">Register Now — $60</a>
+<a href="index.html" class="btn-secondary">Back to Home →</a>
 </div>
 </div>
 </section>
 
-<!-- HOW IT WORKS -->
-<section class="section-pad" style="background:var(--dark)">
+<!-- PRICING CARDS -->
+<section class="pricing-section section-pad" id="pricing">
 <div class="container">
-<p class="eyebrow reveal">The Experience</p>
-<h2 class="reveal reveal-delay-1" style="font-size:clamp(2.5rem,5vw,4.5rem)">HOW IT <span style="color:var(--electric)">WORKS</span></h2>
-<div class="steps-grid">
-<div class="step-card reveal">
-<div class="step-num">1</div>
-<h4>Add at Checkout</h4>
-<p>Athlete adds the Mom Tackle Challenge during registration — just a $20 add-on to any entry.</p>
-</div>
-<div class="step-card reveal reveal-delay-1">
-<div class="step-num">2</div>
-<h4>Check In</h4>
-<p>Mom and son check in at the Mom Tackle station at 1:30 PM. Staff briefs both on the process.</p>
-</div>
-<div class="step-card reveal reveal-delay-2">
-<div class="step-num">3</div>
-<h4>Son Takes Position</h4>
-<p>Son takes his position standing completely stationary at the edge of the high jump pit.</p>
-</div>
-<div class="step-card reveal reveal-delay-3">
-<div class="step-num">4</div>
-<h4>The Tackle</h4>
-<p>Referee signals. Mom runs up and drives the tackle — son falls safely backward into the padded pit.</p>
-</div>
-</div>
-</div>
-</section>
-
-<!-- WHAT'S PROVIDED -->
-<section class="section-pad" style="background:var(--black)">
-<div class="container">
-<p class="eyebrow reveal">Your $20 Includes</p>
-<h2 class="reveal reveal-delay-1" style="font-size:clamp(2.5rem,5vw,4.5rem)">WHAT'S <span style="color:var(--electric)">PROVIDED</span></h2>
-<div class="provided-grid">
-<div class="provided-card reveal">
-<div class="provided-icon">🏟️</div>
-<h4>High Jump Pit Landing</h4>
-<p>Fully padded high jump pit provides a safe, cushioned landing zone for every tackle.</p>
-</div>
-<div class="provided-card reveal reveal-delay-1">
-<div class="provided-icon">📹</div>
-<h4>Video Capture</h4>
-<p>Professional video recording of the moment — yours to share on social media instantly.</p>
-</div>
-<div class="provided-card reveal reveal-delay-2">
-<div class="provided-icon">⚡</div>
-<h4>Event Team Coordination</h4>
-<p>Dedicated staff to brief participants, manage the process, and execute the perfect tackle moment.</p>
-</div>
-</div>
-</div>
-</section>
-
-<!-- WHY PEOPLE LOVE IT -->
-<section class="section-pad" style="background:var(--dark)">
-<div class="container">
-<p class="eyebrow reveal">The Hype</p>
-<h2 class="reveal reveal-delay-1" style="font-size:clamp(2.5rem,5vw,4.5rem)">WHY PEOPLE <span style="color:var(--electric)">LOVE IT</span></h2>
-<div class="love-grid">
-<div class="love-card reveal">
-<h4>📸 Most Photographed</h4>
-<p>The most photographed station at the event. Every angle. Every reaction. Instagram gold.</p>
-</div>
-<div class="love-card reveal reveal-delay-1">
-<h4>🔥 Social Media Gold</h4>
-<p>Shareable in seconds — the video is ready to post the moment it happens. Guaranteed viral moment for your family.</p>
-</div>
-<div class="love-card reveal reveal-delay-2">
-<h4>🏈 Real Bragging Rights</h4>
-<p>Mom gets to say she tackled her son on a football field — and the high jump pit means it's actually safe and epic.</p>
-</div>
-</div>
-</div>
-</section>
-
-<!-- SAFETY CALLOUT -->
-<section class="section-pad" style="background:var(--black)">
-<div class="container">
-<div class="safety-box reveal">
-<h3>🛡️ Safety First</h3>
-<ul>
-<li><strong>Son stands stationary</strong> — no head-on collision, zero unexpected movement.</li>
-<li><strong>Padded landing</strong> — high jump pit is fully padded. Son lands safely backward.</li>
-<li><strong>Professional briefing</strong> — all participants are briefed on technique and safety before the challenge.</li>
-<li><strong>Trained event team</strong> — staff monitors the entire sequence to ensure perfect execution.</li>
+<p class="eyebrow reveal">Choose Your Entry</p>
+<h2 class="reveal reveal-delay-1" style="font-size:clamp(2rem,5vw,3.5rem)">PRICING & <span style="color:var(--electric)">DETAILS</span></h2>
+<div class="pricing-grid">
+<div class="pricing-card reveal reveal-delay-2">
+<span class="pricing-badge">Main Event</span>
+<h3 style="font-size:1.4rem;margin-bottom:8px">Athlete Registration</h3>
+<div class="pricing-price">$60<span style="font-size:.7rem;color:var(--muted)">/athlete</span></div>
+<ul class="pricing-features">
+<li><span>✓ Access to All 9 Stations</span>Complete skill evaluation across all events</li>
+<li><span>✓ Official Laser-Timed Results</span>Precise measurements and timing data</li>
+<li><span>✓ Downloadable Metrics PDF</span>Professional results card for coaches</li>
+<li><span>✓ Social Graphic Template</span>Share-ready image for recruiting posts</li>
+<li><span>✓ County+Overall Leaderboard</span>See your ranking across all competitors</li>
+<li><span>✓ 501(c)(3) Donation Receipt</span>Tax-deductible charitable contribution</li>
 </ul>
+<button class="btn-primary" onclick="selectAthlete()">Register as Athlete</button>
+</div>
+
+<div class="pricing-card reveal reveal-delay-3">
+<span class="pricing-badge gold">Optional Add-On</span>
+<h3 style="font-size:1.4rem;margin-bottom:8px">Mom Tackle Add-On</h3>
+<div class="pricing-price"><span style="color:var(--gold)">$20</span><span style="font-size:.7rem;color:var(--muted)">/parent</span></div>
+<ul class="pricing-features">
+<li><span>✓ High Jump Pit Landing Zone</span>Padded competition area</li>
+<li><span>✓ Professional Video Capture</span>Your moment immortalized</li>
+<li><span>✓ Scheduled at 1:30 PM</span>Prime time during event day</li>
+<li><span>✓ Family-Friendly Spectacle</span>Biggest laugh of the day</li>
+<li><span>✓ Instant Viral Potential</span>May appear on @the904combine</li>
+</ul>
+<button class="btn-primary" onclick="toggleMomTackle()">Add to Registration</button>
+</div>
+</div>
+</div>
+</section>
+
+<!-- REGISTRATION FORM -->
+<section class="form-section section-pad">
+<div class="container">
+<div class="form-container">
+<form id="registrationForm">
+
+<!-- ATHLETE INFO -->
+<div class="form-section-title">Athlete Information</div>
+
+<div class="form-group half">
+<div>
+<label class="form-label" for="firstName">First Name</label>
+<input type="text" class="form-input" id="firstName" name="firstName" required>
+</div>
+<div>
+<label class="form-label" for="lastName">Last Name</label>
+<input type="text" class="form-input" id="lastName" name="lastName" required>
+</div>
+</div>
+
+<div class="form-group half">
+<div>
+<label class="form-label" for="grade">Grade</label>
+<select class="form-select" id="grade" name="grade" required>
+<option value="">Select Grade</option>
+<option value="9">9th Grade</option>
+<option value="10">10th Grade</option>
+<option value="11">11th Grade</option>
+<option value="12">12th Grade</option>
+</select>
+</div>
+<div>
+<label class="form-label" for="age">Age</label>
+<input type="number" class="form-input" id="age" name="age" min="13" max="19" required>
+</div>
+</div>
+
+<div class="form-group half">
+<div>
+<label class="form-label" for="county">County</label>
+<select class="form-select" id="county" name="county" onchange="updateSchools()" required>
+<option value="">Select County</option>
+<option value="duval">Duval County</option>
+<option value="stjohns">St. Johns County</option>
+<option value="nassau">Nassau County</option>
+</select>
+</div>
+<div>
+<label class="form-label" for="school">High School</label>
+<select class="form-select" id="school" name="highSchool" required>
+<option value="">Select School</option>
+</select>
+</div>
+</div>
+
+<div class="form-group half">
+<div>
+<label class="form-label" for="sport">Primary Sport</label>
+<select class="form-select" id="sport" name="primarySport" required>
+<option value="">Select Sport</option>
+<option value="football">Football</option>
+<option value="basketball">Basketball</option>
+<option value="soccer">Soccer</option>
+<option value="track">Track & Field</option>
+<option value="baseball">Baseball</option>
+<option value="lacrosse">Lacrosse</option>
+<option value="other">Other</option>
+</select>
+</div>
+<div>
+<label class="form-label" for="position">Position / Event</label>
+<input type="text" class="form-input" id="position" name="position" placeholder="e.g., Quarterback, Linebacker" required>
+</div>
+</div>
+
+<div class="form-group half">
+<div>
+<label class="form-label" for="height">Height</label>
+<input type="text" class="form-input" id="height" name="height" placeholder="e.g., 5'11&quot;" required>
+</div>
+<div>
+<label class="form-label" for="weight">Weight (lbs)</label>
+<input type="number" class="form-input" id="weight" name="weight" min="100" max="350" required>
+</div>
+</div>
+
+<div class="form-group">
+<label class="form-label" for="tshirtSize">T-Shirt Size</label>
+<select class="form-select" id="tshirtSize" name="tshirtSize" required>
+<option value="">Select Size</option>
+<option value="xs">Extra Small</option>
+<option value="s">Small</option>
+<option value="m">Medium</option>
+<option value="l">Large</option>
+<option value="xl">Extra Large</option>
+<option value="2xl">2X Large</option>
+</select>
+</div>
+
+<!-- CONTACT INFO -->
+<div class="form-section-title">Contact Information</div>
+
+<div class="form-group">
+<label class="form-label" for="athleteEmail">Athlete Email</label>
+<input type="email" class="form-input" id="athleteEmail" name="athleteEmail" required>
+</div>
+
+<div class="form-group">
+<label class="form-label" for="athletePhone">Athlete Cell Phone</label>
+<input type="tel" class="form-input" id="athletePhone" name="athletePhone" placeholder="(XXX) XXX-XXXX" required>
+</div>
+
+<div class="form-group half">
+<div>
+<label class="form-label" for="parentName">Parent / Guardian Name</label>
+<input type="text" class="form-input" id="parentName" name="parentName" required>
+</div>
+<div>
+<label class="form-label" for="parentPhone">Parent Cell Phone</label>
+<input type="tel" class="form-input" id="parentPhone" name="parentPhone" placeholder="(XXX) XXX-XXXX" required>
+</div>
+</div>
+
+<div class="form-group">
+<label class="form-label" for="parentEmail">Parent Email</label>
+<input type="email" class="form-input" id="parentEmail" name="parentEmail" required>
+</div>
+
+<div class="form-group half">
+<div>
+<label class="form-label" for="emergencyName">Emergency Contact Name</label>
+<input type="text" class="form-input" id="emergencyName" name="emergencyName" required>
+</div>
+<div>
+<label class="form-label" for="emergencyPhone">Emergency Contact Phone</label>
+<input type="tel" class="form-input" id="emergencyPhone" name="emergencyPhone" placeholder="(XXX) XXX-XXXX" required>
+</div>
+</div>
+
+<div class="form-group">
+<label class="form-label" for="emergencyRelation">Emergency Contact Relationship</label>
+<input type="text" class="form-input" id="emergencyRelation" name="emergencyRelation" placeholder="e.g., Grandparent, Aunt" required>
+</div>
+
+<!-- STATION SELECTION -->
+<div class="form-section-title">Station Selection</div>
+<p style="color:var(--muted);margin-bottom:16px;font-size:.9rem">Choose the stations you'll compete in. All 9 are included in your $60 registration.</p>
+
+<div class="station-grid">
+<div class="station-checkbox">
+<input type="checkbox" id="station1" name="stations" value="40-yard dash">
+<label for="station1">40-Yard Dash</label>
+</div>
+<div class="station-checkbox">
+<input type="checkbox" id="station2" name="stations" value="broad jump">
+<label for="station2">Broad Jump</label>
+</div>
+<div class="station-checkbox">
+<input type="checkbox" id="station3" name="stations" value="vertical jump">
+<label for="station3">Vertical Jump</label>
+</div>
+<div class="station-checkbox">
+<input type="checkbox" id="station4" name="stations" value="bench press">
+<label for="station4">Bench Press</label>
+</div>
+<div class="station-checkbox">
+<input type="checkbox" id="station5" name="stations" value="pro agility">
+<label for="station5">Pro Agility</label>
+</div>
+<div class="station-checkbox">
+<input type="checkbox" id="station6" name="stations" value="qb accuracy">
+<label for="station6">QB Accuracy</label>
+</div>
+<div class="station-checkbox">
+<input type="checkbox" id="station7" name="stations" value="kicking challenge">
+<label for="station7">Kicking Challenge</label>
+</div>
+<div class="station-checkbox">
+<input type="checkbox" id="station8" name="stations" value="5v5 competition">
+<label for="station8">5v5 Competition</label>
+</div>
+<div class="station-checkbox">
+<input type="checkbox" id="station9" name="stations" value="mom tackle">
+<label for="station9">Mom Tackle Challenge</label>
+</div>
+</div>
+
+<!-- MOM TACKLE ADD-ON -->
+<div class="conditional-section" id="momTackleSection">
+<div class="form-section-title">Mom Tackle Add-On Details</div>
+
+<div class="form-group half">
+<div>
+<label class="form-label" for="momName">Mom's Full Name</label>
+<input type="text" class="form-input" id="momName" name="momName">
+</div>
+<div>
+<label class="form-label" for="momEmail">Mom's Email</label>
+<input type="email" class="form-input" id="momEmail" name="momEmail">
+</div>
+</div>
+
+</div>
+
+<!-- WAIVERS & AGREEMENTS -->
+<div class="form-section-title">Waivers & Agreements</div>
+
+<div style="background:rgba(255,215,0,.05);border:1px solid rgba(255,215,0,.2);padding:20px;margin-bottom:24px;clip-path:polygon(0 0,calc(100% - 12px) 0,100% 12px,100% 100%,12px 100%,0 calc(100% - 12px))">
+<p style="color:var(--muted);font-size:.9rem;margin-bottom:12px">Before submitting, you must review and accept our Terms & Conditions, which include the Liability Waiver, Assumption of Risk, Photo/Video Release, Refund Policy, and Medical Authorization.</p>
+<span class="tc-link" onclick="openTC()">Read Full Terms & Conditions →</span>
+</div>
+
+<div class="checkbox-group">
+<label class="checkbox-label">
+<input type="checkbox" id="tcAccept" name="termsAccepted" required>
+I have read, understand, and agree to the <span class="tc-link" onclick="event.preventDefault();openTC()" style="display:inline">Terms & Conditions</span>, including the Liability Waiver, Assumption of Risk, Photo/Video Release, Refund Policy, and Medical Authorization.
+</label>
+</div>
+
+<div class="checkbox-group">
+<label class="checkbox-label">
+<input type="checkbox" name="parentConsent" required>
+I am the parent or legal guardian and have the authority to agree to these terms on behalf of the athlete. I understand this constitutes a legally binding electronic signature.
+</label>
+</div>
+
+<button type="submit" class="btn-primary" style="width:100%;margin-top:28px;padding:18px 36px;font-size:1.1rem;">Complete Registration — $60</button>
+</form>
+</div>
+</section>
+
+<!-- ELIGIBILITY CHECKLIST -->
+<section class="section-pad" style="background:var(--dark)">
+<div class="container">
+<p class="eyebrow reveal">Before You Register</p>
+<h2 class="reveal reveal-delay-1" style="font-size:clamp(2rem,5vw,3.5rem)">ELIGIBILITY <span style="color:var(--electric)">CHECKLIST</span></h2>
+
+<div class="info-box reveal reveal-delay-2">
+<h4>Make Sure You Qualify</h4>
+<ul>
+<li>Currently enrolled in grades 9–12 at a school in Duval, St. Johns, or Nassau County</li>
+<li>Able to compete on the day of the event (Spring 2025 at Atlantic Coast High School)</li>
+<li>Willing to follow safety protocols and coaching staff instructions</li>
+<li>Parental consent obtained if you are under 18 years old</li>
+</ul>
+</div>
+</div>
+</section>
+
+<!-- LEAD TIMES & CONFIRMATION -->
+<section class="section-pad" style="background:var(--black)">
+<div class="container">
+<p class="eyebrow reveal">Registration Timeline</p>
+<h2 class="reveal reveal-delay-1" style="font-size:clamp(2rem,5vw,3.5rem)">LEAD TIMES & <span style="color:var(--electric)">CONFIRMATION</span></h2>
+
+<div class="info-box reveal reveal-delay-2">
+<h4>Standard Registration (2–4 Weeks)</h4>
+<ul>
+<li>Registration closes 2–4 weeks before the event date</li>
+<li>Confirmation email sent within 48 hours of registration</li>
+<li>Event details and check-in instructions provided 7 days before</li>
+<li>Athlete number and station assignments available 24 hours before</li>
+</ul>
+</div>
+
+<div class="info-box reveal reveal-delay-3">
+<h4>Urgent Registration (Same Week)</h4>
+<ul>
+<li>Want to register last-minute? Contact us directly</li>
+<li>Space permitting, we can often accommodate same-week registrations</li>
+<li>Email contact@904combine.com or call for availability</li>
+<li>Confirmation guaranteed within 24–48 hours</li>
+</ul>
+</div>
+</div>
+</section>
+
+<!-- REFUND POLICY -->
+<section class="section-pad" style="background:var(--dark)">
+<div class="container">
+<p class="eyebrow reveal">Policies</p>
+<h2 class="reveal reveal-delay-1" style="font-size:clamp(2rem,5vw,3.5rem)">REFUND & <span style="color:var(--electric)">RAIN PLAN</span></h2>
+
+<div class="info-box reveal reveal-delay-2">
+<h4>Refund Policy</h4>
+<ul>
+<li>Registrations are non-refundable. Your $60 entry fee is processed as a tax-deductible 501(c)(3) charitable contribution to the Atlantic Coast Stingray Boosters Club.</li>
+<li>Athlete name transfers are allowed up to 72 hours before the event. Contact us to arrange.</li>
+<li>If the event is cancelled due to severe weather or emergency, full credit toward a rescheduled date will be provided.</li>
+</ul>
+</div>
+
+<div class="info-box reveal reveal-delay-3">
+<h4>Rain Plan</h4>
+<ul>
+<li><strong style="color:var(--electric)">Light Rain:</strong> Event proceeds as scheduled with all outdoor testing conducted.</li>
+<li><strong style="color:var(--gold)">Heavy Rain / Lightning:</strong> 30-minute delay protocol. If conditions persist, certain events may move indoors or be rescheduled.</li>
+<li><strong style="color:var(--hot)">Severe Weather:</strong> Full event reschedule within 60 days at no extra charge. New date announced within 24 hours.</li>
+</ul>
+</div>
+</div>
+</section>
+
+<!-- LOCATION -->
+<section class="section-pad" style="background:var(--black)">
+<div class="container">
+<p class="eyebrow reveal">Event Location</p>
+<h2 class="reveal reveal-delay-1" style="font-size:clamp(2rem,5vw,3.5rem)">WHERE WE'RE <span style="color:var(--electric)">MEETING</span></h2>
+
+<div class="location-box reveal reveal-delay-2">
+<h3>Atlantic Coast High School</h3>
+<p>9735 R.G. Skinner Parkway<br>Jacksonville, FL 32256</p>
+<a href="https://maps.google.com/maps?q=Atlantic+Coast+High+School+Jacksonville+FL" target="_blank" class="btn-secondary">Get Directions</a>
 </div>
 </div>
 </section>
@@ -279,11 +573,11 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:60px 0 
 <!-- FINAL CTA -->
 <section class="final-cta">
 <div class="container">
-<h2>MAKE THE VIRAL MOMENT.<br>$20 ADD-ON.</h2>
-<p>Mom tackles son. He lands safe. You get the footage. It's the highlight of the day.</p>
+<h2>READY TO COMPETE?</h2>
+<p>Join the First Coast's most electric high school football combine. Coached by former Jaguars. Measured with precision. Ranked with pride.</p>
 <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
-<a href="registration.html" class="btn-primary">Add Mom Tackle to Registration →</a>
-</div>
+<a href="#registrationForm" class="btn-primary">Register Now — $60</a>
+<a href="stations.html" class="btn-secondary">View All Stations →</a>
 </div>
 </section>
 
@@ -313,15 +607,262 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:60px 0 
 </div>
 </footer>
 
+<!-- TERMS & CONDITIONS MODAL -->
+<div class="modal-overlay" id="tcModal">
+<div class="modal">
+<div class="modal-header">
+<h3>Terms & Conditions — The 904 Combine</h3>
+<button class="modal-close" onclick="closeTC()">&times;</button>
+</div>
+<div class="modal-body">
+
+<p style="color:var(--white);font-weight:600;margin-bottom:20px">PLEASE READ THESE TERMS AND CONDITIONS CAREFULLY. BY REGISTERING FOR THE 904 COMBINE, YOU ACKNOWLEDGE THAT YOU HAVE READ, UNDERSTOOD, AND AGREE TO BE BOUND BY ALL OF THE FOLLOWING TERMS, CONDITIONS, WAIVERS, AND RELEASES.</p>
+
+<p><strong style="color:var(--white)">Effective Date:</strong> This agreement is effective as of the date of registration submission and applies to The 904 Combine event organized by the Atlantic Coast Stingray Boosters Club, a registered 501(c)(3) nonprofit organization ("Organizer"), held at Atlantic Coast High School, 9735 R.G. Skinner Parkway, Jacksonville, FL 32256 ("Venue").</p>
+
+<h4>Section 1 — Assumption of Risk & Liability Waiver</h4>
+
+<ol>
+<li><strong style="color:var(--white)">Voluntary Participation.</strong> The Participant and Parent/Guardian acknowledge that participation in The 904 Combine is entirely voluntary. The event involves strenuous physical activities including but not limited to sprinting, jumping, lifting weights, agility drills, throwing, kicking, and competitive football-style contact drills (including the optional Mom Tackle Challenge).</li>
+<li><strong style="color:var(--white)">Inherent Risks.</strong> The Participant and Parent/Guardian understand and acknowledge that participation in athletic activities carries inherent risks of serious physical injury, including but not limited to: muscle strains, sprains, fractures, concussions, ligament tears, heat-related illness (heat exhaustion, heat stroke), cardiac events, spinal injuries, paralysis, and in rare cases, death. These risks cannot be eliminated regardless of the care taken to avoid them.</li>
+<li><strong style="color:var(--white)">Assumption of Risk.</strong> The Participant and Parent/Guardian knowingly and voluntarily assume all risks associated with participation in The 904 Combine, whether or not specifically identified herein, including risks arising from the negligence of the Organizer, Venue, coaching staff, volunteers, sponsors, or other participants.</li>
+<li><strong style="color:var(--white)">Release & Waiver of Liability.</strong> To the fullest extent permitted by Florida law, the Participant and Parent/Guardian hereby release, waive, discharge, and covenant not to sue the Atlantic Coast Stingray Boosters Club, The 904 Combine, Atlantic Coast High School, Duval County Public Schools, the coaching and volunteer staff (including but not limited to Reggie Hayward, Tony Gilbert, and all other personnel), sponsors, partners, and their respective officers, directors, members, employees, agents, and affiliates (collectively, "Released Parties") from any and all liability, claims, demands, actions, or causes of action arising out of or related to any loss, damage, or injury (including death) sustained during or as a result of participation in or attendance at The 904 Combine.</li>
+<li><strong style="color:var(--white)">Indemnification.</strong> The Participant and Parent/Guardian agree to indemnify, defend, and hold harmless the Released Parties from any and all claims, suits, losses, damages, costs, and expenses (including reasonable attorneys' fees) arising from the Participant's participation in the event or any breach of this agreement.</li>
+<li><strong style="color:var(--white)">Equipment & Facilities.</strong> The Participant agrees to inspect all equipment and facilities prior to use and to immediately report any unsafe conditions to event staff. Participation constitutes acknowledgment that all equipment and facilities are deemed safe and acceptable by the Participant.</li>
+<li><strong style="color:var(--white)">Fitness to Participate.</strong> The Participant and Parent/Guardian represent and warrant that the Participant is physically fit and has no medical condition that would prevent safe participation. It is recommended that participants obtain a physical examination and physician clearance prior to the event.</li>
+</ol>
+
+<h4>Section 2 — Photo, Video & Media Release</h4>
+
+<ol>
+<li><strong style="color:var(--white)">Grant of Rights.</strong> The Participant and Parent/Guardian hereby grant to the Organizer and its designees an irrevocable, perpetual, worldwide, royalty-free, transferable license to photograph, record, film, and otherwise capture the Participant's image, likeness, voice, name, and performance during The 904 Combine.</li>
+<li><strong style="color:var(--white)">Permitted Uses.</strong> The Organizer may use, reproduce, distribute, display, and create derivative works of such media in any format or medium now known or hereafter developed, including but not limited to: social media (Instagram, TikTok, Facebook, YouTube, X/Twitter), website content, promotional materials, press releases, advertising, merchandise, future event marketing, highlight reels, and broadcast media.</li>
+<li><strong style="color:var(--white)">No Compensation.</strong> The Participant and Parent/Guardian acknowledge that no compensation, royalty, or payment of any kind shall be owed for the use of the Participant's image, likeness, or performance recordings.</li>
+<li><strong style="color:var(--white)">No Prior Approval Required.</strong> The Organizer is not required to obtain additional approval before using any media captured during the event.</li>
+<li><strong style="color:var(--white)">Waiver of Claims.</strong> The Participant and Parent/Guardian waive any right to inspect or approve any media or its use, and release the Organizer from any claims related to distortion, alteration, optical illusion, or use in composite form.</li>
+</ol>
+
+<h4>Section 3 — Refund & Cancellation Policy</h4>
+
+<ol>
+<li><strong style="color:var(--white)">Non-Refundable Contribution.</strong> All registration fees are processed as tax-deductible charitable contributions to the Atlantic Coast Stingray Boosters Club, a registered 501(c)(3) nonprofit organization. Registration fees are non-refundable under any circumstances, including but not limited to: change of mind, scheduling conflicts, failure to attend, injury prior to the event, or removal from the event for any reason.</li>
+<li><strong style="color:var(--white)">Name Transfers.</strong> The Participant may transfer their registration to another eligible athlete up to seventy-two (72) hours prior to the event by contacting the Organizer in writing. Transfers made after this deadline will not be honored.</li>
+<li><strong style="color:var(--white)">Event Cancellation by Organizer.</strong> In the event of cancellation due to severe weather, emergency, or circumstances beyond the Organizer's control, registrants will receive full credit toward a rescheduled date. No cash refunds will be issued. If the event cannot be rescheduled within twelve (12) months of the original date, the registration fee shall be considered a charitable donation.</li>
+<li><strong style="color:var(--white)">Weather Policy.</strong> Light rain will not cancel the event. In the event of heavy rain or lightning, a 30-minute delay protocol will be initiated. If conditions do not improve, the event may be partially modified or rescheduled at the sole discretion of the Organizer.</li>
+<li><strong style="color:var(--white)">Removal from Event.</strong> The Organizer reserves the right to remove any Participant from the event for unsportsmanlike conduct, violation of safety protocols, or any behavior deemed disruptive or dangerous, without refund.</li>
+</ol>
+
+<h4>Section 4 — Medical Authorization</h4>
+
+<ol>
+<li><strong style="color:var(--white)">Emergency Medical Treatment.</strong> In the event of illness or injury during The 904 Combine, the Parent/Guardian hereby authorizes the Organizer, its staff, and designated medical personnel to obtain and provide emergency medical treatment, first aid, and transportation to a medical facility for the Participant, if in their judgment such action is necessary.</li>
+<li><strong style="color:var(--white)">Medical Costs.</strong> The Participant and Parent/Guardian accept full financial responsibility for any and all medical expenses incurred as a result of injury or illness during the event. The Organizer does not provide medical insurance coverage for participants.</li>
+<li><strong style="color:var(--white)">Disclosure of Medical Conditions.</strong> The Participant and Parent/Guardian agree to disclose any known medical conditions, allergies, medications, or physical limitations that may affect the Participant's ability to safely participate. Failure to disclose relevant medical information may result in removal from the event without refund.</li>
+<li><strong style="color:var(--white)">Insurance.</strong> The Participant and Parent/Guardian acknowledge that the Organizer does not carry health, accident, or liability insurance on behalf of participants. It is strongly recommended that participants maintain their own health and accident insurance coverage.</li>
+</ol>
+
+<h4>Section 5 — General Provisions</h4>
+
+<ol>
+<li><strong style="color:var(--white)">Governing Law.</strong> This agreement shall be governed by and construed in accordance with the laws of the State of Florida. Any dispute arising under this agreement shall be resolved exclusively in the courts of Duval County, Florida.</li>
+<li><strong style="color:var(--white)">Severability.</strong> If any provision of this agreement is found to be invalid or unenforceable, the remaining provisions shall remain in full force and effect.</li>
+<li><strong style="color:var(--white)">Entire Agreement.</strong> This agreement constitutes the entire understanding between the parties regarding participation in The 904 Combine and supersedes all prior agreements, representations, or understandings.</li>
+<li><strong style="color:var(--white)">Binding on Heirs.</strong> This agreement shall be binding upon the Participant, Parent/Guardian, and their respective heirs, executors, administrators, personal representatives, and assigns.</li>
+<li><strong style="color:var(--white)">Age of Participant.</strong> By registering, the Parent/Guardian confirms that the Participant is currently enrolled in grades 9–12 and meets all eligibility requirements. If the Participant is under 18 years of age, the Parent/Guardian represents that they have the legal authority to enter into this agreement on behalf of the Participant.</li>
+<li><strong style="color:var(--white)">Electronic Acceptance.</strong> The Participant and Parent/Guardian agree that checking the acceptance box on the registration form and submitting the registration constitutes a valid electronic signature and acceptance of these Terms and Conditions with the same legal force and effect as a handwritten signature under Florida's Uniform Electronic Transactions Act (Florida Statutes § 668.50).</li>
+</ol>
+
+</div>
+<div class="modal-footer">
+<button class="btn-primary" onclick="acceptTC()">I Accept These Terms</button>
+</div>
+</div>
+</div>
+
 <script>
 function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open')}
 
-// Scroll reveal
-const obs=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}})},{threshold:0.1});
-document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+// School data by county
+const schoolData = {
+  duval: [
+    'Select School',
+    'Atlantic Coast',
+    'First Coast',
+    'Sandalwood',
+    'Mandarin',
+    'Raines',
+    'Fletcher',
+    'Terry Parker',
+    'Jackson',
+    'Ribault',
+    'Ed White',
+    'Paxon',
+    'Englewood',
+    'Baldwin',
+    'Episcopal',
+    'Providence',
+    'Bolles',
+    'Stanton',
+    'Andrew Jackson',
+    'Westside',
+    'Frank H. Peterson',
+    'Riverside'
+  ],
+  stjohns: [
+    'Select School',
+    'Ponte Vedra',
+    'Nease',
+    'Creekside',
+    'Bartram Trail',
+    'St. Johns Country Day',
+    'Pedro Menendez',
+    'St. Augustine'
+  ],
+  nassau: [
+    'Select School',
+    'Yulee',
+    'Fernandina Beach',
+    'Hilliard',
+    'West Nassau'
+  ]
+};
 
-// Parallax
-window.addEventListener('scroll',()=>{const s=window.scrollY;const bg=document.querySelector('.hero-bg');const content=document.querySelector('.hero-content');if(bg)bg.style.transform=`translateY(${s*0.3}px)`;if(content&&s<window.innerHeight)content.style.transform=`translateY(${s*0.1}px)`});
+// Update school dropdown based on county selection
+function updateSchools(){
+  const county = document.getElementById('county').value;
+  const schoolSelect = document.getElementById('school');
+  schoolSelect.innerHTML = '';
+
+  if(county && schoolData[county]){
+    schoolData[county].forEach(school => {
+      const option = document.createElement('option');
+      option.value = school;
+      option.textContent = school;
+      schoolSelect.appendChild(option);
+    });
+  }
+}
+
+// Toggle Mom Tackle conditional section
+function toggleMomTackle(){
+  const momSection = document.getElementById('momTackleSection');
+  const station9 = document.getElementById('station9');
+
+  momSection.classList.toggle('active');
+  station9.checked = !station9.checked;
+}
+
+function selectAthlete(){
+  document.getElementById('registrationForm').scrollIntoView({behavior: 'smooth'});
+}
+
+// T&C Modal
+function openTC(){
+  document.getElementById('tcModal').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeTC(){
+  document.getElementById('tcModal').classList.remove('open');
+  document.body.style.overflow = '';
+}
+function acceptTC(){
+  document.getElementById('tcAccept').checked = true;
+  closeTC();
+}
+document.getElementById('tcModal').addEventListener('click', function(e){
+  if(e.target === this) closeTC();
+});
+document.addEventListener('keydown', function(e){
+  if(e.key === 'Escape') closeTC();
+});
+
+
+// ============================================
+// CONFIGURATION
+// ============================================
+// 1. Your Google Apps Script URL (see setup instructions)
+const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzBoRN6pVchXOg_GT3r5JbhAObvYHPpCUIcS8EJBuz9rB7nmn21rPq0PN6ZvPadJzBj/exec';
+// 2. Your Square Checkout Link
+const SQUARE_LINK_60 = 'https://square.link/u/9NYI6hc8';
+const SQUARE_LINK_80 = 'https://square.link/u/9NYI6hc8';
+// ============================================
+
+// Form submission — sends to Google Sheet, then redirects to Square
+document.getElementById('registrationForm').addEventListener('submit', function(e){
+  e.preventDefault();
+
+  const form = this;
+  const submitBtn = form.querySelector('button[type="submit"]');
+  const originalText = submitBtn.textContent;
+  submitBtn.textContent = 'SUBMITTING...';
+  submitBtn.disabled = true;
+
+  // Collect all form data
+  const formData = new FormData(form);
+  const data = {};
+  formData.forEach((value, key) => {
+    if(data[key]){
+      data[key] = data[key] + ', ' + value;
+    } else {
+      data[key] = value;
+    }
+  });
+
+  // Add timestamp and calculate total
+  data.timestamp = new Date().toLocaleString();
+  const hasMomTackle = document.getElementById('station9').checked;
+  data.momTackle = hasMomTackle ? 'Yes' : 'No';
+  data.totalDue = hasMomTackle ? '$80' : '$60';
+  data.termsAcceptedAt = new Date().toISOString();
+
+  // Send to Google Sheets
+  if(GOOGLE_SCRIPT_URL !== 'YOUR_GOOGLE_APPS_SCRIPT_URL_HERE'){
+    fetch(GOOGLE_SCRIPT_URL, {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify(data)
+    }).then(() => {
+      redirectToSquare(hasMomTackle);
+    }).catch(() => {
+      redirectToSquare(hasMomTackle);
+    });
+  } else {
+    // If Google Sheets not configured yet, just redirect to Square
+    redirectToSquare(hasMomTackle);
+  }
+});
+
+function redirectToSquare(hasMomTackle){
+  const squareUrl = hasMomTackle ? SQUARE_LINK_80 : SQUARE_LINK_60;
+  if(squareUrl.includes('YOUR_SQUARE')){
+    // Square not configured yet — show confirmation
+    document.getElementById('registrationForm').innerHTML = '<div style="text-align:center;padding:40px 0"><h2 style="color:var(--electric);font-size:2rem;margin-bottom:16px">REGISTRATION RECEIVED</h2><p style="color:var(--muted);font-size:1.1rem;max-width:500px;margin:0 auto">Thank you for registering! You will receive a payment link via email shortly.</p></div>';
+    window.scrollTo({top: document.getElementById('registrationForm').offsetTop - 100, behavior:'smooth'});
+  } else {
+    window.location.href = squareUrl;
+  }
+}
+
+// Scroll reveal
+const obs = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if(e.isIntersecting){
+      e.target.classList.add('visible');
+      obs.unobserve(e.target);
+    }
+  });
+}, {threshold: 0.1});
+document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+// Parallax on hero
+window.addEventListener('scroll', () => {
+  const s = window.scrollY;
+  const bg = document.querySelector('.hero-bg');
+  const content = document.querySelector('.hero-content');
+  if(bg) bg.style.transform = `translateY(${s * 0.3}px)`;
+  if(content && s < window.innerHeight) content.style.transform = `translateY(${s * 0.1}px)`;
+});
 </script>
 </body>
 </html>
