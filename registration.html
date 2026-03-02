@@ -710,12 +710,75 @@ document.getElementById('donation').addEventListener('change', function(){
   }
 });
 
-// Form submission
+// ============================================
+// CONFIGURATION
+// ============================================
+// 1. Your Google Apps Script URL (see setup instructions)
+const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzBoRN6pVchXOg_GT3r5JbhAObvYHPpCUIcS8EJBuz9rB7nmn21rPq0PN6ZvPadJzBj/exec';
+// 2. Your Square Checkout Link
+const SQUARE_LINK_60 = 'https://square.link/u/9NYI6hc8';
+const SQUARE_LINK_80 = 'https://square.link/u/9NYI6hc8';
+// ============================================
+
+// Form submission — sends to Google Sheet, then redirects to Square
 document.getElementById('registrationForm').addEventListener('submit', function(e){
   e.preventDefault();
-  alert('Thank you for registering! A confirmation email will be sent shortly.');
-  // In a real implementation, this would send data to a backend server
+
+  const form = this;
+  const submitBtn = form.querySelector('button[type="submit"]');
+  const originalText = submitBtn.textContent;
+  submitBtn.textContent = 'SUBMITTING...';
+  submitBtn.disabled = true;
+
+  // Collect all form data
+  const formData = new FormData(form);
+  const data = {};
+  formData.forEach((value, key) => {
+    if(data[key]){
+      data[key] = data[key] + ', ' + value;
+    } else {
+      data[key] = value;
+    }
+  });
+
+  // Add timestamp and calculate total
+  data.timestamp = new Date().toLocaleString();
+  const hasMomTackle = document.getElementById('station9').checked;
+  const donationAmount = document.getElementById('donation').value === 'custom'
+    ? (document.getElementById('customAmount').value || 0)
+    : document.getElementById('donation').value;
+  data.momTackle = hasMomTackle ? 'Yes' : 'No';
+  data.donationAmount = '$' + donationAmount;
+  data.totalDue = hasMomTackle ? '$80' : '$60';
+
+  // Send to Google Sheets
+  if(GOOGLE_SCRIPT_URL !== 'YOUR_GOOGLE_APPS_SCRIPT_URL_HERE'){
+    fetch(GOOGLE_SCRIPT_URL, {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify(data)
+    }).then(() => {
+      redirectToSquare(hasMomTackle);
+    }).catch(() => {
+      redirectToSquare(hasMomTackle);
+    });
+  } else {
+    // If Google Sheets not configured yet, just redirect to Square
+    redirectToSquare(hasMomTackle);
+  }
 });
+
+function redirectToSquare(hasMomTackle){
+  const squareUrl = hasMomTackle ? SQUARE_LINK_80 : SQUARE_LINK_60;
+  if(squareUrl.includes('YOUR_SQUARE')){
+    // Square not configured yet — show confirmation
+    document.getElementById('registrationForm').innerHTML = '<div style="text-align:center;padding:40px 0"><h2 style="color:var(--electric);font-size:2rem;margin-bottom:16px">REGISTRATION RECEIVED</h2><p style="color:var(--muted);font-size:1.1rem;max-width:500px;margin:0 auto">Thank you for registering! You will receive a payment link via email shortly.</p></div>';
+    window.scrollTo({top: document.getElementById('registrationForm').offsetTop - 100, behavior:'smooth'});
+  } else {
+    window.location.href = squareUrl;
+  }
+}
 
 // Scroll reveal
 const obs = new IntersectionObserver((entries) => {
