@@ -113,6 +113,26 @@ nav{position:sticky;top:0;width:100%;height:64px;background:rgba(10,10,15,.92);b
 .conditional-section{display:none;margin-top:28px;padding-top:28px;border-top:2px solid var(--border)}
 .conditional-section.active{display:block}
 
+/* T&C MODAL */
+.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.85);backdrop-filter:blur(6px);z-index:2000;display:none;align-items:center;justify-content:center;padding:24px}
+.modal-overlay.open{display:flex}
+.modal{background:var(--card);border:2px solid var(--electric);max-width:800px;width:100%;max-height:85vh;display:flex;flex-direction:column;clip-path:polygon(0 0,calc(100% - 20px) 0,100% 20px,100% 100%,20px 100%,0 calc(100% - 20px))}
+.modal-header{display:flex;justify-content:space-between;align-items:center;padding:24px 32px;border-bottom:1px solid var(--border);flex-shrink:0}
+.modal-header h3{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.3rem;text-transform:uppercase;color:var(--electric)}
+.modal-close{background:none;border:none;color:var(--muted);font-size:1.5rem;cursor:pointer;padding:4px 8px;transition:color .2s}
+.modal-close:hover{color:var(--white)}
+.modal-body{padding:32px;overflow-y:auto;flex:1}
+.modal-body h4{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.1rem;text-transform:uppercase;color:var(--gold);margin:28px 0 12px;padding-top:20px;border-top:1px solid var(--border)}
+.modal-body h4:first-child{margin-top:0;padding-top:0;border-top:none}
+.modal-body p{color:var(--muted);font-size:.88rem;line-height:1.8;margin-bottom:12px}
+.modal-body ol{counter-reset:tc-counter;list-style:none;padding:0;margin:0 0 16px}
+.modal-body ol li{counter-increment:tc-counter;padding:10px 0 10px 36px;color:var(--muted);font-size:.88rem;line-height:1.7;border-bottom:1px solid rgba(255,255,255,.04);position:relative}
+.modal-body ol li::before{content:counter(tc-counter) ".";position:absolute;left:0;color:var(--electric);font-weight:700;font-size:.85rem}
+.modal-footer{padding:20px 32px;border-top:1px solid var(--border);display:flex;gap:16px;justify-content:flex-end;flex-shrink:0}
+.tc-link{color:var(--electric);text-decoration:underline;cursor:pointer;font-size:.9rem;font-weight:600}
+.tc-link:hover{color:var(--gold)}
+@media(max-width:600px){.modal{max-height:90vh}.modal-body{padding:20px}.modal-header{padding:16px 20px}.modal-footer{padding:16px 20px}}
+
 /* ELIGIBILITY & INFO BOXES */
 .info-box{background:var(--dark);border:1px solid var(--border);padding:24px;clip-path:polygon(0 0,calc(100% - 12px) 0,100% 12px,100% 100%,12px 100%,0 calc(100% - 12px));margin-bottom:32px}
 .info-box h4{font-size:1.1rem;color:var(--electric);margin-bottom:12px}
@@ -474,24 +494,29 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:60px 0 
 <!-- WAIVERS & AGREEMENTS -->
 <div class="form-section-title">Waivers & Agreements</div>
 
+<div style="background:rgba(255,215,0,.05);border:1px solid rgba(255,215,0,.2);padding:20px;margin-bottom:24px;clip-path:polygon(0 0,calc(100% - 12px) 0,100% 12px,100% 100%,12px 100%,0 calc(100% - 12px))">
+<p style="color:var(--muted);font-size:.9rem;margin-bottom:12px">Before submitting, you must review and accept our Terms & Conditions, which include the Liability Waiver, Assumption of Risk, Photo/Video Release, Refund Policy, and Medical Authorization.</p>
+<span class="tc-link" onclick="openTC()">Read Full Terms & Conditions →</span>
+</div>
+
 <div class="checkbox-group">
 <label class="checkbox-label">
 <input type="checkbox" name="gradeConfirm" required>
-I confirm that I am currently enrolled in grades 9–12.
+I confirm that the athlete is currently enrolled in grades 9–12 at an eligible high school.
 </label>
 </div>
 
 <div class="checkbox-group">
 <label class="checkbox-label">
-<input type="checkbox" name="liabilityWaiver" required>
-I agree to the liability waiver and assume full responsibility for any injuries sustained during the event.
+<input type="checkbox" id="tcAccept" name="termsAccepted" required>
+I have read, understand, and agree to the <span class="tc-link" onclick="event.preventDefault();openTC()" style="display:inline">Terms & Conditions</span>, including the Liability Waiver, Assumption of Risk, Photo/Video Release, Refund Policy, and Medical Authorization.
 </label>
 </div>
 
 <div class="checkbox-group">
 <label class="checkbox-label">
 <input type="checkbox" name="parentConsent" required>
-I confirm that parent/guardian consent has been obtained for athletes under 18 years old.
+I am the parent or legal guardian and have the authority to agree to these terms on behalf of the athlete. I understand this constitutes a legally binding electronic signature.
 </label>
 </div>
 
@@ -623,6 +648,78 @@ I confirm that parent/guardian consent has been obtained for athletes under 18 y
 </div>
 </footer>
 
+<!-- TERMS & CONDITIONS MODAL -->
+<div class="modal-overlay" id="tcModal">
+<div class="modal">
+<div class="modal-header">
+<h3>Terms & Conditions — The 904 Combine</h3>
+<button class="modal-close" onclick="closeTC()">&times;</button>
+</div>
+<div class="modal-body">
+
+<p style="color:var(--white);font-weight:600;margin-bottom:20px">PLEASE READ THESE TERMS AND CONDITIONS CAREFULLY. BY REGISTERING FOR THE 904 COMBINE, YOU ACKNOWLEDGE THAT YOU HAVE READ, UNDERSTOOD, AND AGREE TO BE BOUND BY ALL OF THE FOLLOWING TERMS, CONDITIONS, WAIVERS, AND RELEASES.</p>
+
+<p><strong style="color:var(--white)">Effective Date:</strong> This agreement is effective as of the date of registration submission and applies to The 904 Combine event organized by the Atlantic Coast Stingray Boosters Club, a registered 501(c)(3) nonprofit organization ("Organizer"), held at Atlantic Coast High School, 9735 R.G. Skinner Parkway, Jacksonville, FL 32256 ("Venue").</p>
+
+<h4>Section 1 — Assumption of Risk & Liability Waiver</h4>
+
+<ol>
+<li><strong style="color:var(--white)">Voluntary Participation.</strong> The Participant and Parent/Guardian acknowledge that participation in The 904 Combine is entirely voluntary. The event involves strenuous physical activities including but not limited to sprinting, jumping, lifting weights, agility drills, throwing, kicking, and competitive football-style contact drills (including the optional Mom Tackle Challenge).</li>
+<li><strong style="color:var(--white)">Inherent Risks.</strong> The Participant and Parent/Guardian understand and acknowledge that participation in athletic activities carries inherent risks of serious physical injury, including but not limited to: muscle strains, sprains, fractures, concussions, ligament tears, heat-related illness (heat exhaustion, heat stroke), cardiac events, spinal injuries, paralysis, and in rare cases, death. These risks cannot be eliminated regardless of the care taken to avoid them.</li>
+<li><strong style="color:var(--white)">Assumption of Risk.</strong> The Participant and Parent/Guardian knowingly and voluntarily assume all risks associated with participation in The 904 Combine, whether or not specifically identified herein, including risks arising from the negligence of the Organizer, Venue, coaching staff, volunteers, sponsors, or other participants.</li>
+<li><strong style="color:var(--white)">Release & Waiver of Liability.</strong> To the fullest extent permitted by Florida law, the Participant and Parent/Guardian hereby release, waive, discharge, and covenant not to sue the Atlantic Coast Stingray Boosters Club, The 904 Combine, Atlantic Coast High School, Duval County Public Schools, the coaching and volunteer staff (including but not limited to Reggie Hayward, Tony Gilbert, and all other personnel), sponsors, partners, and their respective officers, directors, members, employees, agents, and affiliates (collectively, "Released Parties") from any and all liability, claims, demands, actions, or causes of action arising out of or related to any loss, damage, or injury (including death) sustained during or as a result of participation in or attendance at The 904 Combine.</li>
+<li><strong style="color:var(--white)">Indemnification.</strong> The Participant and Parent/Guardian agree to indemnify, defend, and hold harmless the Released Parties from any and all claims, suits, losses, damages, costs, and expenses (including reasonable attorneys' fees) arising from the Participant's participation in the event or any breach of this agreement.</li>
+<li><strong style="color:var(--white)">Equipment & Facilities.</strong> The Participant agrees to inspect all equipment and facilities prior to use and to immediately report any unsafe conditions to event staff. Participation constitutes acknowledgment that all equipment and facilities are deemed safe and acceptable by the Participant.</li>
+<li><strong style="color:var(--white)">Fitness to Participate.</strong> The Participant and Parent/Guardian represent and warrant that the Participant is physically fit and has no medical condition that would prevent safe participation. It is recommended that participants obtain a physical examination and physician clearance prior to the event.</li>
+</ol>
+
+<h4>Section 2 — Photo, Video & Media Release</h4>
+
+<ol>
+<li><strong style="color:var(--white)">Grant of Rights.</strong> The Participant and Parent/Guardian hereby grant to the Organizer and its designees an irrevocable, perpetual, worldwide, royalty-free, transferable license to photograph, record, film, and otherwise capture the Participant's image, likeness, voice, name, and performance during The 904 Combine.</li>
+<li><strong style="color:var(--white)">Permitted Uses.</strong> The Organizer may use, reproduce, distribute, display, and create derivative works of such media in any format or medium now known or hereafter developed, including but not limited to: social media (Instagram, TikTok, Facebook, YouTube, X/Twitter), website content, promotional materials, press releases, advertising, merchandise, future event marketing, highlight reels, and broadcast media.</li>
+<li><strong style="color:var(--white)">No Compensation.</strong> The Participant and Parent/Guardian acknowledge that no compensation, royalty, or payment of any kind shall be owed for the use of the Participant's image, likeness, or performance recordings.</li>
+<li><strong style="color:var(--white)">No Prior Approval Required.</strong> The Organizer is not required to obtain additional approval before using any media captured during the event.</li>
+<li><strong style="color:var(--white)">Waiver of Claims.</strong> The Participant and Parent/Guardian waive any right to inspect or approve any media or its use, and release the Organizer from any claims related to distortion, alteration, optical illusion, or use in composite form.</li>
+</ol>
+
+<h4>Section 3 — Refund & Cancellation Policy</h4>
+
+<ol>
+<li><strong style="color:var(--white)">Non-Refundable Contribution.</strong> All registration fees are processed as tax-deductible charitable contributions to the Atlantic Coast Stingray Boosters Club, a registered 501(c)(3) nonprofit organization. Registration fees are non-refundable under any circumstances, including but not limited to: change of mind, scheduling conflicts, failure to attend, injury prior to the event, or removal from the event for any reason.</li>
+<li><strong style="color:var(--white)">Name Transfers.</strong> The Participant may transfer their registration to another eligible athlete up to seventy-two (72) hours prior to the event by contacting the Organizer in writing. Transfers made after this deadline will not be honored.</li>
+<li><strong style="color:var(--white)">Event Cancellation by Organizer.</strong> In the event of cancellation due to severe weather, emergency, or circumstances beyond the Organizer's control, registrants will receive full credit toward a rescheduled date. No cash refunds will be issued. If the event cannot be rescheduled within twelve (12) months of the original date, the registration fee shall be considered a charitable donation.</li>
+<li><strong style="color:var(--white)">Weather Policy.</strong> Light rain will not cancel the event. In the event of heavy rain or lightning, a 30-minute delay protocol will be initiated. If conditions do not improve, the event may be partially modified or rescheduled at the sole discretion of the Organizer.</li>
+<li><strong style="color:var(--white)">Removal from Event.</strong> The Organizer reserves the right to remove any Participant from the event for unsportsmanlike conduct, violation of safety protocols, or any behavior deemed disruptive or dangerous, without refund.</li>
+</ol>
+
+<h4>Section 4 — Medical Authorization</h4>
+
+<ol>
+<li><strong style="color:var(--white)">Emergency Medical Treatment.</strong> In the event of illness or injury during The 904 Combine, the Parent/Guardian hereby authorizes the Organizer, its staff, and designated medical personnel to obtain and provide emergency medical treatment, first aid, and transportation to a medical facility for the Participant, if in their judgment such action is necessary.</li>
+<li><strong style="color:var(--white)">Medical Costs.</strong> The Participant and Parent/Guardian accept full financial responsibility for any and all medical expenses incurred as a result of injury or illness during the event. The Organizer does not provide medical insurance coverage for participants.</li>
+<li><strong style="color:var(--white)">Disclosure of Medical Conditions.</strong> The Participant and Parent/Guardian agree to disclose any known medical conditions, allergies, medications, or physical limitations that may affect the Participant's ability to safely participate. Failure to disclose relevant medical information may result in removal from the event without refund.</li>
+<li><strong style="color:var(--white)">Insurance.</strong> The Participant and Parent/Guardian acknowledge that the Organizer does not carry health, accident, or liability insurance on behalf of participants. It is strongly recommended that participants maintain their own health and accident insurance coverage.</li>
+</ol>
+
+<h4>Section 5 — General Provisions</h4>
+
+<ol>
+<li><strong style="color:var(--white)">Governing Law.</strong> This agreement shall be governed by and construed in accordance with the laws of the State of Florida. Any dispute arising under this agreement shall be resolved exclusively in the courts of Duval County, Florida.</li>
+<li><strong style="color:var(--white)">Severability.</strong> If any provision of this agreement is found to be invalid or unenforceable, the remaining provisions shall remain in full force and effect.</li>
+<li><strong style="color:var(--white)">Entire Agreement.</strong> This agreement constitutes the entire understanding between the parties regarding participation in The 904 Combine and supersedes all prior agreements, representations, or understandings.</li>
+<li><strong style="color:var(--white)">Binding on Heirs.</strong> This agreement shall be binding upon the Participant, Parent/Guardian, and their respective heirs, executors, administrators, personal representatives, and assigns.</li>
+<li><strong style="color:var(--white)">Age of Participant.</strong> By registering, the Parent/Guardian confirms that the Participant is currently enrolled in grades 9–12 and meets all eligibility requirements. If the Participant is under 18 years of age, the Parent/Guardian represents that they have the legal authority to enter into this agreement on behalf of the Participant.</li>
+<li><strong style="color:var(--white)">Electronic Acceptance.</strong> The Participant and Parent/Guardian agree that checking the acceptance box on the registration form and submitting the registration constitutes a valid electronic signature and acceptance of these Terms and Conditions with the same legal force and effect as a handwritten signature under Florida's Uniform Electronic Transactions Act (Florida Statutes § 668.50).</li>
+</ol>
+
+</div>
+<div class="modal-footer">
+<button class="btn-primary" onclick="acceptTC()">I Accept These Terms</button>
+</div>
+</div>
+</div>
+
 <script>
 function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open')}
 
@@ -700,6 +797,26 @@ function selectAthlete(){
   document.getElementById('registrationForm').scrollIntoView({behavior: 'smooth'});
 }
 
+// T&C Modal
+function openTC(){
+  document.getElementById('tcModal').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeTC(){
+  document.getElementById('tcModal').classList.remove('open');
+  document.body.style.overflow = '';
+}
+function acceptTC(){
+  document.getElementById('tcAccept').checked = true;
+  closeTC();
+}
+document.getElementById('tcModal').addEventListener('click', function(e){
+  if(e.target === this) closeTC();
+});
+document.addEventListener('keydown', function(e){
+  if(e.key === 'Escape') closeTC();
+});
+
 // Custom donation amount
 document.getElementById('donation').addEventListener('change', function(){
   const customGroup = document.getElementById('customDonationGroup');
@@ -750,6 +867,7 @@ document.getElementById('registrationForm').addEventListener('submit', function(
   data.momTackle = hasMomTackle ? 'Yes' : 'No';
   data.donationAmount = '$' + donationAmount;
   data.totalDue = hasMomTackle ? '$80' : '$60';
+  data.termsAcceptedAt = new Date().toISOString();
 
   // Send to Google Sheets
   if(GOOGLE_SCRIPT_URL !== 'YOUR_GOOGLE_APPS_SCRIPT_URL_HERE'){
