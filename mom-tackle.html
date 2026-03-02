@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mom Tackle Challenge | The 904 Combine | Jacksonville</title>
+<meta name="description" content="Mom runs up, son stands still at the high jump pit — she makes the tackle, he lands safe. Jacksonville's most viral sports moment. $20 add-on.">
+<meta property="og:title" content="Mom Tackle Challenge | The 904 Combine | Jacksonville">
+<meta property="og:description" content="Mom runs up, son stands still at the high jump pit — she makes the tackle, he lands safe. Jacksonville's most viral sports moment. $20 add-on.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://the904combine.com/mom-tackle.html">
+<link rel="canonical" href="https://the904combine.com/mom-tackle.html">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700;800&family=Barlow:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+--black:#0a0a0f;--dark:#0d0d14;--card:#13131f;
+--border:rgba(255,255,255,0.08);--electric:#00f0ff;--gold:#ffd700;--hot:#ff3c00;
+--white:#ffffff;--muted:rgba(255,255,255,0.55);
+}
+html{scroll-behavior:smooth}
+body{background:var(--black);color:var(--white);font-family:'Barlow',sans-serif;font-weight:400;line-height:1.8;overflow-x:hidden}
+h1,h2,h3,h4{font-family:'Barlow Condensed',sans-serif;font-weight:800;text-transform:uppercase;line-height:.95}
+a{color:var(--electric);text-decoration:none}
+.container{max-width:1200px;margin:0 auto;padding:0 24px}
+.eyebrow{font-family:'Barlow',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.2em;color:var(--electric);font-size:.85rem;margin-bottom:12px}
+.clip{clip-path:polygon(0 0,calc(100% - 20px) 0,100% 20px,100% 100%,20px 100%,0 calc(100% - 20px))}
+.btn-primary{display:inline-block;background:var(--electric);color:var(--black);font-family:'Barlow Condensed',sans-serif;font-weight:800;text-transform:uppercase;padding:16px 36px;font-size:1.05rem;letter-spacing:.05em;clip-path:polygon(0 0,calc(100% - 14px) 0,100% 14px,100% 100%,14px 100%,0 calc(100% - 14px));transition:transform .3s,box-shadow .3s;cursor:pointer;border:none}
+.btn-primary:hover{transform:scale(1.03);box-shadow:0 0 20px rgba(0,240,255,.4)}
+.btn-secondary{display:inline-block;background:transparent;color:var(--white);font-family:'Barlow Condensed',sans-serif;font-weight:800;text-transform:uppercase;padding:16px 36px;font-size:1.05rem;letter-spacing:.05em;border:1px solid rgba(255,255,255,.2);clip-path:polygon(0 0,calc(100% - 14px) 0,100% 14px,100% 100%,14px 100%,0 calc(100% - 14px));transition:border-color .3s;cursor:pointer}
+.btn-secondary:hover{border-color:var(--electric)}
+.section-pad{padding:100px 0}
+/* Scroll animation */
+.reveal{opacity:1;transform:translateY(0);transition:opacity .6s ease-out,transform .6s ease-out}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.reveal-delay-1{transition-delay:.1s}.reveal-delay-2{transition-delay:.2s}.reveal-delay-3{transition-delay:.3s}.reveal-delay-4{transition-delay:.4s}.reveal-delay-5{transition-delay:.5s}
+
+/* NAV */
+nav{position:sticky;top:0;width:100%;height:64px;background:rgba(10,10,15,.92);backdrop-filter:blur(12px);z-index:1000;display:flex;align-items:center;border-bottom:1px solid var(--border)}
+.nav-inner{max-width:1200px;margin:0 auto;padding:0 24px;width:100%;display:flex;align-items:center;justify-content:space-between}
+.nav-logo{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.3rem;text-transform:uppercase;color:var(--white);letter-spacing:.05em}
+.nav-logo span{color:var(--electric)}
+.nav-links{display:flex;align-items:center;gap:24px}
+.nav-links a{color:var(--muted);font-family:'Barlow',sans-serif;font-weight:600;font-size:.88rem;text-transform:uppercase;letter-spacing:.06em;transition:color .2s}
+.nav-links a:hover,.nav-links a.active{color:var(--electric)}
+.nav-links .nav-cta{background:var(--electric);color:var(--black);padding:8px 20px;font-weight:800;clip-path:polygon(0 0,calc(100% - 10px) 0,100% 10px,100% 100%,10px 100%,0 calc(100% - 10px))}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;z-index:1001}
+.hamburger span{width:26px;height:2px;background:var(--white);transition:transform .3s,opacity .3s}
+.mobile-menu{position:absolute;top:0;right:-100%;width:100%;height:100%;background:var(--black);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:28px;transition:right .4s ease;z-index:999}
+.mobile-menu.open{right:0}
+.mobile-menu a{color:var(--white);font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.8rem;text-transform:uppercase}
+
+@media(max-width:900px){
+.nav-links{display:none}
+.hamburger{display:flex}
+}
+
+/* HERO */
+.hero{position:relative;min-height:800px;display:flex;align-items:center;overflow:hidden;padding-top:64px}
+.hero-bg{position:absolute;inset:0;z-index:0}
+.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(0,240,255,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(0,240,255,.06) 1px,transparent 1px);background-size:60px 60px;animation:gridPulse 4s ease-in-out infinite}
+@keyframes gridPulse{0%,100%{opacity:.05}50%{opacity:.1}}
+.hero-scanlines{position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(255,255,255,.03) 2px,rgba(255,255,255,.03) 3px);pointer-events:none}
+.hero-gradient{position:absolute;inset:0;background:radial-gradient(ellipse at 20% 50%,rgba(0,240,255,.12) 0%,transparent 60%),radial-gradient(ellipse at 80% 40%,rgba(255,215,0,.06) 0%,transparent 50%)}
+.hero-content{position:relative;z-index:1;max-width:900px;margin:0 auto;padding:0 24px;text-align:center}
+.hero h1{font-size:clamp(4rem,9vw,8rem);margin-bottom:24px}
+.hero h1 .electric{color:var(--electric);text-shadow:0 0 40px rgba(0,240,255,.3);animation:glowPulse 3s ease-in-out infinite}
+@keyframes glowPulse{0%,100%{text-shadow:0 0 40px rgba(0,240,255,.3)}50%{text-shadow:0 0 60px rgba(0,240,255,.5)}}
+.hero-sub{font-size:1.15rem;color:var(--muted);max-width:650px;margin:0 auto 32px;line-height:1.8}
+.badges{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-bottom:36px}
+.badge{padding:8px 18px;border:1px solid var(--border);color:var(--muted);font-size:.8rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;clip-path:polygon(0 0,calc(100% - 8px) 0,100% 8px,100% 100%,8px 100%,0 calc(100% - 8px))}
+.hero-btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+
+/* HOW IT WORKS */
+.steps-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:48px}
+@media(max-width:768px){.steps-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:500px){.steps-grid{grid-template-columns:1fr}}
+.step-card{background:var(--card);border:1px solid var(--border);padding:32px;clip-path:polygon(0 0,calc(100% - 16px) 0,100% 16px,100% 100%,16px 100%,0 calc(100% - 16px));transition:border-color .3s,transform .3s;text-align:center}
+.step-card:hover{border-color:rgba(0,240,255,.3);transform:translateY(-5px)}
+.step-num{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:3.5rem;color:var(--electric);margin-bottom:12px}
+.step-card h4{font-family:'Barlow Condensed',sans-serif;font-weight:800;text-transform:uppercase;font-size:1.1rem;margin-bottom:12px}
+.step-card p{color:var(--muted);font-size:.9rem;line-height:1.6}
+
+/* WHATS PROVIDED */
+.provided-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px}
+@media(max-width:768px){.provided-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:500px){.provided-grid{grid-template-columns:1fr}}
+.provided-card{background:var(--card);border:1px solid var(--border);padding:28px;clip-path:polygon(0 0,calc(100% - 16px) 0,100% 16px,100% 100%,16px 100%,0 calc(100% - 16px));transition:border-color .3s,transform .3s}
+.provided-card:hover{border-color:rgba(0,240,255,.3);transform:translateY(-5px)}
+.provided-icon{font-size:2rem;margin-bottom:12px}
+.provided-card h4{font-family:'Barlow Condensed',sans-serif;font-weight:800;text-transform:uppercase;font-size:1.05rem;margin-bottom:8px}
+.provided-card p{color:var(--muted);font-size:.88rem;line-height:1.6}
+
+/* WHY PEOPLE LOVE IT */
+.love-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px}
+@media(max-width:768px){.love-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:500px){.love-grid{grid-template-columns:1fr}}
+.love-card{background:var(--card);border:1px solid var(--border);padding:28px;clip-path:polygon(0 0,calc(100% - 16px) 0,100% 16px,100% 100%,16px 100%,0 calc(100% - 16px));transition:border-color .3s,transform .3s}
+.love-card:hover{border-color:rgba(0,240,255,.3);transform:translateY(-5px)}
+.love-card h4{font-family:'Barlow Condensed',sans-serif;font-weight:800;text-transform:uppercase;font-size:1.15rem;margin-bottom:12px;color:var(--electric)}
+.love-card p{color:var(--muted);font-size:.9rem;line-height:1.6}
+
+/* SAFETY CALLOUT */
+.safety-box{background:rgba(0,240,255,.08);border:2px solid var(--electric);border-radius:8px;padding:32px;margin:48px 0;clip-path:polygon(0 0,calc(100% - 12px) 0,100% 12px,100% 100%,12px 100%,0 calc(100% - 12px))}
+.safety-box h3{font-size:1.3rem;margin-bottom:16px;color:var(--electric)}
+.safety-box ul{list-style:none;margin:0}
+.safety-box li{padding:10px 0;color:var(--muted);font-size:.95rem;border-bottom:1px solid rgba(0,240,255,.1)}
+.safety-box li:last-child{border-bottom:none}
+.safety-box li strong{color:var(--white)}
+
+/* FINAL CTA */
+.final-cta{background:var(--electric);padding:100px 0;text-align:center;clip-path:polygon(0 30px,100% 0,100% calc(100% - 30px),0 100%);margin:40px 0 0}
+.final-cta h2{color:var(--black);font-size:clamp(2rem,5vw,3.5rem);margin-bottom:16px}
+.final-cta p{color:rgba(10,10,15,.7);max-width:600px;margin:0 auto 32px;font-size:1rem}
+.final-cta .btn-primary{background:var(--black);color:var(--electric)}
+.final-cta .btn-primary:hover{box-shadow:0 0 20px rgba(10,10,15,.4)}
+.final-cta .btn-secondary{border-color:rgba(10,10,15,.3);color:var(--black)}
+.final-cta .btn-secondary:hover{border-color:var(--black)}
+
+/* FOOTER */
+footer{background:var(--dark);border-top:1px solid var(--border);padding:60px 0 40px}
+.footer-top{display:flex;justify-content:space-between;align-items:start;flex-wrap:wrap;gap:32px;margin-bottom:40px}
+.footer-links{display:flex;flex-wrap:wrap;gap:20px}
+.footer-links a{color:var(--muted);font-size:.85rem;font-weight:600;text-transform:uppercase;letter-spacing:.06em;transition:color .2s}
+.footer-links a:hover{color:var(--electric)}
+.footer-disclaimer{color:rgba(255,255,255,.35);font-size:.78rem;line-height:1.6;max-width:800px;margin-bottom:16px}
+.footer-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;padding-top:24px;border-top:1px solid var(--border)}
+.footer-bottom span{color:rgba(255,255,255,.3);font-size:.78rem}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+<div class="nav-inner">
+<a href="index.html" class="nav-logo">THE <span>904</span> COMBINE</a>
+<div class="nav-links">
+<a href="stations.html">Stations</a>
+<a href="coaches.html">Coaches</a>
+<a href="registration.html">Register</a>
+<a href="sponsors.html">Sponsors</a>
+<a href="mom-tackle.html" class="active">Mom Tackle</a>
+<a href="leaderboard.html">Leaderboard</a>
+<a href="about.html">About</a>
+<a href="registration.html" class="nav-cta">Register Now</a>
+</div>
+<div class="hamburger" onclick="toggleMenu()">
+<span></span><span></span><span></span>
+</div>
+</div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+<a href="stations.html" onclick="toggleMenu()">Stations</a>
+<a href="coaches.html" onclick="toggleMenu()">Coaches</a>
+<a href="registration.html" onclick="toggleMenu()">Register</a>
+<a href="sponsors.html" onclick="toggleMenu()">Sponsors</a>
+<a href="mom-tackle.html" onclick="toggleMenu()">Mom Tackle</a>
+<a href="leaderboard.html" onclick="toggleMenu()">Leaderboard</a>
+<a href="about.html" onclick="toggleMenu()">About</a>
+<a href="faq.html" onclick="toggleMenu()">FAQ</a>
+<a href="contact.html" onclick="toggleMenu()">Contact</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+<div class="hero-bg">
+<div class="hero-grid"></div>
+<div class="hero-scanlines"></div>
+<div class="hero-gradient"></div>
+</div>
+<div class="hero-content">
+<p class="eyebrow reveal">$20 Add-On · The Most Viral Moment in Jacksonville Sports</p>
+<h1 class="reveal reveal-delay-1">MOMS HIT <br><span class="electric">DIFFERENT.</span></h1>
+<p class="hero-sub reveal reveal-delay-2">Full safety gear. High jump pit. Son standing still. Mom runs in and makes the tackle — he lands safe, she gets the credit. $20 and you're on the field.</p>
+<div class="badges reveal reveal-delay-3">
+<span class="badge">Full Safety Gear Provided</span>
+<span class="badge">Video Captured</span>
+<span class="badge">On-Field</span>
+<span class="badge">Spring 2025</span>
+</div>
+<div class="hero-btns reveal reveal-delay-4">
+<a href="registration.html" class="btn-primary">Add Mom Tackle to Registration →</a>
+</div>
+</div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section-pad" style="background:var(--dark)">
+<div class="container">
+<p class="eyebrow reveal">The Experience</p>
+<h2 class="reveal reveal-delay-1" style="font-size:clamp(2.5rem,5vw,4.5rem)">HOW IT <span style="color:var(--electric)">WORKS</span></h2>
+<div class="steps-grid">
+<div class="step-card reveal">
+<div class="step-num">1</div>
+<h4>Add at Checkout</h4>
+<p>Athlete adds the Mom Tackle Challenge during registration — just a $20 add-on to any entry.</p>
+</div>
+<div class="step-card reveal reveal-delay-1">
+<div class="step-num">2</div>
+<h4>Check In & Gear Up</h4>
+<p>Mom and son check in at the Mom Tackle station at 1:30 PM. Staff fits mom with full safety gear on-site.</p>
+</div>
+<div class="step-card reveal reveal-delay-2">
+<div class="step-num">3</div>
+<h4>Son Takes Position</h4>
+<p>Son takes his position standing completely stationary at the edge of the high jump pit.</p>
+</div>
+<div class="step-card reveal reveal-delay-3">
+<div class="step-num">4</div>
+<h4>The Tackle</h4>
+<p>Referee signals. Mom runs up and drives the tackle — son falls safely backward into the padded pit.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- WHAT'S PROVIDED -->
+<section class="section-pad" style="background:var(--black)">
+<div class="container">
+<p class="eyebrow reveal">Your $20 Includes</p>
+<h2 class="reveal reveal-delay-1" style="font-size:clamp(2.5rem,5vw,4.5rem)">WHAT'S <span style="color:var(--electric)">PROVIDED</span></h2>
+<div class="provided-grid">
+<div class="provided-card reveal">
+<div class="provided-icon">🛡️</div>
+<h4>Full Padded Safety Gear</h4>
+<p>Complete protective equipment for mom — helmet, shoulder pads, and more.</p>
+</div>
+<div class="provided-card reveal reveal-delay-1">
+<div class="provided-icon">🪖</div>
+<h4>Fitted Helmet</h4>
+<p>Professional helmet fitted on-site to ensure proper protection and comfort.</p>
+</div>
+<div class="provided-card reveal reveal-delay-2">
+<div class="provided-icon">🦷</div>
+<h4>Mouth Guard</h4>
+<p>Protective mouth guard included and properly fitted for maximum safety.</p>
+</div>
+<div class="provided-card reveal reveal-delay-3">
+<div class="provided-icon">📹</div>
+<h4>Video Capture</h4>
+<p>Professional video recording of the moment — yours to share on social media instantly.</p>
+</div>
+<div class="provided-card reveal reveal-delay-4">
+<div class="provided-icon">⚡</div>
+<h4>Event Team Coordination</h4>
+<p>Dedicated staff to brief participants, manage safety, and execute the perfect tackle moment.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- WHY PEOPLE LOVE IT -->
+<section class="section-pad" style="background:var(--dark)">
+<div class="container">
+<p class="eyebrow reveal">The Hype</p>
+<h2 class="reveal reveal-delay-1" style="font-size:clamp(2.5rem,5vw,4.5rem)">WHY PEOPLE <span style="color:var(--electric)">LOVE IT</span></h2>
+<div class="love-grid">
+<div class="love-card reveal">
+<h4>📸 Most Photographed</h4>
+<p>The most photographed station at the event. Every angle. Every reaction. Instagram gold.</p>
+</div>
+<div class="love-card reveal reveal-delay-1">
+<h4>🔥 Social Media Gold</h4>
+<p>Shareable in seconds — the video is ready to post the moment it happens. Guaranteed viral moment for your family.</p>
+</div>
+<div class="love-card reveal reveal-delay-2">
+<h4>🏈 Real Bragging Rights</h4>
+<p>Mom gets to say she tackled her son on a football field — and the padded pit means it's actually safe and epic.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- SAFETY CALLOUT -->
+<section class="section-pad" style="background:var(--black)">
+<div class="container">
+<div class="safety-box reveal">
+<h3>🛡️ Safety First</h3>
+<ul>
+<li><strong>Son stands stationary</strong> — no head-on collision, zero unexpected movement.</li>
+<li><strong>No head contact</strong> — mom drives the tackle into the padded pit, not directly into son's head.</li>
+<li><strong>Padded landing</strong> — high jump pit is fully padded. Son lands safely backward.</li>
+<li><strong>Full protective gear required</strong> — mom wears helmet, mouth guard, and complete safety padding.</li>
+<li><strong>Professional briefing</strong> — all participants are briefed on technique and safety before the challenge.</li>
+<li><strong>Trained event team</strong> — staff monitors the entire sequence to ensure perfect execution and zero risk.</li>
+</ul>
+</div>
+</div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+<div class="container">
+<h2>MAKE THE VIRAL MOMENT.<br>$20 ADD-ON.</h2>
+<p>Mom tackles son. He lands safe. You get the footage. It's the highlight of the day.</p>
+<div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
+<a href="registration.html" class="btn-primary">Add Mom Tackle to Registration →</a>
+</div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+<div class="container">
+<div class="footer-top">
+<div class="nav-logo" style="font-size:1.5rem">THE <span style="color:var(--electric)">904</span> COMBINE</div>
+<div class="footer-links">
+<a href="coaches.html">Coaches</a>
+<a href="stations.html">Stations</a>
+<a href="registration.html">Register</a>
+<a href="sponsors.html">Sponsors</a>
+<a href="mom-tackle.html">Mom Tackle</a>
+<a href="leaderboard.html">Leaderboard</a>
+<a href="about.html">About</a>
+<a href="faq.html">FAQ</a>
+<a href="contact.html">Contact</a>
+</div>
+</div>
+<p class="footer-disclaimer">The 904 Combine is not affiliated with the Jacksonville Jaguars NFL franchise. Coaching staff consists of retired former Jaguars players participating independently.</p>
+<p class="footer-disclaimer">Atlantic Coast High School · 9735 R.G. Skinner Pkwy · Jacksonville, FL 32256</p>
+<div class="footer-bottom">
+<span>Proceeds benefit the Stingray Boosters Club, a registered 501(c)(3) nonprofit.</span>
+<span>© 2025 The 904 Combine. All rights reserved.</span>
+</div>
+</div>
+</footer>
+
+<script>
+function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open')}
+
+// Scroll reveal
+const obs=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}})},{threshold:0.1});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+
+// Parallax
+window.addEventListener('scroll',()=>{const s=window.scrollY;const bg=document.querySelector('.hero-bg');const content=document.querySelector('.hero-content');if(bg)bg.style.transform=`translateY(${s*0.3}px)`;if(content&&s<window.innerHeight)content.style.transform=`translateY(${s*0.1}px)`});
+</script>
+</body>
+</html>

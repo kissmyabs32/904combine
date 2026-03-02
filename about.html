@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About The 904 Combine | Stingray Boosters 501(c)(3)</title>
+<meta name="description" content="The 904 Combine benefits the Atlantic Coast Stingray Boosters Club—a 501(c)(3) nonprofit. Former Jaguars coaches. Jacksonville, FL.">
+<meta property="og:title" content="About The 904 Combine | Stingray Boosters 501(c)(3)">
+<meta property="og:description" content="The 904 Combine benefits the Atlantic Coast Stingray Boosters Club—a 501(c)(3) nonprofit. Former Jaguars coaches. Jacksonville, FL.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://the904combine.com/about.html">
+<link rel="canonical" href="https://the904combine.com/about.html">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700;800&family=Barlow:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+--black:#0a0a0f;--dark:#0d0d14;--card:#13131f;
+--border:rgba(255,255,255,0.08);--electric:#00f0ff;--gold:#ffd700;--hot:#ff3c00;
+--white:#ffffff;--muted:rgba(255,255,255,0.55);
+}
+html{scroll-behavior:smooth}
+body{background:var(--black);color:var(--white);font-family:'Barlow',sans-serif;font-weight:400;line-height:1.8;overflow-x:hidden}
+h1,h2,h3,h4{font-family:'Barlow Condensed',sans-serif;font-weight:800;text-transform:uppercase;line-height:.95}
+a{color:var(--electric);text-decoration:none}
+.container{max-width:1200px;margin:0 auto;padding:0 24px}
+.eyebrow{font-family:'Barlow',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.2em;color:var(--electric);font-size:.85rem;margin-bottom:12px}
+.clip{clip-path:polygon(0 0,calc(100% - 20px) 0,100% 20px,100% 100%,20px 100%,0 calc(100% - 20px))}
+.btn-primary{display:inline-block;background:var(--electric);color:var(--black);font-family:'Barlow Condensed',sans-serif;font-weight:800;text-transform:uppercase;padding:16px 36px;font-size:1.05rem;letter-spacing:.05em;clip-path:polygon(0 0,calc(100% - 14px) 0,100% 14px,100% 100%,14px 100%,0 calc(100% - 14px));transition:transform .3s,box-shadow .3s;cursor:pointer;border:none}
+.btn-primary:hover{transform:scale(1.03);box-shadow:0 0 20px rgba(0,240,255,.4)}
+.btn-secondary{display:inline-block;background:transparent;color:var(--white);font-family:'Barlow Condensed',sans-serif;font-weight:800;text-transform:uppercase;padding:16px 36px;font-size:1.05rem;letter-spacing:.05em;border:1px solid rgba(255,255,255,.2);clip-path:polygon(0 0,calc(100% - 14px) 0,100% 14px,100% 100%,14px 100%,0 calc(100% - 14px));transition:border-color .3s;cursor:pointer}
+.btn-secondary:hover{border-color:var(--electric)}
+.section-pad{padding:100px 0}
+/* Scroll animation */
+.reveal{opacity:1;transform:translateY(0);transition:opacity .6s ease-out,transform .6s ease-out}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.reveal-delay-1{transition-delay:.1s}.reveal-delay-2{transition-delay:.2s}.reveal-delay-3{transition-delay:.3s}.reveal-delay-4{transition-delay:.4s}.reveal-delay-5{transition-delay:.5s}
+
+/* NAV */
+nav{position:sticky;top:0;width:100%;height:64px;background:rgba(10,10,15,.92);backdrop-filter:blur(12px);z-index:1000;display:flex;align-items:center;border-bottom:1px solid var(--border)}
+.nav-inner{max-width:1200px;margin:0 auto;padding:0 24px;width:100%;display:flex;align-items:center;justify-content:space-between}
+.nav-logo{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.3rem;text-transform:uppercase;color:var(--white);letter-spacing:.05em}
+.nav-logo span{color:var(--electric)}
+.nav-links{display:flex;align-items:center;gap:24px}
+.nav-links a{color:var(--muted);font-family:'Barlow',sans-serif;font-weight:600;font-size:.88rem;text-transform:uppercase;letter-spacing:.06em;transition:color .2s}
+.nav-links a:hover,.nav-links a.active{color:var(--electric)}
+.nav-links .nav-cta{background:var(--electric);color:var(--black);padding:8px 20px;font-weight:800;clip-path:polygon(0 0,calc(100% - 10px) 0,100% 10px,100% 100%,10px 100%,0 calc(100% - 10px))}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;z-index:1001}
+.hamburger span{width:26px;height:2px;background:var(--white);transition:transform .3s,opacity .3s}
+.mobile-menu{position:absolute;top:0;right:-100%;width:100%;height:100%;background:var(--black);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:28px;transition:right .4s ease;z-index:999}
+.mobile-menu.open{right:0}
+.mobile-menu a{color:var(--white);font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.8rem;text-transform:uppercase}
+
+@media(max-width:900px){
+.nav-links{display:none}
+.hamburger{display:flex}
+}
+
+/* HERO */
+.hero{position:relative;min-height:800px;display:flex;align-items:center;overflow:hidden;padding-top:64px}
+.hero-bg{position:absolute;inset:0;z-index:0}
+.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(0,240,255,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(0,240,255,.06) 1px,transparent 1px);background-size:60px 60px;animation:gridPulse 4s ease-in-out infinite}
+@keyframes gridPulse{0%,100%{opacity:.05}50%{opacity:.1}}
+.hero-scanlines{position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(255,255,255,.03) 2px,rgba(255,255,255,.03) 3px);pointer-events:none}
+.hero-gradient{position:absolute;inset:0;background:radial-gradient(ellipse at 20% 50%,rgba(0,240,255,.12) 0%,transparent 60%),radial-gradient(ellipse at 80% 40%,rgba(255,215,0,.06) 0%,transparent 50%)}
+.hero-content{position:relative;z-index:1;max-width:900px;margin:0 auto;padding:0 24px;text-align:center}
+.hero h1{font-size:clamp(4rem,9vw,8rem);margin-bottom:24px}
+.hero h1 .electric{color:var(--electric);text-shadow:0 0 40px rgba(0,240,255,.3);animation:glowPulse 3s ease-in-out infinite}
+@keyframes glowPulse{0%,100%{text-shadow:0 0 40px rgba(0,240,255,.3)}50%{text-shadow:0 0 60px rgba(0,240,255,.5)}}
+.hero-sub{font-size:1.15rem;color:var(--muted);max-width:650px;margin:0 auto 32px;line-height:1.8}
+.badges{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-bottom:36px}
+.badge{padding:8px 18px;border:1px solid var(--border);color:var(--muted);font-size:.8rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;clip-path:polygon(0 0,calc(100% - 8px) 0,100% 8px,100% 100%,8px 100%,0 calc(100% - 8px))}
+.hero-btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+
+/* MISSION SECTION */
+.mission-section{background:var(--dark);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.mission-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:48px;margin-top:48px;align-items:start}
+@media(max-width:768px){.mission-grid{grid-template-columns:1fr}}
+.mission-text{color:var(--muted);line-height:1.8}
+.mission-text p{margin-bottom:16px;font-size:.95rem}
+.mission-text p strong{color:var(--white);font-weight:600}
+.stats-grid{display:grid;grid-template-columns:1fr;gap:32px}
+.stat-card{background:var(--card);border:1px solid var(--border);padding:28px;text-align:center;clip-path:polygon(0 0,calc(100% - 16px) 0,100% 16px,100% 100%,16px 100%,0 calc(100% - 16px))}
+.stat-card .stat-num{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:3.2rem;color:var(--electric);margin-bottom:8px}
+.stat-card .stat-label{color:var(--muted);font-size:.85rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em}
+
+/* BOOSTER SECTION */
+.booster-section{background:var(--black)}
+.booster-content{background:var(--card);border:1px solid var(--border);padding:40px;clip-path:polygon(0 0,calc(100% - 20px) 0,100% 20px,100% 100%,20px 100%,0 calc(100% - 20px))}
+.booster-header{text-align:center;margin-bottom:36px}
+.booster-badge{display:inline-block;padding:10px 20px;border:1px solid var(--gold);color:var(--gold);font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:.8rem;margin-bottom:16px;clip-path:polygon(0 0,calc(100% - 10px) 0,100% 10px,100% 100%,10px 100%,0 calc(100% - 10px))}
+.booster-header h3{font-size:1.8rem;margin-bottom:12px}
+.c3-callout{background:rgba(255,215,0,.08);border:1px solid rgba(255,215,0,.2);padding:16px;margin-bottom:24px;clip-path:polygon(0 0,calc(100% - 8px) 0,100% 8px,100% 100%,8px 100%,0 calc(100% - 8px))}
+.c3-callout p{color:var(--white);font-weight:600;margin:0;font-size:.95rem}
+.impact-list{list-style:none;display:grid;grid-template-columns:1fr;gap:12px}
+.impact-list li{padding:12px 0;border-bottom:1px solid var(--border);color:var(--white);font-weight:600;font-size:.95rem}
+.impact-list li span{color:var(--electric);margin-right:8px}
+
+/* LOCATION SECTION */
+.location-section{background:var(--dark);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.location-content{background:var(--card);border:1px solid var(--border);padding:40px;text-align:center;clip-path:polygon(0 0,calc(100% - 20px) 0,100% 20px,100% 100%,20px 100%,0 calc(100% - 20px))}
+.location-school{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.5rem;text-transform:uppercase;margin-bottom:12px}
+.location-address{color:var(--muted);font-size:1rem;margin-bottom:24px;line-height:1.8}
+.location-address strong{color:var(--white)}
+.location-btn{display:inline-block;margin-top:8px}
+
+/* COACHES CALLOUT */
+.coaches-callout{background:var(--black)}
+.coaches-callout-content{text-align:center}
+.coaches-callout h3{font-size:clamp(2rem,4vw,3rem);margin-bottom:24px;color:var(--white)}
+.coaches-callout h3 .electric{color:var(--electric)}
+.coaches-callout p{color:var(--muted);font-size:.95rem;max-width:600px;margin:0 auto 32px;line-height:1.8}
+
+/* FINAL CTA */
+.final-cta{background:var(--electric);padding:100px 0;text-align:center;clip-path:polygon(0 30px,100% 0,100% calc(100% - 30px),0 100%);margin:40px 0 0}
+.final-cta h2{color:var(--black);font-size:clamp(2rem,5vw,3.5rem);margin-bottom:16px}
+.final-cta p{color:rgba(10,10,15,.7);max-width:600px;margin:0 auto 32px;font-size:1rem}
+.final-cta .btn-primary{background:var(--black);color:var(--electric)}
+.final-cta .btn-primary:hover{box-shadow:0 0 20px rgba(10,10,15,.4)}
+.final-cta .btn-secondary{border-color:rgba(10,10,15,.3);color:var(--black)}
+.final-cta .btn-secondary:hover{border-color:var(--black)}
+.final-cta-btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+
+/* FOOTER */
+footer{background:var(--dark);border-top:1px solid var(--border);padding:60px 0 40px}
+.footer-top{display:flex;justify-content:space-between;align-items:start;flex-wrap:wrap;gap:32px;margin-bottom:40px}
+.footer-links{display:flex;flex-wrap:wrap;gap:20px}
+.footer-links a{color:var(--muted);font-size:.85rem;font-weight:600;text-transform:uppercase;letter-spacing:.06em;transition:color .2s}
+.footer-links a:hover{color:var(--electric)}
+.footer-disclaimer{color:rgba(255,255,255,.35);font-size:.78rem;line-height:1.6;max-width:800px;margin-bottom:16px}
+.footer-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;padding-top:24px;border-top:1px solid var(--border)}
+.footer-bottom span{color:rgba(255,255,255,.3);font-size:.78rem}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+<div class="nav-inner">
+<a href="index.html" class="nav-logo">THE <span>904</span> COMBINE</a>
+<div class="nav-links">
+<a href="stations.html">Stations</a>
+<a href="coaches.html">Coaches</a>
+<a href="registration.html">Register</a>
+<a href="sponsors.html">Sponsors</a>
+<a href="mom-tackle.html">Mom Tackle</a>
+<a href="leaderboard.html">Leaderboard</a>
+<a href="about.html" class="active">About</a>
+<a href="registration.html" class="nav-cta">Register Now</a>
+</div>
+<div class="hamburger" onclick="toggleMenu()">
+<span></span><span></span><span></span>
+</div>
+</div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+<a href="stations.html" onclick="toggleMenu()">Stations</a>
+<a href="coaches.html" onclick="toggleMenu()">Coaches</a>
+<a href="registration.html" onclick="toggleMenu()">Register</a>
+<a href="sponsors.html" onclick="toggleMenu()">Sponsors</a>
+<a href="mom-tackle.html" onclick="toggleMenu()">Mom Tackle</a>
+<a href="leaderboard.html" onclick="toggleMenu()">Leaderboard</a>
+<a href="about.html" onclick="toggleMenu()">About</a>
+<a href="faq.html" onclick="toggleMenu()">FAQ</a>
+<a href="contact.html" onclick="toggleMenu()">Contact</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+<div class="hero-bg">
+<div class="hero-grid"></div>
+<div class="hero-scanlines"></div>
+<div class="hero-gradient"></div>
+</div>
+<div class="hero-content">
+<p class="eyebrow reveal">About The 904 Combine</p>
+<h1 class="reveal reveal-delay-1">BUILT FOR THE<br><span class="electric">FIRST COAST.</span></h1>
+<p class="hero-sub reveal reveal-delay-2">The 904 Combine is Jacksonville's only NFL-coached high school football combine — and every dollar raised stays right here.</p>
+</div>
+</section>
+
+<!-- MISSION SECTION -->
+<section class="mission-section section-pad">
+<div class="container">
+<div class="mission-grid">
+<div class="reveal">
+<p class="mission-text"><strong>The 904 Combine started with a simple question: where do First Coast athletes go to get official, NFL-standard measurements evaluated by people who actually know what those numbers mean?</strong></p>
+<p class="mission-text"><strong>The answer was: nowhere. So we built it.</strong></p>
+<p class="mission-text">Every station. Every county. Former Jaguars coaches. One day in Jacksonville.</p>
+</div>
+<div class="reveal reveal-delay-1">
+<div class="stats-grid">
+<div class="stat-card">
+<div class="stat-num" data-count="3">0</div>
+<div class="stat-label">Counties Served</div>
+</div>
+<div class="stat-card">
+<div class="stat-num" data-count="9">0</div>
+<div class="stat-label">Skill Stations</div>
+</div>
+<div class="stat-card">
+<div class="stat-num"><span data-count="100">0</span>%</div>
+<div class="stat-label">To Charity</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- BOOSTER CLUB SECTION -->
+<section class="booster-section section-pad">
+<div class="container">
+<div class="booster-content">
+<div class="booster-header reveal">
+<div class="booster-badge">Atlantic Coast High School</div>
+<h3>Stingray Boosters Club</h3>
+<div class="c3-callout">
+<p>501(c)(3) Nonprofit Organization</p>
+</div>
+</div>
+<div class="reveal reveal-delay-1">
+<p style="color:var(--muted);margin-bottom:24px;font-size:.95rem">Your $60 registration is a tax-deductible donation to a nonprofit that directly funds student athletes.</p>
+</div>
+<ul class="impact-list reveal reveal-delay-2">
+<li><span>⚡</span> Athletic Equipment & Uniforms</li>
+<li><span>⚡</span> Travel & Competition Access</li>
+<li><span>⚡</span> Facility Improvements</li>
+</ul>
+</div>
+</div>
+</section>
+
+<!-- LOCATION SECTION -->
+<section class="location-section section-pad">
+<div class="container">
+<div class="location-content reveal">
+<div class="location-school">Atlantic Coast High School</div>
+<div class="location-address">
+<strong>9735 R.G. Skinner Pkwy</strong><br>
+<strong>Jacksonville, FL 32256</strong>
+</div>
+<a href="https://maps.google.com/?q=9735+R.G.+Skinner+Pkwy+Jacksonville+FL+32256" target="_blank" class="btn-secondary location-btn">Get Directions →</a>
+</div>
+</div>
+</section>
+
+<!-- COACHES CALLOUT -->
+<section class="coaches-callout section-pad">
+<div class="container">
+<div class="coaches-callout-content reveal">
+<h3>Coached by people who've been <span class="electric">exactly where your athletes want to go.</span></h3>
+<p>Former Jacksonville Jaguars players and coaches. Real NFL combine experience. Real feedback. Real results.</p>
+<div style="margin-top:32px"><a href="coaches.html" class="btn-secondary">Meet the Coaches →</a></div>
+</div>
+</div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+<div class="container">
+<h2>GET ON THE <br>SAME FIELD.</h2>
+<p>Register as an athlete or become a sponsor. Help us build the First Coast's premier football combine.</p>
+<div class="final-cta-btns">
+<a href="registration.html" class="btn-primary">Register as an Athlete →</a>
+<a href="sponsors.html" class="btn-secondary">Become a Sponsor →</a>
+</div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+<div class="container">
+<div class="footer-top">
+<div class="nav-logo" style="font-size:1.5rem">THE <span style="color:var(--electric)">904</span> COMBINE</div>
+<div class="footer-links">
+<a href="coaches.html">Coaches</a>
+<a href="stations.html">Stations</a>
+<a href="registration.html">Register</a>
+<a href="sponsors.html">Sponsors</a>
+<a href="mom-tackle.html">Mom Tackle</a>
+<a href="leaderboard.html">Leaderboard</a>
+<a href="about.html">About</a>
+<a href="faq.html">FAQ</a>
+<a href="contact.html">Contact</a>
+</div>
+</div>
+<p class="footer-disclaimer">The 904 Combine is not affiliated with the Jacksonville Jaguars NFL franchise. Coaching staff consists of retired former Jaguars players participating independently.</p>
+<p class="footer-disclaimer">Atlantic Coast High School · 9735 R.G. Skinner Pkwy · Jacksonville, FL 32256</p>
+<div class="footer-bottom">
+<span>Proceeds benefit the Stingray Boosters Club, a registered 501(c)(3) nonprofit.</span>
+<span>© 2025 The 904 Combine. All rights reserved.</span>
+</div>
+</div>
+</footer>
+
+<script>
+function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open')}
+
+// Scroll reveal
+const obs=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}})},{threshold:0.1});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+
+// Count-up
+const countObs=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){const el=e.target;const target=parseInt(el.dataset.count);let current=0;const step=Math.max(1,Math.floor(target/60));const timer=setInterval(()=>{current+=step;if(current>=target){current=target;clearInterval(timer)}el.textContent=current},20);countObs.unobserve(el)}})},{threshold:0.5});
+document.querySelectorAll('[data-count]').forEach(el=>countObs.observe(el));
+
+// Parallax
+window.addEventListener('scroll',()=>{const s=window.scrollY;const bg=document.querySelector('.hero-bg');const content=document.querySelector('.hero-content');if(bg)bg.style.transform=`translateY(${s*0.3}px)`;if(content&&s<window.innerHeight)content.style.transform=`translateY(${s*0.1}px)`});
+</script>
+</body>
+</html>

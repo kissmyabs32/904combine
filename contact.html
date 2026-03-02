@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact The 904 Combine | Jacksonville Football Showcase</title>
+<meta name="description" content="Contact The 904 Combine—Jacksonville's NFL-coached high school football showcase. Register, sponsor, or ask about the Mom Tackle Challenge.">
+<meta property="og:title" content="Contact The 904 Combine | Jacksonville Football Showcase">
+<meta property="og:description" content="Contact The 904 Combine—Jacksonville's NFL-coached high school football showcase. Register, sponsor, or ask about the Mom Tackle Challenge.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://the904combine.com/contact.html">
+<link rel="canonical" href="https://the904combine.com/contact.html">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700;800&family=Barlow:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+--black:#0a0a0f;--dark:#0d0d14;--card:#13131f;
+--border:rgba(255,255,255,0.08);--electric:#00f0ff;--gold:#ffd700;--hot:#ff3c00;
+--white:#ffffff;--muted:rgba(255,255,255,0.55);
+}
+html{scroll-behavior:smooth}
+body{background:var(--black);color:var(--white);font-family:'Barlow',sans-serif;font-weight:400;line-height:1.8;overflow-x:hidden}
+h1,h2,h3,h4{font-family:'Barlow Condensed',sans-serif;font-weight:800;text-transform:uppercase;line-height:.95}
+a{color:var(--electric);text-decoration:none}
+.container{max-width:1200px;margin:0 auto;padding:0 24px}
+.eyebrow{font-family:'Barlow',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.2em;color:var(--electric);font-size:.85rem;margin-bottom:12px}
+.clip{clip-path:polygon(0 0,calc(100% - 20px) 0,100% 20px,100% 100%,20px 100%,0 calc(100% - 20px))}
+.btn-primary{display:inline-block;background:var(--electric);color:var(--black);font-family:'Barlow Condensed',sans-serif;font-weight:800;text-transform:uppercase;padding:16px 36px;font-size:1.05rem;letter-spacing:.05em;clip-path:polygon(0 0,calc(100% - 14px) 0,100% 14px,100% 100%,14px 100%,0 calc(100% - 14px));transition:transform .3s,box-shadow .3s;cursor:pointer;border:none}
+.btn-primary:hover{transform:scale(1.03);box-shadow:0 0 20px rgba(0,240,255,.4)}
+.btn-secondary{display:inline-block;background:transparent;color:var(--white);font-family:'Barlow Condensed',sans-serif;font-weight:800;text-transform:uppercase;padding:16px 36px;font-size:1.05rem;letter-spacing:.05em;border:1px solid rgba(255,255,255,.2);clip-path:polygon(0 0,calc(100% - 14px) 0,100% 14px,100% 100%,14px 100%,0 calc(100% - 14px));transition:border-color .3s;cursor:pointer}
+.btn-secondary:hover{border-color:var(--electric)}
+.section-pad{padding:100px 0}
+/* Scroll animation */
+.reveal{opacity:1;transform:translateY(0);transition:opacity .6s ease-out,transform .6s ease-out}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.reveal-delay-1{transition-delay:.1s}.reveal-delay-2{transition-delay:.2s}.reveal-delay-3{transition-delay:.3s}.reveal-delay-4{transition-delay:.4s}.reveal-delay-5{transition-delay:.5s}
+
+/* NAV */
+nav{position:sticky;top:0;width:100%;height:64px;background:rgba(10,10,15,.92);backdrop-filter:blur(12px);z-index:1000;display:flex;align-items:center;border-bottom:1px solid var(--border)}
+.nav-inner{max-width:1200px;margin:0 auto;padding:0 24px;width:100%;display:flex;align-items:center;justify-content:space-between}
+.nav-logo{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.3rem;text-transform:uppercase;color:var(--white);letter-spacing:.05em}
+.nav-logo span{color:var(--electric)}
+.nav-links{display:flex;align-items:center;gap:24px}
+.nav-links a{color:var(--muted);font-family:'Barlow',sans-serif;font-weight:600;font-size:.88rem;text-transform:uppercase;letter-spacing:.06em;transition:color .2s}
+.nav-links a:hover,.nav-links a.active{color:var(--electric)}
+.nav-links .nav-cta{background:var(--electric);color:var(--black);padding:8px 20px;font-weight:800;clip-path:polygon(0 0,calc(100% - 10px) 0,100% 10px,100% 100%,10px 100%,0 calc(100% - 10px))}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;z-index:1001}
+.hamburger span{width:26px;height:2px;background:var(--white);transition:transform .3s,opacity .3s}
+.mobile-menu{position:absolute;top:0;right:-100%;width:100%;height:100%;background:var(--black);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:28px;transition:right .4s ease;z-index:999}
+.mobile-menu.open{right:0}
+.mobile-menu a{color:var(--white);font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.8rem;text-transform:uppercase}
+
+@media(max-width:900px){
+.nav-links{display:none}
+.hamburger{display:flex}
+}
+
+/* HERO */
+.hero{position:relative;min-height:70vh;display:flex;align-items:center;overflow:hidden;padding-top:64px}
+.hero-bg{position:absolute;inset:0;z-index:0}
+.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(0,240,255,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(0,240,255,.06) 1px,transparent 1px);background-size:60px 60px;animation:gridPulse 4s ease-in-out infinite}
+@keyframes gridPulse{0%,100%{opacity:.05}50%{opacity:.1}}
+.hero-scanlines{position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(255,255,255,.03) 2px,rgba(255,255,255,.03) 3px);pointer-events:none}
+.hero-gradient{position:absolute;inset:0;background:radial-gradient(ellipse at 20% 50%,rgba(0,240,255,.12) 0%,transparent 60%),radial-gradient(ellipse at 80% 40%,rgba(255,215,0,.06) 0%,transparent 50%)}
+.hero-content{position:relative;z-index:1;max-width:900px;margin:0 auto;padding:0 24px;text-align:center}
+.hero h1{font-size:clamp(3.5rem,8vw,6rem);margin-bottom:24px}
+.hero h1 .electric{color:var(--electric);text-shadow:0 0 40px rgba(0,240,255,.3);animation:glowPulse 3s ease-in-out infinite}
+@keyframes glowPulse{0%,100%{text-shadow:0 0 40px rgba(0,240,255,.3)}50%{text-shadow:0 0 60px rgba(0,240,255,.5)}}
+.hero-sub{font-size:1.15rem;color:var(--muted);max-width:650px;margin:0 auto 32px;line-height:1.8}
+
+/* CONTACT CARDS */
+.contact-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:60px}
+@media(max-width:900px){.contact-cards{grid-template-columns:1fr}}
+.contact-card{background:var(--card);border:1px solid var(--border);padding:36px 32px;clip-path:polygon(0 0,calc(100% - 16px) 0,100% 16px,100% 100%,16px 100%,0 calc(100% - 16px));transition:border-color .3s,transform .3s;text-align:center}
+.contact-card:hover{border-color:rgba(0,240,255,.3);transform:translateY(-5px)}
+.contact-card h4{font-size:1.2rem;margin-bottom:12px;color:var(--white)}
+.contact-card-label{font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin-bottom:16px}
+.contact-card-email{font-size:1rem;color:var(--electric);font-weight:600;margin-bottom:20px;word-break:break-all}
+.contact-card-response{font-size:.85rem;color:var(--muted);padding-top:16px;border-top:1px solid var(--border)}
+
+/* CONTACT FORM */
+.form-section{background:var(--dark);padding:80px 0}
+.form-content{max-width:700px;margin:0 auto;padding:0 24px}
+.form-group{margin-bottom:24px}
+label{display:block;font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;font-size:.85rem;letter-spacing:.08em;margin-bottom:8px;color:var(--white)}
+input[type="text"],input[type="email"],input[type="tel"],select,textarea{width:100%;background:rgba(0,240,255,.08);border:1px solid var(--border);color:var(--white);font-family:'Barlow',sans-serif;font-size:1rem;padding:14px 16px;transition:border-color .3s,box-shadow .3s}
+input[type="text"]:focus,input[type="email"]:focus,input[type="tel"]:focus,select:focus,textarea:focus{outline:none;border-color:var(--electric);box-shadow:0 0 20px rgba(0,240,255,.2)}
+textarea{resize:vertical;min-height:140px}
+select{appearance:none;padding-right:40px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%2300f0ff' d='M0 0l6 8 6-8z'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 12px center;padding-right:40px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+@media(max-width:600px){.form-row{grid-template-columns:1fr}}
+.form-required::after{content:" *";color:var(--electric)}
+.form-submit{display:flex;justify-content:center;margin-top:36px}
+
+/* LOCATION */
+.location-section{background:var(--black);padding:80px 0;border-top:1px solid var(--border)}
+.location-content{max-width:700px;margin:0 auto;padding:0 24px;text-align:center}
+.location-card{background:var(--card);border:1px solid var(--border);padding:48px 36px;clip-path:polygon(0 0,calc(100% - 20px) 0,100% 20px,100% 100%,20px 100%,0 calc(100% - 20px))}
+.location-card h3{font-size:1.4rem;margin-bottom:20px;color:var(--white)}
+.location-address{color:var(--muted);font-size:1rem;margin-bottom:16px;line-height:1.8}
+.location-phone{color:var(--electric);font-size:1rem;font-weight:600;margin-bottom:28px}
+.location-btn{display:inline-block}
+
+/* SOCIAL */
+.social-section{background:var(--dark);padding:60px 0;text-align:center;border-top:1px solid var(--border)}
+.social-content{max-width:600px;margin:0 auto}
+.social-links{display:flex;justify-content:center;gap:32px;margin-top:24px;flex-wrap:wrap}
+.social-links a{display:flex;align-items:center;gap:10px;color:var(--electric);font-weight:700;text-transform:uppercase;font-size:.95rem;letter-spacing:.06em;transition:color .2s}
+.social-links a:hover{color:var(--white)}
+
+/* FOOTER */
+footer{background:var(--dark);border-top:1px solid var(--border);padding:60px 0 40px}
+.footer-top{display:flex;justify-content:space-between;align-items:start;flex-wrap:wrap;gap:32px;margin-bottom:40px}
+.footer-links{display:flex;flex-wrap:wrap;gap:20px}
+.footer-links a{color:var(--muted);font-size:.85rem;font-weight:600;text-transform:uppercase;letter-spacing:.06em;transition:color .2s}
+.footer-links a:hover{color:var(--electric)}
+.footer-disclaimer{color:rgba(255,255,255,.35);font-size:.78rem;line-height:1.6;max-width:800px;margin-bottom:16px}
+.footer-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;padding-top:24px;border-top:1px solid var(--border)}
+.footer-bottom span{color:rgba(255,255,255,.3);font-size:.78rem}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+<div class="nav-inner">
+<a href="index.html" class="nav-logo">THE <span>904</span> COMBINE</a>
+<div class="nav-links">
+<a href="stations.html">Stations</a>
+<a href="coaches.html">Coaches</a>
+<a href="registration.html">Register</a>
+<a href="sponsors.html">Sponsors</a>
+<a href="mom-tackle.html">Mom Tackle</a>
+<a href="leaderboard.html">Leaderboard</a>
+<a href="about.html">About</a>
+<a href="registration.html" class="nav-cta">Register Now</a>
+</div>
+<div class="hamburger" onclick="toggleMenu()">
+<span></span><span></span><span></span>
+</div>
+</div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+<a href="stations.html" onclick="toggleMenu()">Stations</a>
+<a href="coaches.html" onclick="toggleMenu()">Coaches</a>
+<a href="registration.html" onclick="toggleMenu()">Register</a>
+<a href="sponsors.html" onclick="toggleMenu()">Sponsors</a>
+<a href="mom-tackle.html" onclick="toggleMenu()">Mom Tackle</a>
+<a href="leaderboard.html" onclick="toggleMenu()">Leaderboard</a>
+<a href="about.html" onclick="toggleMenu()">About</a>
+<a href="faq.html" onclick="toggleMenu()">FAQ</a>
+<a href="contact.html" onclick="toggleMenu()" class="active">Contact</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+<div class="hero-bg">
+<div class="hero-grid"></div>
+<div class="hero-scanlines"></div>
+<div class="hero-gradient"></div>
+</div>
+<div class="hero-content">
+<p class="eyebrow reveal">Get in Touch</p>
+<h1 class="reveal reveal-delay-1">LET'S <span class="electric">TALK.</span></h1>
+<p class="hero-sub reveal reveal-delay-2">Questions about registration? Interested in sponsoring The 904 Combine? Want to cover the event? We're here to help. Choose your path below.</p>
+
+<div class="contact-cards reveal reveal-delay-3">
+<div class="contact-card">
+<h4>General Questions</h4>
+<div class="contact-card-label">Email</div>
+<a href="mailto:info@the904combine.com" class="contact-card-email">info@the904combine.com</a>
+<div class="contact-card-response"><strong>Response:</strong><br>Within 48 hours</div>
+</div>
+<div class="contact-card">
+<h4>Sponsorship Inquiries</h4>
+<div class="contact-card-label">Email</div>
+<a href="mailto:sponsors@the904combine.com" class="contact-card-email">sponsors@the904combine.com</a>
+<div class="contact-card-response"><strong>Response:</strong><br>Within 24 hours</div>
+</div>
+<div class="contact-card">
+<h4>Media & Press</h4>
+<div class="contact-card-label">Email</div>
+<a href="mailto:press@the904combine.com" class="contact-card-email">press@the904combine.com</a>
+<div class="contact-card-response"><strong>Response:</strong><br>Within 24 hours</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- CONTACT FORM SECTION -->
+<section class="form-section">
+<div class="form-content">
+<p class="eyebrow reveal" style="text-align:center">Send us a Message</p>
+<h2 class="reveal reveal-delay-1" style="text-align:center;font-size:2.2rem;margin-bottom:36px">Quick <span style="color:var(--electric)">CONTACT FORM</span></h2>
+
+<form id="contactForm" class="reveal reveal-delay-2">
+<div class="form-row">
+<div class="form-group">
+<label for="name" class="form-required">Name</label>
+<input type="text" id="name" name="name" required>
+</div>
+<div class="form-group">
+<label for="email" class="form-required">Email</label>
+<input type="email" id="email" name="email" required>
+</div>
+</div>
+
+<div class="form-row">
+<div class="form-group">
+<label for="phone">Phone <span style="color:var(--muted)">(Optional)</span></label>
+<input type="tel" id="phone" name="phone">
+</div>
+<div class="form-group">
+<label for="inquiry" class="form-required">Inquiry Type</label>
+<select id="inquiry" name="inquiry" required>
+<option value="">Select...</option>
+<option value="general">General</option>
+<option value="registration">Registration</option>
+<option value="sponsorship">Sponsorship</option>
+<option value="media">Media</option>
+<option value="other">Other</option>
+</select>
+</div>
+</div>
+
+<div class="form-group">
+<label for="message" class="form-required">Message</label>
+<textarea id="message" name="message" required></textarea>
+</div>
+
+<div class="form-submit">
+<button type="submit" class="btn-primary">SEND MESSAGE →</button>
+</div>
+</form>
+</div>
+</section>
+
+<!-- LOCATION SECTION -->
+<section class="location-section">
+<div class="location-content">
+<p class="eyebrow reveal" style="text-align:center">Event Location</p>
+<div class="location-card reveal reveal-delay-1">
+<h3>Atlantic Coast High School</h3>
+<div class="location-address">
+9735 R.G. Skinner Pkwy<br>
+Jacksonville, FL 32256
+</div>
+<div class="location-phone">(904) 538-5120</div>
+<div class="location-btn">
+<a href="https://maps.google.com/?q=9735+RG+Skinner+Parkway+Jacksonville+FL+32256" target="_blank" class="btn-secondary">GET DIRECTIONS →</a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- SOCIAL SECTION -->
+<section class="social-section">
+<div class="social-content">
+<p class="eyebrow reveal" style="text-align:center">Follow the Action</p>
+<h3 class="reveal reveal-delay-1" style="font-size:1.3rem;margin-bottom:0">STAY CONNECTED</h3>
+<div class="social-links reveal reveal-delay-2">
+<a href="https://instagram.com/the904combine" target="_blank">📱 Instagram</a>
+<a href="https://twitter.com/the904combine" target="_blank">𝕏 Twitter</a>
+</div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+<div class="container">
+<div class="footer-top">
+<div class="nav-logo" style="font-size:1.5rem">THE <span style="color:var(--electric)">904</span> COMBINE</div>
+<div class="footer-links">
+<a href="coaches.html">Coaches</a>
+<a href="stations.html">Stations</a>
+<a href="registration.html">Register</a>
+<a href="sponsors.html">Sponsors</a>
+<a href="mom-tackle.html">Mom Tackle</a>
+<a href="leaderboard.html">Leaderboard</a>
+<a href="about.html">About</a>
+<a href="faq.html">FAQ</a>
+<a href="contact.html">Contact</a>
+</div>
+</div>
+<p class="footer-disclaimer">The 904 Combine is not affiliated with the Jacksonville Jaguars NFL franchise. Coaching staff consists of retired former Jaguars players participating independently.</p>
+<p class="footer-disclaimer">Atlantic Coast High School · 9735 R.G. Skinner Pkwy · Jacksonville, FL 32256</p>
+<div class="footer-bottom">
+<span>Proceeds benefit the Stingray Boosters Club, a registered 501(c)(3) nonprofit.</span>
+<span>© 2025 The 904 Combine. All rights reserved.</span>
+</div>
+</div>
+</footer>
+
+<script>
+function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open')}
+
+// Scroll reveal
+const obs=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}})},{threshold:0.1});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+
+// Form handling
+document.getElementById('contactForm').addEventListener('submit',function(e){
+e.preventDefault();
+const formData=new FormData(this);
+const name=formData.get('name');
+const email=formData.get('email');
+const phone=formData.get('phone');
+const inquiry=formData.get('inquiry');
+const message=formData.get('message');
+
+// Build email subject based on inquiry type
+let subject='';
+const inquiryType=inquiry.charAt(0).toUpperCase()+inquiry.slice(1);
+switch(inquiry){
+case 'general':subject='General Inquiry from '+name;break;
+case 'registration':subject='Registration Question from '+name;break;
+case 'sponsorship':subject='Sponsorship Inquiry from '+name;break;
+case 'media':subject='Media Inquiry from '+name;break;
+case 'other':subject='Contact Form Submission from '+name;break;
+}
+
+// Route to appropriate email based on inquiry type
+let toEmail='info@the904combine.com';
+if(inquiry==='sponsorship')toEmail='sponsors@the904combine.com';
+else if(inquiry==='media')toEmail='press@the904combine.com';
+
+const mailtoLink=`mailto:${toEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nInquiry Type: ${inquiryType}\n\nMessage:\n${message}`)}`;
+
+window.location.href=mailtoLink;
+});
+
+// Parallax
+window.addEventListener('scroll',()=>{const s=window.scrollY;const bg=document.querySelector('.hero-bg');const content=document.querySelector('.hero-content');if(bg)bg.style.transform=`translateY(${s*0.3}px)`;if(content&&s<window.innerHeight)content.style.transform=`translateY(${s*0.1}px)`});
+</script>
+</body>
+</html>

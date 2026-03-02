@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The 904 Combine | Jacksonville Football | Former Jaguars</title>
+<meta name="description" content="The First Coast's NFL-coached high school football combine. Former Jacksonville Jaguars coaches. Duval, St. Johns & Nassau County. Spring 2025.">
+<meta property="og:title" content="The 904 Combine | Jacksonville Football | Former Jaguars">
+<meta property="og:description" content="The First Coast's NFL-coached high school football combine. Former Jacksonville Jaguars coaches. Duval, St. Johns & Nassau County. Spring 2025.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://the904combine.com">
+<link rel="canonical" href="https://the904combine.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700;800&family=Barlow:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+--black:#0a0a0f;--dark:#0d0d14;--card:#13131f;
+--border:rgba(255,255,255,0.08);--electric:#00f0ff;--gold:#ffd700;--hot:#ff3c00;
+--white:#ffffff;--muted:rgba(255,255,255,0.55);
+}
+html{scroll-behavior:smooth}
+body{background:var(--black);color:var(--white);font-family:'Barlow',sans-serif;font-weight:400;line-height:1.8;overflow-x:hidden}
+h1,h2,h3,h4{font-family:'Barlow Condensed',sans-serif;font-weight:800;text-transform:uppercase;line-height:.95}
+a{color:var(--electric);text-decoration:none}
+.container{max-width:1200px;margin:0 auto;padding:0 24px}
+.eyebrow{font-family:'Barlow',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.2em;color:var(--electric);font-size:.85rem;margin-bottom:12px}
+.clip{clip-path:polygon(0 0,calc(100% - 20px) 0,100% 20px,100% 100%,20px 100%,0 calc(100% - 20px))}
+.btn-primary{display:inline-block;background:var(--electric);color:var(--black);font-family:'Barlow Condensed',sans-serif;font-weight:800;text-transform:uppercase;padding:16px 36px;font-size:1.05rem;letter-spacing:.05em;clip-path:polygon(0 0,calc(100% - 14px) 0,100% 14px,100% 100%,14px 100%,0 calc(100% - 14px));transition:transform .3s,box-shadow .3s;cursor:pointer;border:none}
+.btn-primary:hover{transform:scale(1.03);box-shadow:0 0 20px rgba(0,240,255,.4)}
+.btn-secondary{display:inline-block;background:transparent;color:var(--white);font-family:'Barlow Condensed',sans-serif;font-weight:800;text-transform:uppercase;padding:16px 36px;font-size:1.05rem;letter-spacing:.05em;border:1px solid rgba(255,255,255,.2);clip-path:polygon(0 0,calc(100% - 14px) 0,100% 14px,100% 100%,14px 100%,0 calc(100% - 14px));transition:border-color .3s;cursor:pointer}
+.btn-secondary:hover{border-color:var(--electric)}
+.section-pad{padding:100px 0}
+/* Scroll animation */
+.reveal{opacity:0;transform:translateY(25px);transition:opacity .6s ease-out,transform .6s ease-out}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.reveal-delay-1{transition-delay:.1s}.reveal-delay-2{transition-delay:.2s}.reveal-delay-3{transition-delay:.3s}.reveal-delay-4{transition-delay:.4s}.reveal-delay-5{transition-delay:.5s}
+
+/* NAV */
+nav{position:sticky;top:0;width:100%;height:64px;background:rgba(10,10,15,.92);backdrop-filter:blur(12px);z-index:1000;display:flex;align-items:center;border-bottom:1px solid var(--border)}
+.nav-inner{max-width:1200px;margin:0 auto;padding:0 24px;width:100%;display:flex;align-items:center;justify-content:space-between}
+.nav-logo{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.3rem;text-transform:uppercase;color:var(--white);letter-spacing:.05em}
+.nav-logo span{color:var(--electric)}
+.nav-links{display:flex;align-items:center;gap:24px}
+.nav-links a{color:var(--muted);font-family:'Barlow',sans-serif;font-weight:600;font-size:.88rem;text-transform:uppercase;letter-spacing:.06em;transition:color .2s}
+.nav-links a:hover,.nav-links a.active{color:var(--electric)}
+.nav-links .nav-cta{background:var(--electric);color:var(--black);padding:8px 20px;font-weight:800;clip-path:polygon(0 0,calc(100% - 10px) 0,100% 10px,100% 100%,10px 100%,0 calc(100% - 10px))}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;z-index:1001}
+.hamburger span{width:26px;height:2px;background:var(--white);transition:transform .3s,opacity .3s}
+.mobile-menu{position:absolute;top:0;right:-100%;width:100%;height:100%;background:var(--black);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:28px;transition:right .4s ease;z-index:999}
+.mobile-menu.open{right:0}
+.mobile-menu a{color:var(--white);font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.8rem;text-transform:uppercase}
+
+@media(max-width:900px){
+.nav-links{display:none}
+.hamburger{display:flex}
+}
+
+/* HERO */
+.hero{position:relative;min-height:800px;display:flex;align-items:center;overflow:hidden;padding-top:64px}
+.hero-bg{position:absolute;inset:0;z-index:0}
+.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(0,240,255,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(0,240,255,.06) 1px,transparent 1px);background-size:60px 60px;animation:gridPulse 4s ease-in-out infinite}
+@keyframes gridPulse{0%,100%{opacity:.05}50%{opacity:.1}}
+.hero-scanlines{position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(255,255,255,.03) 2px,rgba(255,255,255,.03) 3px);pointer-events:none}
+.hero-gradient{position:absolute;inset:0;background:radial-gradient(ellipse at 20% 50%,rgba(0,240,255,.12) 0%,transparent 60%),radial-gradient(ellipse at 80% 40%,rgba(255,215,0,.06) 0%,transparent 50%)}
+.hero-content{position:relative;z-index:1;max-width:900px;margin:0 auto;padding:0 24px;text-align:center}
+.hero h1{font-size:clamp(4rem,9vw,8rem);margin-bottom:24px}
+.hero h1 .electric{color:var(--electric);text-shadow:0 0 40px rgba(0,240,255,.3);animation:glowPulse 3s ease-in-out infinite}
+@keyframes glowPulse{0%,100%{text-shadow:0 0 40px rgba(0,240,255,.3)}50%{text-shadow:0 0 60px rgba(0,240,255,.5)}}
+.hero-sub{font-size:1.15rem;color:var(--muted);max-width:650px;margin:0 auto 32px;line-height:1.8}
+.badges{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-bottom:36px}
+.badge{padding:8px 18px;border:1px solid var(--border);color:var(--muted);font-size:.8rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;clip-path:polygon(0 0,calc(100% - 8px) 0,100% 8px,100% 100%,8px 100%,0 calc(100% - 8px))}
+.hero-btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+
+/* STAT BAR */
+.stat-bar{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border);border-top:1px solid var(--border);border-bottom:1px solid var(--border);margin-top:80px}
+.stat-item{background:var(--dark);text-align:center;padding:32px 16px}
+.stat-num{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:2.8rem;color:var(--electric)}
+.stat-label{color:var(--muted);font-size:.85rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em}
+@media(max-width:600px){.stat-bar{grid-template-columns:repeat(2,1fr)}}
+
+/* TICKER */
+.ticker-wrap{overflow:hidden;background:var(--dark);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:14px 0}
+.ticker{display:flex;width:max-content;animation:tickerScroll 30s linear infinite}
+@keyframes tickerScroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.ticker span{color:var(--electric);font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:.95rem;text-transform:uppercase;letter-spacing:.15em;white-space:nowrap;padding:0 32px}
+
+/* COACHES */
+.coaches-section{background:var(--dark);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.coach-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:48px}
+@media(max-width:768px){.coach-grid{grid-template-columns:1fr}}
+.coach-card{background:var(--card);border:1px solid var(--border);padding:36px;clip-path:polygon(0 0,calc(100% - 20px) 0,100% 20px,100% 100%,20px 100%,0 calc(100% - 20px));transition:border-color .3s,transform .3s}
+.coach-card:hover{border-color:rgba(0,240,255,.3);transform:translateY(-5px)}
+.coach-avatar{width:80px;height:80px;border-radius:50%;border:3px solid var(--gold);background:var(--dark);display:flex;align-items:center;justify-content:center;margin-bottom:16px;font-size:1.6rem}
+.coach-nfl-tag{font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--gold);margin-bottom:8px}
+.coach-name{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.8rem;text-transform:uppercase;margin-bottom:12px}
+.coach-badges{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.coach-badges span{padding:4px 12px;border:1px solid var(--border);font-size:.72rem;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.coach-bio{color:var(--muted);font-size:.95rem;line-height:1.7;margin-bottom:20px}
+.coach-focus{border-left:3px solid var(--electric);padding:12px 16px;background:rgba(0,240,255,.04);font-size:.88rem;font-weight:600;color:var(--white)}
+.coach-focus.gold-border{border-left-color:var(--gold)}
+
+/* SCHOOLS */
+.school-section{background:var(--black)}
+.county-block{margin-bottom:40px}
+.county-label{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.2rem;text-transform:uppercase;margin-bottom:14px}
+.county-label.duval{color:var(--electric)}.county-label.stjohns{color:var(--gold)}.county-label.nassau{color:var(--hot)}
+.school-chips{display:flex;flex-wrap:wrap;gap:8px}
+.school-chip{padding:6px 16px;border:1px solid var(--border);font-size:.78rem;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;transition:border-color .2s,color .2s}
+.school-chip:hover{border-color:var(--electric);color:var(--white)}
+.info-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:56px}
+@media(max-width:768px){.info-grid{grid-template-columns:1fr}}
+.info-card{background:var(--card);border:1px solid var(--border);padding:28px;clip-path:polygon(0 0,calc(100% - 16px) 0,100% 16px,100% 100%,16px 100%,0 calc(100% - 16px))}
+.info-card h4{font-size:1.1rem;margin-bottom:10px}
+.info-card p{color:var(--muted);font-size:.9rem;line-height:1.7}
+
+/* WHAT YOU GET */
+.wyg-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px}
+@media(max-width:768px){.wyg-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:500px){.wyg-grid{grid-template-columns:1fr}}
+.wyg-card{background:var(--card);border:1px solid var(--border);padding:28px;clip-path:polygon(0 0,calc(100% - 16px) 0,100% 16px,100% 100%,16px 100%,0 calc(100% - 16px));transition:border-color .3s,transform .3s}
+.wyg-card:hover{border-color:rgba(0,240,255,.3);transform:translateY(-5px)}
+.wyg-icon{font-size:1.8rem;margin-bottom:12px}
+.wyg-card h4{font-family:'Barlow Condensed',sans-serif;font-weight:800;text-transform:uppercase;font-size:1.05rem;margin-bottom:8px}
+.wyg-card p{color:var(--muted);font-size:.88rem;line-height:1.6}
+
+/* HOW WE MEASURE */
+.measure-section{background:var(--dark)}
+.measure-grid{display:grid;grid-template-columns:1fr 1.3fr;gap:48px;margin-top:48px;align-items:start}
+@media(max-width:768px){.measure-grid{grid-template-columns:1fr}}
+.measure-text{color:var(--muted);font-size:.95rem;line-height:1.8}
+.measure-table{width:100%;border-collapse:collapse}
+.measure-table th,.measure-table td{padding:12px 16px;text-align:left;border-bottom:1px solid var(--border);font-size:.85rem}
+.measure-table th{color:var(--electric);font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:.75rem}
+.measure-table td{color:var(--muted)}
+.measure-table td:first-child{color:var(--white);font-weight:600}
+
+/* ELIGIBILITY */
+.elig-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:48px}
+@media(max-width:768px){.elig-grid{grid-template-columns:1fr 1fr}}
+.elig-card{background:var(--card);border:1px solid var(--border);padding:28px;text-align:center;clip-path:polygon(0 0,calc(100% - 16px) 0,100% 16px,100% 100%,16px 100%,0 calc(100% - 16px))}
+.elig-icon{font-size:2rem;margin-bottom:12px}
+.elig-card h4{font-family:'Barlow Condensed',sans-serif;font-weight:800;text-transform:uppercase;font-size:1rem;margin-bottom:8px}
+.elig-card p{color:var(--muted);font-size:.85rem}
+
+/* SCHEDULE */
+.schedule-section{background:var(--black)}
+.timeline{margin-top:48px}
+.timeline-item{display:grid;grid-template-columns:140px 1fr;gap:24px;padding:20px 0;border-bottom:1px solid var(--border)}
+@media(max-width:600px){.timeline-item{grid-template-columns:100px 1fr}}
+.timeline-time{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.2rem;color:var(--electric)}
+.timeline-event h4{font-family:'Barlow Condensed',sans-serif;font-weight:800;text-transform:uppercase;font-size:1.1rem;margin-bottom:4px}
+.timeline-event p{color:var(--muted);font-size:.88rem}
+
+/* SPONSOR PREVIEW */
+.sponsor-section{background:var(--dark)}
+.sponsor-table{width:100%;border-collapse:collapse;margin-top:40px}
+.sponsor-table th,.sponsor-table td{padding:14px 12px;text-align:center;border-bottom:1px solid var(--border);font-size:.82rem}
+.sponsor-table th{color:var(--electric);font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:.72rem}
+.sponsor-table td{color:var(--muted)}
+.sponsor-table tr:first-child td{color:var(--gold);font-weight:700}
+
+/* BOOSTER */
+.booster-section{background:var(--black)}
+.booster-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:48px;margin-top:40px;align-items:start}
+@media(max-width:768px){.booster-grid{grid-template-columns:1fr}}
+.booster-text{color:var(--muted);line-height:1.8}
+.impact-list{list-style:none}
+.impact-list li{padding:12px 0;border-bottom:1px solid var(--border);color:var(--white);font-weight:600;font-size:.95rem}
+.impact-list li span{color:var(--electric);margin-right:8px}
+.c3-badge{display:inline-block;padding:10px 20px;border:1px solid var(--gold);color:var(--gold);font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:.8rem;margin-top:20px;clip-path:polygon(0 0,calc(100% - 10px) 0,100% 10px,100% 100%,10px 100%,0 calc(100% - 10px))}
+
+/* REFUND */
+.refund-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:48px}
+@media(max-width:768px){.refund-grid{grid-template-columns:1fr}}
+.refund-card{background:var(--card);border:1px solid var(--border);padding:32px;clip-path:polygon(0 0,calc(100% - 16px) 0,100% 16px,100% 100%,16px 100%,0 calc(100% - 16px))}
+.refund-card h4{font-family:'Barlow Condensed',sans-serif;font-weight:800;text-transform:uppercase;margin-bottom:16px}
+.refund-card p{color:var(--muted);font-size:.9rem;line-height:1.7;margin-bottom:8px}
+
+/* FINAL CTA */
+.final-cta{background:var(--electric);padding:100px 0;text-align:center;clip-path:polygon(0 30px,100% 0,100% calc(100% - 30px),0 100%);margin:40px 0 0}
+.final-cta h2{color:var(--black);font-size:clamp(2rem,5vw,3.5rem);margin-bottom:16px}
+.final-cta p{color:rgba(10,10,15,.7);max-width:600px;margin:0 auto 32px;font-size:1rem}
+.final-cta .btn-primary{background:var(--black);color:var(--electric)}
+.final-cta .btn-primary:hover{box-shadow:0 0 20px rgba(10,10,15,.4)}
+.final-cta .btn-secondary{border-color:rgba(10,10,15,.3);color:var(--black)}
+.final-cta .btn-secondary:hover{border-color:var(--black)}
+
+/* FOOTER */
+footer{background:var(--dark);border-top:1px solid var(--border);padding:60px 0 40px}
+.footer-top{display:flex;justify-content:space-between;align-items:start;flex-wrap:wrap;gap:32px;margin-bottom:40px}
+.footer-links{display:flex;flex-wrap:wrap;gap:20px}
+.footer-links a{color:var(--muted);font-size:.85rem;font-weight:600;text-transform:uppercase;letter-spacing:.06em;transition:color .2s}
+.footer-links a:hover{color:var(--electric)}
+.footer-disclaimer{color:rgba(255,255,255,.35);font-size:.78rem;line-height:1.6;max-width:800px;margin-bottom:16px}
+.footer-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;padding-top:24px;border-top:1px solid var(--border)}
+.footer-bottom span{color:rgba(255,255,255,.3);font-size:.78rem}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+<div class="nav-inner">
+<a href="index.html" class="nav-logo">THE <span>904</span> COMBINE</a>
+<div class="nav-links">
+<a href="stations.html">Stations</a>
+<a href="coaches.html" class="active">Coaches</a>
+<a href="registration.html">Register</a>
+<a href="sponsors.html">Sponsors</a>
+<a href="mom-tackle.html">Mom Tackle</a>
+<a href="leaderboard.html">Leaderboard</a>
+<a href="about.html">About</a>
+<a href="registration.html" class="nav-cta">Register Now</a>
+</div>
+<div class="hamburger" onclick="toggleMenu()">
+<span></span><span></span><span></span>
+</div>
+</div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+<a href="stations.html" onclick="toggleMenu()">Stations</a>
+<a href="coaches.html" onclick="toggleMenu()">Coaches</a>
+<a href="registration.html" onclick="toggleMenu()">Register</a>
+<a href="sponsors.html" onclick="toggleMenu()">Sponsors</a>
+<a href="mom-tackle.html" onclick="toggleMenu()">Mom Tackle</a>
+<a href="leaderboard.html" onclick="toggleMenu()">Leaderboard</a>
+<a href="about.html" onclick="toggleMenu()">About</a>
+<a href="faq.html" onclick="toggleMenu()">FAQ</a>
+<a href="contact.html" onclick="toggleMenu()">Contact</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+<div class="hero-bg">
+<div class="hero-grid"></div>
+<div class="hero-scanlines"></div>
+<div class="hero-gradient"></div>
+</div>
+<div class="hero-content">
+<p class="eyebrow reveal">The First Coast's #1 High School Football Combine</p>
+<h1 class="reveal reveal-delay-1">WHO'S THE<br><span class="electric">FASTEST</span><br>IN THE 904?</h1>
+<p class="hero-sub reveal reveal-delay-2">The First Coast's most electric high school football combine and skills showcase. NFL combine-style testing. One day. Every county. Real bragging rights. All sports welcome. Football at the center.</p>
+<div class="badges reveal reveal-delay-3">
+<span class="badge">Spring 2025</span>
+<span class="badge">Atlantic Coast High School</span>
+<span class="badge">Duval · St. Johns · Nassau</span>
+<span class="badge">Former Jaguars Coaches</span>
+<span class="badge">501(c)(3) Fundraiser</span>
+</div>
+<div class="hero-btns reveal reveal-delay-4">
+<a href="registration.html" class="btn-primary">Register Now — $60</a>
+<a href="stations.html" class="btn-secondary">View Stations →</a>
+</div>
+</div>
+</section>
+
+<!-- STAT BAR -->
+<div class="stat-bar">
+<div class="stat-item reveal"><div class="stat-num" data-count="9">0</div><div class="stat-label">Skill Stations</div></div>
+<div class="stat-item reveal reveal-delay-1"><div class="stat-num">$<span data-count="60">0</span></div><div class="stat-label">All-In Entry</div></div>
+<div class="stat-item reveal reveal-delay-2"><div class="stat-num" data-count="3">0</div><div class="stat-label">Counties</div></div>
+<div class="stat-item reveal reveal-delay-3"><div class="stat-num"><span data-count="100">0</span>%</div><div class="stat-label">To Charity</div></div>
+</div>
+
+<!-- TICKER -->
+<div class="ticker-wrap">
+<div class="ticker">
+<span>THE 904 COMBINE · SPRING 2025 · ATLANTIC COAST HIGH SCHOOL · JACKSONVILLE, FL · COACHED BY FORMER JACKSONVILLE JAGUARS · WHO'S FASTEST IN THE 904? ·</span>
+<span>THE 904 COMBINE · SPRING 2025 · ATLANTIC COAST HIGH SCHOOL · JACKSONVILLE, FL · COACHED BY FORMER JACKSONVILLE JAGUARS · WHO'S FASTEST IN THE 904? ·</span>
+</div>
+</div>
+
+<!-- COACHES SECTION -->
+<section class="coaches-section section-pad">
+<div class="container">
+<p class="eyebrow reveal">Coached by Former NFL Players</p>
+<h2 class="reveal reveal-delay-1" style="font-size:clamp(2.5rem,5vw,4.5rem)">REAL PROS. REAL FEEDBACK. REAL <span style="color:var(--electric)">RESULTS.</span></h2>
+<div class="coach-grid">
+<div class="coach-card reveal reveal-delay-2">
+<div class="coach-avatar">🏈</div>
+<div class="coach-nfl-tag">Former Jacksonville Jaguars · NFL Veteran</div>
+<div class="coach-name">REGGIE HAYWARD</div>
+<div class="coach-badges">
+<span>Jacksonville Jaguars</span><span>Denver Broncos</span><span>Defensive End</span>
+</div>
+<p class="coach-bio">Reggie Hayward played defensive end for the Jacksonville Jaguars. A pass rusher with real NFL combine experience, he knows exactly what scouts look for and what separates a good athlete from one who gets noticed.</p>
+<div class="coach-focus">Coaching Focus: D-line, pass rushers, edge players</div>
+</div>
+<div class="coach-card reveal reveal-delay-3">
+<div class="coach-avatar">🏈</div>
+<div class="coach-nfl-tag">Former Jacksonville Jaguars · NFL Coach</div>
+<div class="coach-name">TONY GILBERT</div>
+<div class="coach-badges">
+<span>Jaguars 2003–06</span><span>Linebacker</span><span>NFL LB Coach</span>
+</div>
+<p class="coach-bio">Tony Gilbert played linebacker for the Jacksonville Jaguars (2003–2006) and later returned as their inside linebackers coach (2020–2023). He brings both playing and coaching credentials at the highest level.</p>
+<div class="coach-focus gold-border">Coaching Focus: Linebackers, inside defenders, tackling technique</div>
+</div>
+</div>
+<p style="color:var(--muted);margin-top:28px;text-align:center;font-size:.95rem">More former Jaguars being announced — follow @the904combine</p>
+<div style="text-align:center;margin-top:20px"><a href="coaches.html" class="btn-secondary">Meet the Coaches →</a></div>
+</div>
+</section>
+
+<!-- SCHOOLS -->
+<section class="school-section section-pad">
+<div class="container">
+<p class="eyebrow reveal">Every School. Every County. One Combine.</p>
+<h2 class="reveal reveal-delay-1" style="font-size:clamp(2.5rem,5vw,4.5rem)">IF YOU GO HERE, YOU <span style="color:var(--electric)">BELONG HERE.</span></h2>
+<p class="reveal reveal-delay-2" style="color:var(--muted);margin:16px 0 40px;max-width:600px">The 904 Combine is built for Northeast Florida — the First Coast.</p>
+
+<div class="county-block reveal">
+<div class="county-label duval">Duval County</div>
+<div class="school-chips">
+<span class="school-chip">Atlantic Coast</span><span class="school-chip">Sandalwood</span><span class="school-chip">Mandarin</span><span class="school-chip">Raines</span><span class="school-chip">Andrew Jackson</span><span class="school-chip">First Coast</span><span class="school-chip">Fletcher</span><span class="school-chip">Englewood</span><span class="school-chip">Ribault</span><span class="school-chip">Ed White</span><span class="school-chip">Westside</span><span class="school-chip">Paxon</span><span class="school-chip">Bolles</span><span class="school-chip">Episcopal</span><span class="school-chip">Providence</span><span class="school-chip">Stanton</span><span class="school-chip">Oakleaf</span><span class="school-chip">Creekside</span><span class="school-chip">Bartram Trail</span><span class="school-chip">Parker</span><span class="school-chip">Jean Ribault</span><span class="school-chip">Wolfson</span>
+</div>
+</div>
+<div class="county-block reveal reveal-delay-1">
+<div class="county-label stjohns">St. Johns County</div>
+<div class="school-chips">
+<span class="school-chip">Ponte Vedra</span><span class="school-chip">Nease</span><span class="school-chip">Creekside</span><span class="school-chip">Beachside</span><span class="school-chip">St. Johns Country Day</span><span class="school-chip">Pedro Menendez</span><span class="school-chip">St. Augustine</span><span class="school-chip">Tocoi Creek</span>
+</div>
+</div>
+<div class="county-block reveal reveal-delay-2">
+<div class="county-label nassau">Nassau County</div>
+<div class="school-chips">
+<span class="school-chip">Yulee</span><span class="school-chip">Fernandina Beach</span><span class="school-chip">West Nassau</span><span class="school-chip">Hilliard</span><span class="school-chip">Bryceville</span>
+</div>
+</div>
+
+<div class="info-grid">
+<div class="info-card reveal">
+<h4 style="color:var(--electric)">First Coast Football</h4>
+<p>From the beaches to the Westside — every corner of the First Coast is represented. Duval, St. Johns, and Nassau athletes competing side by side.</p>
+</div>
+<div class="info-card reveal reveal-delay-1">
+<h4 style="color:var(--gold)">7v5 & 5v5 Competition</h4>
+<p>Skill-position competition evaluating the same things scouts watch: route running, coverage, QB reads, and football IQ.</p>
+</div>
+<div class="info-card reveal reveal-delay-2">
+<h4 style="color:var(--hot)">NFL Combine Testing</h4>
+<p>The same drills run at the NFL Scouting Combine — 40-yard dash, vertical jump, broad jump, bench press, pro agility — measured to precision.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- WHAT YOU GET -->
+<section class="section-pad" style="background:var(--dark)">
+<div class="container">
+<p class="eyebrow reveal">Your $60 Investment</p>
+<h2 class="reveal reveal-delay-1" style="font-size:clamp(2.5rem,5vw,4.5rem)">WHAT YOU GET FOR <span style="color:var(--electric)">$60</span></h2>
+<div class="wyg-grid">
+<div class="wyg-card reveal"><div class="wyg-icon">🏆</div><h4>Verified Results</h4><p>Official measurements, timed to the hundredth of a second by calibrated equipment.</p></div>
+<div class="wyg-card reveal reveal-delay-1"><div class="wyg-icon">📊</div><h4>Downloadable Metrics Card</h4><p>PDF results card formatted for recruiting profiles and coach submissions.</p></div>
+<div class="wyg-card reveal reveal-delay-2"><div class="wyg-icon">📱</div><h4>Social Graphic Template</h4><p>Shareable results graphic designed for Instagram, Twitter, and recruiting posts.</p></div>
+<div class="wyg-card reveal reveal-delay-3"><div class="wyg-icon">🗺️</div><h4>County Leaderboard Ranking</h4><p>Ranked vs. your peers across all three First Coast counties.</p></div>
+<div class="wyg-card reveal reveal-delay-4"><div class="wyg-icon">⚡</div><h4>Access to All 9 Stations</h4><p>Every event, one entry fee. No hidden costs, no station add-ons.</p></div>
+<div class="wyg-card reveal reveal-delay-5"><div class="wyg-icon">🎁</div><h4>Charitable Donation Receipt</h4><p>Tax-deductible 501(c)(3) receipt for your registration contribution.</p></div>
+</div>
+</div>
+</section>
+
+<!-- HOW WE MEASURE -->
+<section class="measure-section section-pad">
+<div class="container">
+<p class="eyebrow reveal">Measurement Standards</p>
+<h2 class="reveal reveal-delay-1" style="font-size:clamp(2.5rem,5vw,4.5rem)">HOW WE <span style="color:var(--electric)">MEASURE</span></h2>
+<div class="measure-grid">
+<div class="reveal">
+<p class="measure-text">Every station at The 904 Combine uses standardized equipment and measurement protocols aligned with NFL Scouting Combine methodology. Results are captured by trained staff and verified before posting to the official leaderboard.</p>
+<p class="measure-text" style="margin-top:16px">Your metrics card reflects real, verified data — the kind coaches and scouts trust.</p>
+</div>
+<table class="measure-table reveal reveal-delay-1">
+<thead><tr><th>Station</th><th>Timing Method</th><th>Unit</th></tr></thead>
+<tbody>
+<tr><td>40-Yard Dash</td><td>Laser-timed gate</td><td>Seconds (0.01s)</td></tr>
+<tr><td>Broad Jump</td><td>Tape measure</td><td>Feet & inches</td></tr>
+<tr><td>Vertical Jump</td><td>Vertec system</td><td>Inches</td></tr>
+<tr><td>Kicking Challenge</td><td>Point scoring</td><td>Composite score</td></tr>
+<tr><td>QB Accuracy</td><td>Point scoring</td><td>Points scored</td></tr>
+<tr><td>5-on-5 Drill</td><td>Composite</td><td>Composite score</td></tr>
+<tr><td>Mom-Son Tackle</td><td>Staff judged</td><td>Fun/viral moment</td></tr>
+<tr><td>Bench Press</td><td>Rep count</td><td>Reps @ 185lb</td></tr>
+<tr><td>Pro Agility</td><td>Hand-timed</td><td>Seconds</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+
+<!-- ELIGIBILITY -->
+<section class="section-pad" style="background:var(--black)">
+<div class="container">
+<p class="eyebrow reveal">Who Can Compete</p>
+<h2 class="reveal reveal-delay-1" style="font-size:clamp(2.5rem,5vw,4.5rem)"><span style="color:var(--electric)">ELIGIBILITY</span></h2>
+<div class="elig-grid">
+<div class="elig-card reveal"><div class="elig-icon">🎓</div><h4>Grades 9–12 Only</h4><p>Must be currently enrolled in high school.</p></div>
+<div class="elig-card reveal reveal-delay-1"><div class="elig-icon">🗺️</div><h4>Three Counties Welcome</h4><p>Duval, St. Johns, and Nassau County schools.</p></div>
+<div class="elig-card reveal reveal-delay-2"><div class="elig-icon">🏃</div><h4>Any Sport</h4><p>Football, basketball, soccer, track — all athletes welcome.</p></div>
+<div class="elig-card reveal reveal-delay-3"><div class="elig-icon">🏈</div><h4>Football-Forward</h4><p>NFL combine-style testing with football at the center.</p></div>
+</div>
+<p class="reveal" style="color:var(--muted);text-align:center;margin-top:24px;font-size:.88rem">Parental consent required for athletes under 18.</p>
+</div>
+</section>
+
+<!-- SCHEDULE -->
+<section class="schedule-section section-pad">
+<div class="container">
+<p class="eyebrow reveal">Event Day</p>
+<h2 class="reveal reveal-delay-1" style="font-size:clamp(2.5rem,5vw,4.5rem)"><span style="color:var(--electric)">SCHEDULE</span></h2>
+<div class="timeline">
+<div class="timeline-item reveal"><div class="timeline-time">8:00 AM</div><div class="timeline-event"><h4>Check-In & Registration</h4><p>Arrive, register, get your athlete number and station map.</p></div></div>
+<div class="timeline-item reveal reveal-delay-1"><div class="timeline-time">8:45 AM</div><div class="timeline-event"><h4>Opening Ceremony</h4><p>Coach introductions, safety briefing, and welcome from event organizers.</p></div></div>
+<div class="timeline-item reveal reveal-delay-1"><div class="timeline-time">9:15 AM</div><div class="timeline-event"><h4>Station Block 1 — Speed & Power</h4><p>40-yard dash, vertical jump, broad jump, bench press.</p></div></div>
+<div class="timeline-item reveal reveal-delay-2"><div class="timeline-time">11:30 AM</div><div class="timeline-event"><h4>Station Block 2 — Skill Events</h4><p>QB accuracy, kicking challenge, 5v5 competition, pro agility shuttle.</p></div></div>
+<div class="timeline-item reveal reveal-delay-2"><div class="timeline-time">1:30 PM</div><div class="timeline-event"><h4>Mom Tackle Challenge</h4><p>Son stationary at high jump pit, mom runs the tackle. Full safety gear provided.</p></div></div>
+<div class="timeline-item reveal reveal-delay-3"><div class="timeline-time">2:30 PM</div><div class="timeline-event"><h4>Awards Ceremony</h4><p>"Fastest in the 904 Presented by ___" — county and overall winners announced.</p></div></div>
+<div class="timeline-item reveal reveal-delay-3"><div class="timeline-time">3:30 PM</div><div class="timeline-event"><h4>Wrap-Up</h4><p>Metrics cards distributed. Results posted to leaderboard.</p></div></div>
+</div>
+</div>
+</section>
+
+<!-- SPONSOR PREVIEW -->
+<section class="sponsor-section section-pad">
+<div class="container">
+<p class="eyebrow reveal">Partner With Us</p>
+<h2 class="reveal reveal-delay-1" style="font-size:clamp(2.5rem,5vw,4.5rem)">BECOME A <span style="color:var(--electric)">SPONSOR</span></h2>
+<table class="sponsor-table reveal reveal-delay-2">
+<thead><tr><th>Tier</th><th>Title $2,500</th><th>Station $1,000</th><th>Mom Tackle $750</th><th>Leaderboard $600</th><th>Community $500</th></tr></thead>
+<tbody>
+<tr><td>Event Naming</td><td style="color:var(--gold)">✅</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+<tr><td>Station Naming</td><td>Your choice</td><td>Exclusive</td><td>—</td><td>—</td><td>—</td></tr>
+<tr><td>Leaderboards</td><td style="color:var(--gold)">✅</td><td>—</td><td>—</td><td style="color:var(--electric)">✅</td><td style="color:var(--electric)">✅</td></tr>
+<tr><td>Booth Space</td><td>Premium</td><td>Yes</td><td>Yes</td><td>Standard</td><td>Standard</td></tr>
+</tbody>
+</table>
+<div style="text-align:center;margin-top:36px" class="reveal reveal-delay-3"><a href="sponsors.html" class="btn-secondary">View All Packages →</a></div>
+</div>
+</section>
+
+<!-- BOOSTER CLUB -->
+<section class="booster-section section-pad">
+<div class="container">
+<p class="eyebrow reveal">Where the Money Goes</p>
+<h2 class="reveal reveal-delay-1" style="font-size:clamp(2.5rem,5vw,4.5rem)">100% TO <span style="color:var(--electric)">CHARITY</span></h2>
+<div class="booster-grid">
+<div class="reveal">
+<p class="booster-text">Every dollar raised by The 904 Combine goes directly to the Atlantic Coast Stingray Boosters Club — a registered 501(c)(3) nonprofit supporting student athletes at Atlantic Coast High School.</p>
+<p class="booster-text" style="margin-top:16px">Your registration isn't just a ticket to compete. It's a tax-deductible contribution that directly funds equipment, travel, facility improvements, and athletic opportunity for First Coast student athletes.</p>
+<div class="c3-badge">501(c)(3) Nonprofit</div>
+</div>
+<ul class="impact-list reveal reveal-delay-1">
+<li><span>⚡</span> Athletic Equipment & Uniforms</li>
+<li><span>⚡</span> Travel & Competition Access</li>
+<li><span>⚡</span> Facility Improvements</li>
+</ul>
+</div>
+</div>
+</section>
+
+<!-- REFUND & RAIN -->
+<section class="section-pad" style="background:var(--dark)">
+<div class="container">
+<p class="eyebrow reveal">Policies</p>
+<h2 class="reveal reveal-delay-1" style="font-size:clamp(2rem,4vw,3rem)">REFUND & <span style="color:var(--electric)">RAIN PLAN</span></h2>
+<div class="refund-grid">
+<div class="refund-card reveal">
+<h4>Refund Policy</h4>
+<p>Registrations are non-refundable as they are processed as 501(c)(3) charitable contributions.</p>
+<p>Athlete name transfer is allowed up to 72 hours before the event — contact us directly to arrange.</p>
+</div>
+<div class="refund-card reveal reveal-delay-1">
+<h4>Rain Plan</h4>
+<p><strong style="color:var(--electric)">Light Rain:</strong> Event proceeds as scheduled.</p>
+<p><strong style="color:var(--gold)">Heavy Rain / Lightning:</strong> 30-minute delay protocol.</p>
+<p><strong style="color:var(--hot)">Severe Weather:</strong> Full reschedule within 60 days, no extra charge.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+<div class="container">
+<h2>DON'T JUST TRAIN.<br>GET EVALUATED.</h2>
+<p>Get on the same field as former Jacksonville Jaguars coaches. Get your numbers. Get your ranking.</p>
+<div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
+<a href="registration.html" class="btn-primary">Register Now — $60</a>
+<a href="stations.html" class="btn-secondary">See All Stations →</a>
+</div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+<div class="container">
+<div class="footer-top">
+<div class="nav-logo" style="font-size:1.5rem">THE <span style="color:var(--electric)">904</span> COMBINE</div>
+<div class="footer-links">
+<a href="coaches.html">Coaches</a>
+<a href="stations.html">Stations</a>
+<a href="registration.html">Register</a>
+<a href="sponsors.html">Sponsors</a>
+<a href="mom-tackle.html">Mom Tackle</a>
+<a href="leaderboard.html">Leaderboard</a>
+<a href="about.html">About</a>
+<a href="faq.html">FAQ</a>
+<a href="contact.html">Contact</a>
+</div>
+</div>
+<p class="footer-disclaimer">The 904 Combine is not affiliated with the Jacksonville Jaguars NFL franchise. Coaching staff consists of retired former Jaguars players participating independently.</p>
+<p class="footer-disclaimer">Atlantic Coast High School · 9735 R.G. Skinner Pkwy · Jacksonville, FL 32256</p>
+<div class="footer-bottom">
+<span>Proceeds benefit the Stingray Boosters Club, a registered 501(c)(3) nonprofit.</span>
+<span>© 2025 The 904 Combine. All rights reserved.</span>
+</div>
+</div>
+</footer>
+
+<script>
+function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open')}
+
+// Scroll reveal
+const obs=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}})},{threshold:0.1});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+
+// Count-up
+const countObs=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){const el=e.target;const target=parseInt(el.dataset.count);let current=0;const step=Math.max(1,Math.floor(target/60));const timer=setInterval(()=>{current+=step;if(current>=target){current=target;clearInterval(timer)}el.textContent=current},20);countObs.unobserve(el)}})},{threshold:0.5});
+document.querySelectorAll('[data-count]').forEach(el=>countObs.observe(el));
+
+// Parallax
+window.addEventListener('scroll',()=>{const s=window.scrollY;const bg=document.querySelector('.hero-bg');const content=document.querySelector('.hero-content');if(bg)bg.style.transform=`translateY(${s*0.3}px)`;if(content&&s<window.innerHeight)content.style.transform=`translateY(${s*0.1}px)`});
+</script>
+</body>
+</html>

@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stations | The 904 Combine | Jacksonville Football Combine</title>
+<meta name="description" content="9 NFL combine-style stations coached by former Jacksonville Jaguars. 40-yard dash, vertical, broad jump, QB accuracy, 5v5, kicking & more.">
+<meta property="og:title" content="Stations | The 904 Combine | Jacksonville Football Combine">
+<meta property="og:description" content="9 NFL combine-style stations coached by former Jacksonville Jaguars. 40-yard dash, vertical, broad jump, QB accuracy, 5v5, kicking & more.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://the904combine.com/stations">
+<link rel="canonical" href="https://the904combine.com/stations">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700;800&family=Barlow:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+--black:#0a0a0f;--dark:#0d0d14;--card:#13131f;
+--border:rgba(255,255,255,0.08);--electric:#00f0ff;--gold:#ffd700;--hot:#ff3c00;
+--white:#ffffff;--muted:rgba(255,255,255,0.55);
+}
+html{scroll-behavior:smooth}
+body{background:var(--black);color:var(--white);font-family:'Barlow',sans-serif;font-weight:400;line-height:1.8;overflow-x:hidden}
+h1,h2,h3,h4{font-family:'Barlow Condensed',sans-serif;font-weight:800;text-transform:uppercase;line-height:.95}
+a{color:var(--electric);text-decoration:none}
+.container{max-width:1200px;margin:0 auto;padding:0 24px}
+.eyebrow{font-family:'Barlow',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.2em;color:var(--electric);font-size:.85rem;margin-bottom:12px}
+.clip{clip-path:polygon(0 0,calc(100% - 20px) 0,100% 20px,100% 100%,20px 100%,0 calc(100% - 20px))}
+.btn-primary{display:inline-block;background:var(--electric);color:var(--black);font-family:'Barlow Condensed',sans-serif;font-weight:800;text-transform:uppercase;padding:16px 36px;font-size:1.05rem;letter-spacing:.05em;clip-path:polygon(0 0,calc(100% - 14px) 0,100% 14px,100% 100%,14px 100%,0 calc(100% - 14px));transition:transform .3s,box-shadow .3s;cursor:pointer;border:none}
+.btn-primary:hover{transform:scale(1.03);box-shadow:0 0 20px rgba(0,240,255,.4)}
+.btn-secondary{display:inline-block;background:transparent;color:var(--white);font-family:'Barlow Condensed',sans-serif;font-weight:800;text-transform:uppercase;padding:16px 36px;font-size:1.05rem;letter-spacing:.05em;border:1px solid rgba(255,255,255,.2);clip-path:polygon(0 0,calc(100% - 14px) 0,100% 14px,100% 100%,14px 100%,0 calc(100% - 14px));transition:border-color .3s;cursor:pointer}
+.btn-secondary:hover{border-color:var(--electric)}
+.section-pad{padding:100px 0}
+/* Scroll animation */
+.reveal{opacity:1;transform:translateY(0);transition:opacity .6s ease-out,transform .6s ease-out}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.reveal-delay-1{transition-delay:.1s}.reveal-delay-2{transition-delay:.2s}.reveal-delay-3{transition-delay:.3s}.reveal-delay-4{transition-delay:.4s}.reveal-delay-5{transition-delay:.5s}.reveal-delay-6{transition-delay:.6s}.reveal-delay-7{transition-delay:.7s}.reveal-delay-8{transition-delay:.8s}.reveal-delay-9{transition-delay:.9s}
+
+/* NAV */
+nav{position:sticky;top:0;width:100%;height:64px;background:rgba(10,10,15,.92);backdrop-filter:blur(12px);z-index:1000;display:flex;align-items:center;border-bottom:1px solid var(--border)}
+.nav-inner{max-width:1200px;margin:0 auto;padding:0 24px;width:100%;display:flex;align-items:center;justify-content:space-between}
+.nav-logo{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.3rem;text-transform:uppercase;color:var(--white);letter-spacing:.05em}
+.nav-logo span{color:var(--electric)}
+.nav-links{display:flex;align-items:center;gap:24px}
+.nav-links a{color:var(--muted);font-family:'Barlow',sans-serif;font-weight:600;font-size:.88rem;text-transform:uppercase;letter-spacing:.06em;transition:color .2s}
+.nav-links a:hover,.nav-links a.active{color:var(--electric)}
+.nav-links .nav-cta{background:var(--electric);color:var(--black);padding:8px 20px;font-weight:800;clip-path:polygon(0 0,calc(100% - 10px) 0,100% 10px,100% 100%,10px 100%,0 calc(100% - 10px))}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;z-index:1001}
+.hamburger span{width:26px;height:2px;background:var(--white);transition:transform .3s,opacity .3s}
+.mobile-menu{position:absolute;top:0;right:-100%;width:100%;height:100%;background:var(--black);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:28px;transition:right .4s ease;z-index:999}
+.mobile-menu.open{right:0}
+.mobile-menu a{color:var(--white);font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.8rem;text-transform:uppercase}
+
+@media(max-width:900px){
+.nav-links{display:none}
+.hamburger{display:flex}
+}
+
+/* HERO */
+.hero{position:relative;min-height:800px;display:flex;align-items:center;overflow:hidden;padding-top:64px}
+.hero-bg{position:absolute;inset:0;z-index:0}
+.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(0,240,255,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(0,240,255,.06) 1px,transparent 1px);background-size:60px 60px;animation:gridPulse 4s ease-in-out infinite}
+@keyframes gridPulse{0%,100%{opacity:.05}50%{opacity:.1}}
+.hero-scanlines{position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(255,255,255,.03) 2px,rgba(255,255,255,.03) 3px);pointer-events:none}
+.hero-gradient{position:absolute;inset:0;background:radial-gradient(ellipse at 20% 50%,rgba(0,240,255,.12) 0%,transparent 60%),radial-gradient(ellipse at 80% 40%,rgba(255,215,0,.06) 0%,transparent 50%)}
+.hero-content{position:relative;z-index:1;max-width:900px;margin:0 auto;padding:0 24px;text-align:center}
+.hero h1{font-size:clamp(4rem,9vw,8rem);margin-bottom:24px}
+.hero h1 .electric{color:var(--electric);text-shadow:0 0 40px rgba(0,240,255,.3);animation:glowPulse 3s ease-in-out infinite}
+@keyframes glowPulse{0%,100%{text-shadow:0 0 40px rgba(0,240,255,.3)}50%{text-shadow:0 0 60px rgba(0,240,255,.5)}}
+.hero-sub{font-size:1.15rem;color:var(--muted);max-width:650px;margin:0 auto 32px;line-height:1.8}
+.badges{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-bottom:36px}
+.badge{padding:8px 18px;border:1px solid var(--border);color:var(--muted);font-size:.8rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;clip-path:polygon(0 0,calc(100% - 8px) 0,100% 8px,100% 100%,8px 100%,0 calc(100% - 8px))}
+.hero-btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+
+/* STAT BAR */
+.stat-bar{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border);border-top:1px solid var(--border);border-bottom:1px solid var(--border);margin-top:80px}
+.stat-item{background:var(--dark);text-align:center;padding:32px 16px}
+.stat-num{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:2.8rem;color:var(--electric)}
+.stat-label{color:var(--muted);font-size:.85rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em}
+@media(max-width:600px){.stat-bar{grid-template-columns:repeat(2,1fr)}}
+
+/* STATIONS GRID */
+.stations-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px}
+@media(max-width:1024px){.stations-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.stations-grid{grid-template-columns:1fr}}
+.station-card{background:var(--card);border:1px solid var(--border);padding:32px;clip-path:polygon(0 0,calc(100% - 16px) 0,100% 16px,100% 100%,16px 100%,0 calc(100% - 16px));transition:border-color .3s,transform .3s}
+.station-card:hover{border-color:rgba(0,240,255,.3);transform:translateY(-5px)}
+.station-emoji{font-size:2.2rem;margin-bottom:12px;display:block}
+.station-card h3{font-family:'Barlow Condensed',sans-serif;font-weight:800;text-transform:uppercase;font-size:1.2rem;margin-bottom:12px;color:var(--white)}
+.station-detail{font-size:.85rem;color:var(--muted);line-height:1.6;margin-bottom:16px}
+.station-label{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--electric);margin-bottom:4px}
+.station-value{font-size:.9rem;color:var(--white);font-weight:600}
+.station-desc{font-size:.85rem;color:var(--muted);margin-top:12px;line-height:1.6}
+
+/* MEASUREMENT TABLE */
+.measure-section{background:var(--dark)}
+.measure-grid{display:grid;grid-template-columns:1fr 1.3fr;gap:48px;margin-top:48px;align-items:start}
+@media(max-width:768px){.measure-grid{grid-template-columns:1fr}}
+.measure-text{color:var(--muted);font-size:.95rem;line-height:1.8}
+.measure-table{width:100%;border-collapse:collapse}
+.measure-table th,.measure-table td{padding:12px 16px;text-align:left;border-bottom:1px solid var(--border);font-size:.85rem}
+.measure-table th{color:var(--electric);font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:.75rem}
+.measure-table td{color:var(--muted)}
+.measure-table td:first-child{color:var(--white);font-weight:600}
+
+/* FINAL CTA */
+.final-cta{background:var(--electric);padding:100px 0;text-align:center;clip-path:polygon(0 30px,100% 0,100% calc(100% - 30px),0 100%);margin:40px 0 0}
+.final-cta h2{color:var(--black);font-size:clamp(2rem,5vw,3.5rem);margin-bottom:16px}
+.final-cta p{color:rgba(10,10,15,.7);max-width:600px;margin:0 auto 32px;font-size:1rem}
+.final-cta .btn-primary{background:var(--black);color:var(--electric)}
+.final-cta .btn-primary:hover{box-shadow:0 0 20px rgba(10,10,15,.4)}
+.final-cta .btn-secondary{border-color:rgba(10,10,15,.3);color:var(--black)}
+.final-cta .btn-secondary:hover{border-color:var(--black)}
+
+/* FOOTER */
+footer{background:var(--dark);border-top:1px solid var(--border);padding:60px 0 40px}
+.footer-top{display:flex;justify-content:space-between;align-items:start;flex-wrap:wrap;gap:32px;margin-bottom:40px}
+.footer-links{display:flex;flex-wrap:wrap;gap:20px}
+.footer-links a{color:var(--muted);font-size:.85rem;font-weight:600;text-transform:uppercase;letter-spacing:.06em;transition:color .2s}
+.footer-links a:hover{color:var(--electric)}
+.footer-disclaimer{color:rgba(255,255,255,.35);font-size:.78rem;line-height:1.6;max-width:800px;margin-bottom:16px}
+.footer-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;padding-top:24px;border-top:1px solid var(--border)}
+.footer-bottom span{color:rgba(255,255,255,.3);font-size:.78rem}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+<div class="nav-inner">
+<a href="index.html" class="nav-logo">THE <span>904</span> COMBINE</a>
+<div class="nav-links">
+<a href="stations.html" class="active">Stations</a>
+<a href="coaches.html">Coaches</a>
+<a href="registration.html">Register</a>
+<a href="sponsors.html">Sponsors</a>
+<a href="mom-tackle.html">Mom Tackle</a>
+<a href="leaderboard.html">Leaderboard</a>
+<a href="about.html">About</a>
+<a href="registration.html" class="nav-cta">Register Now</a>
+</div>
+<div class="hamburger" onclick="toggleMenu()">
+<span></span><span></span><span></span>
+</div>
+</div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+<a href="stations.html" onclick="toggleMenu()">Stations</a>
+<a href="coaches.html" onclick="toggleMenu()">Coaches</a>
+<a href="registration.html" onclick="toggleMenu()">Register</a>
+<a href="sponsors.html" onclick="toggleMenu()">Sponsors</a>
+<a href="mom-tackle.html" onclick="toggleMenu()">Mom Tackle</a>
+<a href="leaderboard.html" onclick="toggleMenu()">Leaderboard</a>
+<a href="about.html" onclick="toggleMenu()">About</a>
+<a href="faq.html" onclick="toggleMenu()">FAQ</a>
+<a href="contact.html" onclick="toggleMenu()">Contact</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+<div class="hero-bg">
+<div class="hero-grid"></div>
+<div class="hero-scanlines"></div>
+<div class="hero-gradient"></div>
+</div>
+<div class="hero-content">
+<p class="eyebrow reveal">9 Official Skill Stations</p>
+<h1 class="reveal reveal-delay-1">PROVE WHAT<br><span class="electric">YOU'RE MADE OF</span></h1>
+<p class="hero-sub reveal reveal-delay-2">NFL combine-style testing coached by former Jacksonville Jaguars. Laser-timed gates, Vertec systems, and official measurements. Get ranked across the First Coast with verified results scouts trust.</p>
+<div class="hero-btns reveal reveal-delay-3">
+<a href="registration.html" class="btn-primary">Register $60 All Stations</a>
+</div>
+</div>
+</section>
+
+<!-- STAT BAR -->
+<div class="stat-bar">
+<div class="stat-item reveal"><div class="stat-num">9</div><div class="stat-label">Stations</div></div>
+<div class="stat-item reveal reveal-delay-1"><div class="stat-num">0.01<span style="font-size:.7em">s</span></div><div class="stat-label">Timing Precision</div></div>
+<div class="stat-item reveal reveal-delay-2"><div class="stat-num">2–3</div><div class="stat-label">Attempts Per Event</div></div>
+<div class="stat-item reveal reveal-delay-3"><div class="stat-num">✓</div><div class="stat-label">Official Results</div></div>
+</div>
+
+<!-- STATIONS SECTION -->
+<section class="section-pad" style="background:var(--black)">
+<div class="container">
+<p class="eyebrow reveal">Complete Station Breakdown</p>
+<h2 class="reveal reveal-delay-1" style="font-size:clamp(2.5rem,5vw,4.5rem)">9 STATIONS. <span style="color:var(--electric)">ONE DAY.</span> REAL <span style="color:var(--gold)">RESULTS.</span></h2>
+<div class="stations-grid">
+
+<!-- Station 1: 40-Yard Dash -->
+<div class="station-card reveal">
+<span class="station-emoji">⚡</span>
+<h3>40-Yard Dash</h3>
+<div style="border-bottom:1px solid var(--border);padding-bottom:16px;margin-bottom:16px">
+<div class="station-label">Equipment</div>
+<div class="station-value">Laser-timed gate</div>
+<div class="station-label" style="margin-top:8px">Attempts</div>
+<div class="station-value">2</div>
+<div class="station-label" style="margin-top:8px">Measurement</div>
+<div class="station-value">Seconds (0.01s)</div>
+</div>
+<p class="station-desc">Scouts see your top-end speed and explosiveness off the line. This is the most-watched drill in football.</p>
+</div>
+
+<!-- Station 2: Vertical Jump -->
+<div class="station-card reveal reveal-delay-1">
+<span class="station-emoji">🏀</span>
+<h3>Vertical Jump</h3>
+<div style="border-bottom:1px solid var(--border);padding-bottom:16px;margin-bottom:16px">
+<div class="station-label">Equipment</div>
+<div class="station-value">Vertec system</div>
+<div class="station-label" style="margin-top:8px">Attempts</div>
+<div class="station-value">3</div>
+<div class="station-label" style="margin-top:8px">Measurement</div>
+<div class="station-value">Inches</div>
+</div>
+<p class="station-desc">Scouts see your lower-body explosion and vertical athleticism — critical for any position needing vertical power.</p>
+</div>
+
+<!-- Station 3: Broad Jump -->
+<div class="station-card reveal reveal-delay-2">
+<span class="station-emoji">📏</span>
+<h3>Broad Jump</h3>
+<div style="border-bottom:1px solid var(--border);padding-bottom:16px;margin-bottom:16px">
+<div class="station-label">Equipment</div>
+<div class="station-value">Tape measure</div>
+<div class="station-label" style="margin-top:8px">Attempts</div>
+<div class="station-value">3</div>
+<div class="station-label" style="margin-top:8px">Measurement</div>
+<div class="station-value">Feet & inches</div>
+</div>
+<p class="station-desc">Scouts see your horizontal power and body control. A single jump defines your explosiveness in one number.</p>
+</div>
+
+<!-- Station 4: Pro Agility Shuttle -->
+<div class="station-card reveal reveal-delay-3">
+<span class="station-emoji">🔄</span>
+<h3>Pro Agility (5-10-5 Shuttle)</h3>
+<div style="border-bottom:1px solid var(--border);padding-bottom:16px;margin-bottom:16px">
+<div class="station-label">Equipment</div>
+<div class="station-value">Hand-timed</div>
+<div class="station-label" style="margin-top:8px">Attempts</div>
+<div class="station-value">2</div>
+<div class="station-label" style="margin-top:8px">Measurement</div>
+<div class="station-value">Seconds</div>
+</div>
+<p class="station-desc">Scouts see your lateral quickness and body control. Essential for DBs, linebackers, and skill-position players.</p>
+</div>
+
+<!-- Station 5: Bench Press -->
+<div class="station-card reveal reveal-delay-4">
+<span class="station-emoji">💪</span>
+<h3>Bench Press</h3>
+<div style="border-bottom:1px solid var(--border);padding-bottom:16px;margin-bottom:16px">
+<div class="station-label">Equipment</div>
+<div class="station-value">45lb bar + 185lb load</div>
+<div class="station-label" style="margin-top:8px">Attempts</div>
+<div class="station-value">1 set max reps</div>
+<div class="station-label" style="margin-top:8px">Measurement</div>
+<div class="station-value">Rep count</div>
+</div>
+<p class="station-desc">Scouts see your upper-body strength and endurance. Critical for linemen and any position requiring press strength.</p>
+</div>
+
+<!-- Station 6: QB Accuracy Challenge -->
+<div class="station-card reveal reveal-delay-5">
+<span class="station-emoji">🏈</span>
+<h3>QB Accuracy Challenge</h3>
+<div style="border-bottom:1px solid var(--border);padding-bottom:16px;margin-bottom:16px">
+<div class="station-label">Setup</div>
+<div class="station-value">Targets at 5/10/15/20 yards</div>
+<div class="station-label" style="margin-top:8px">Attempts</div>
+<div class="station-value">1 round</div>
+<div class="station-label" style="margin-top:8px">Measurement</div>
+<div class="station-value">Points scored</div>
+</div>
+<p class="station-desc">Scouts see your arm accuracy, consistency, and decision-making under pressure. QBs and skill-position players benefit most.</p>
+</div>
+
+<!-- Station 7: Kicking Challenge -->
+<div class="station-card reveal reveal-delay-6">
+<span class="station-emoji">🦵</span>
+<h3>Kicking Challenge</h3>
+<div style="border-bottom:1px solid var(--border);padding-bottom:16px;margin-bottom:16px">
+<div class="station-label">Setup</div>
+<div class="station-value">Field goals increasing distance</div>
+<div class="station-label" style="margin-top:8px">Attempts</div>
+<div class="station-value">1 round</div>
+<div class="station-label" style="margin-top:8px">Measurement</div>
+<div class="station-value">Composite score</div>
+</div>
+<p class="station-desc">Scouts see your leg power, consistency, and range. Kickers and punters showcase their specialization here.</p>
+</div>
+
+<!-- Station 8: 5v5 Competition -->
+<div class="station-card reveal reveal-delay-7">
+<span class="station-emoji">⚔️</span>
+<h3>5-on-5 Competition</h3>
+<div style="border-bottom:1px solid var(--border);padding-bottom:16px;margin-bottom:16px">
+<div class="station-label">Setup</div>
+<div class="station-value">No-contact pass competition</div>
+<div class="station-label" style="margin-top:8px">Attempts</div>
+<div class="station-value">1 round multiple plays</div>
+<div class="station-label" style="margin-top:8px">Measurement</div>
+<div class="station-value">Composite score</div>
+</div>
+<p class="station-desc">Scouts see your football IQ, game awareness, and competitive fire. This is where real football happens.</p>
+</div>
+
+<!-- Station 9: Mom-Son Tackle Challenge -->
+<div class="station-card reveal reveal-delay-8">
+<span class="station-emoji">❤️</span>
+<h3>Mom-Son Tackle Challenge</h3>
+<div style="border-bottom:1px solid var(--border);padding-bottom:16px;margin-bottom:16px">
+<div class="station-label">Setup</div>
+<div class="station-value">Son stationary, mom runs the tackle</div>
+<div class="station-label" style="margin-top:8px">Attempts</div>
+<div class="station-value">1 run</div>
+<div class="station-label" style="margin-top:8px">Measurement</div>
+<div class="station-value">Fun/viral moment</div>
+</div>
+<p class="station-desc">The most fun moment of the day. Your mom in full safety gear drives a live tackle. Guaranteed to be legendary. <strong>$20 add-on.</strong> <a href="registration.html" style="color:var(--gold)">Register now →</a></p>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- HOW WE MEASURE -->
+<section class="measure-section section-pad">
+<div class="container">
+<p class="eyebrow reveal">Measurement Standards</p>
+<h2 class="reveal reveal-delay-1" style="font-size:clamp(2.5rem,5vw,4.5rem)">HOW WE <span style="color:var(--electric)">MEASURE</span></h2>
+<div class="measure-grid">
+<div class="reveal">
+<p class="measure-text">Every station at The 904 Combine uses standardized equipment and measurement protocols aligned with NFL Scouting Combine methodology. Results are captured by trained staff and verified before posting to the official leaderboard.</p>
+<p class="measure-text" style="margin-top:16px">Your metrics card reflects real, verified data — the kind coaches and scouts trust.</p>
+</div>
+<table class="measure-table reveal reveal-delay-1">
+<thead><tr><th>Station</th><th>Timing Method</th><th>Unit</th></tr></thead>
+<tbody>
+<tr><td>40-Yard Dash</td><td>Laser-timed gate</td><td>Seconds (0.01s)</td></tr>
+<tr><td>Vertical Jump</td><td>Vertec system</td><td>Inches</td></tr>
+<tr><td>Broad Jump</td><td>Tape measure</td><td>Feet & inches</td></tr>
+<tr><td>Pro Agility Shuttle</td><td>Hand-timed</td><td>Seconds</td></tr>
+<tr><td>Bench Press</td><td>Rep count</td><td>Reps @ 185lb</td></tr>
+<tr><td>QB Accuracy</td><td>Point scoring</td><td>Points scored</td></tr>
+<tr><td>Kicking Challenge</td><td>Point scoring</td><td>Composite score</td></tr>
+<tr><td>5-on-5 Drill</td><td>Composite</td><td>Composite score</td></tr>
+<tr><td>Mom-Son Tackle</td><td>Staff judged</td><td>Fun/viral moment</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+<div class="container">
+<h2>ALL STATIONS. ONE DAY.<br>$60 ALL-IN.</h2>
+<p>Get on the same field as former Jacksonville Jaguars coaches. Run every event. Get your numbers. Get your ranking.</p>
+<div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
+<a href="registration.html" class="btn-primary">Register $60 All Stations</a>
+<a href="index.html" class="btn-secondary">Back to Home →</a>
+</div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+<div class="container">
+<div class="footer-top">
+<div class="nav-logo" style="font-size:1.5rem">THE <span style="color:var(--electric)">904</span> COMBINE</div>
+<div class="footer-links">
+<a href="coaches.html">Coaches</a>
+<a href="stations.html">Stations</a>
+<a href="registration.html">Register</a>
+<a href="sponsors.html">Sponsors</a>
+<a href="mom-tackle.html">Mom Tackle</a>
+<a href="leaderboard.html">Leaderboard</a>
+<a href="about.html">About</a>
+<a href="faq.html">FAQ</a>
+<a href="contact.html">Contact</a>
+</div>
+</div>
+<p class="footer-disclaimer">The 904 Combine is not affiliated with the Jacksonville Jaguars NFL franchise. Coaching staff consists of retired former Jaguars players participating independently.</p>
+<p class="footer-disclaimer">Atlantic Coast High School · 9735 R.G. Skinner Pkwy · Jacksonville, FL 32256</p>
+<div class="footer-bottom">
+<span>Proceeds benefit the Stingray Boosters Club, a registered 501(c)(3) nonprofit.</span>
+<span>© 2025 The 904 Combine. All rights reserved.</span>
+</div>
+</div>
+</footer>
+
+<script>
+function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open')}
+
+// Scroll reveal
+const obs=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}})},{threshold:0.1});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+
+// Parallax
+window.addEventListener('scroll',()=>{const s=window.scrollY;const bg=document.querySelector('.hero-bg');const content=document.querySelector('.hero-content');if(bg)bg.style.transform=`translateY(${s*0.3}px)`;if(content&&s<window.innerHeight)content.style.transform=`translateY(${s*0.1}px)`});
+</script>
+</body>
+</html>
