@@ -168,19 +168,19 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:60px 0 
 <div class="contact-card">
 <h4>General Questions</h4>
 <div class="contact-card-label">Email</div>
-<a href="mailto:info@the904combine.com" class="contact-card-email">info@the904combine.com</a>
+<a href="mailto:info@904combine.com" class="contact-card-email">info@904combine.com</a>
 <div class="contact-card-response"><strong>Response:</strong><br>Within 48 hours</div>
 </div>
 <div class="contact-card">
 <h4>Sponsorship Inquiries</h4>
 <div class="contact-card-label">Email</div>
-<a href="mailto:sponsors@the904combine.com" class="contact-card-email">info@the904combine.com</a>
+<a href="mailto:info@904combine.com" class="contact-card-email">info@904combine.com</a>
 <div class="contact-card-response"><strong>Response:</strong><br>Within 24 hours</div>
 </div>
 <div class="contact-card">
 <h4>Media & Press</h4>
 <div class="contact-card-label">Email</div>
-<a href="mailto:press@the904combine.com" class="contact-card-email">info@the904combine.com</a>
+<a href="mailto:info@904combine.com" class="contact-card-email">info@904combine.com</a>
 <div class="contact-card-response"><strong>Response:</strong><br>Within 24 hours</div>
 </div>
 </div>
@@ -193,7 +193,9 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:60px 0 
 <p class="eyebrow reveal" style="text-align:center">Send us a Message</p>
 <h2 class="reveal reveal-delay-1" style="text-align:center;font-size:2.2rem;margin-bottom:36px">Quick <span style="color:var(--electric)">CONTACT FORM</span></h2>
 
-<form id="contactForm" class="reveal reveal-delay-2">
+<form id="contactForm" class="reveal reveal-delay-2" action="https://formspree.io/f/info@904combine.com" method="POST">
+<input type="hidden" name="_next" value="https://904combine.com/contact.html?sent=1">
+<input type="hidden" name="_subject" value="New Contact Form Submission - 904 Combine">
 <div class="form-row">
 <div class="form-group">
 <label for="name" class="form-required">Name</label>
@@ -298,36 +300,12 @@ function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('op
 const obs=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}})},{threshold:0.1});
 document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
 
-// Form handling
-document.getElementById('contactForm').addEventListener('submit',function(e){
-e.preventDefault();
-const formData=new FormData(this);
-const name=formData.get('name');
-const email=formData.get('email');
-const phone=formData.get('phone');
-const inquiry=formData.get('inquiry');
-const message=formData.get('message');
-
-// Build email subject based on inquiry type
-let subject='';
-const inquiryType=inquiry.charAt(0).toUpperCase()+inquiry.slice(1);
-switch(inquiry){
-case 'general':subject='General Inquiry from '+name;break;
-case 'registration':subject='Registration Question from '+name;break;
-case 'sponsorship':subject='Sponsorship Inquiry from '+name;break;
-case 'media':subject='Media Inquiry from '+name;break;
-case 'other':subject='Contact Form Submission from '+name;break;
+// Show thank-you message if redirected back after form submission
+if(window.location.search.includes('sent=1')){
+const form=document.getElementById('contactForm');
+form.innerHTML='<div style="text-align:center;padding:60px 20px"><h3 style="color:var(--electric);margin-bottom:16px">MESSAGE SENT!</h3><p style="color:var(--muted)">Thanks for reaching out. We\'ll get back to you shortly.</p></div>';
+form.classList.add('visible');
 }
-
-// Route to appropriate email based on inquiry type
-let toEmail='info@the904combine.com';
-if(inquiry==='sponsorship')toEmail='sponsors@the904combine.com';
-else if(inquiry==='media')toEmail='press@the904combine.com';
-
-const mailtoLink=`mailto:${toEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nInquiry Type: ${inquiryType}\n\nMessage:\n${message}`)}`;
-
-window.location.href=mailtoLink;
-});
 
 // Parallax
 window.addEventListener('scroll',()=>{const s=window.scrollY;const bg=document.querySelector('.hero-bg');const content=document.querySelector('.hero-content');if(bg)bg.style.transform=`translateY(${s*0.3}px)`;if(content&&s<window.innerHeight)content.style.transform=`translateY(${s*0.1}px)`});
