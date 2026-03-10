@@ -50,10 +50,7 @@ nav{position:sticky;top:0;width:100%;height:64px;background:rgba(10,10,15,.92);b
 .mobile-menu.open{right:0}
 .mobile-menu a{color:var(--white);font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.8rem;text-transform:uppercase}
 
-@media(max-width:900px){
-.nav-links{display:none}
-.hamburger{display:flex}
-}
+
 
 /* HERO */
 .hero{position:relative;min-height:70vh;display:flex;align-items:center;overflow:hidden;padding-top:64px}
@@ -117,6 +114,78 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:60px 0 
 .footer-disclaimer{color:rgba(255,255,255,.35);font-size:.78rem;line-height:1.6;max-width:800px;margin-bottom:16px}
 .footer-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;padding-top:24px;border-top:1px solid var(--border)}
 .footer-bottom span{color:rgba(255,255,255,.3);font-size:.78rem}
+
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media(max-width:900px){
+  .nav-links{display:none}
+  .hamburger{display:flex}
+  .mobile-menu{position:fixed}
+}
+@media(max-width:768px){
+  .section-pad{padding:60px 0}
+  .container{padding:0 16px}
+  h1{font-size:2.2rem!important;line-height:1.1!important}
+  h2{font-size:1.6rem!important}
+  h3{font-size:1.2rem!important}
+  .hero{min-height:60vh}
+  .hero-sub{font-size:.95rem;margin-bottom:24px}
+  .hero-btns{flex-direction:column;align-items:center;gap:12px}
+  .hero-btns a,.hero-btns .btn-primary,.hero-btns .btn-secondary{width:100%;max-width:280px;text-align:center}
+  .stat-bar{grid-template-columns:repeat(2,1fr);margin-top:40px}
+  .stat-num{font-size:1.8rem}
+  .info-grid{grid-template-columns:1fr;gap:16px}
+  .coach-grid{grid-template-columns:1fr}
+  .measure-grid{grid-template-columns:1fr}
+  .elig-grid{grid-template-columns:1fr}
+  .wyg-grid{grid-template-columns:1fr}
+  .booster-grid{grid-template-columns:1fr}
+  .refund-grid{grid-template-columns:1fr}
+  .sponsor-table{font-size:.85rem}
+  .footer-top{flex-direction:column;align-items:center;text-align:center}
+  .footer-links{justify-content:center}
+  .footer-bottom{flex-direction:column;gap:12px;text-align:center}
+  .timeline-item{grid-template-columns:80px 1fr}
+  .school-chips{gap:6px}
+  .school-chip{font-size:.75rem;padding:4px 10px}
+  .form-group.half{grid-template-columns:1fr!important;display:block}
+  .form-group.half>div{margin-bottom:16px}
+  .pricing-grid,.price-grid{grid-template-columns:1fr!important;gap:24px}
+  .pricing-card,.price-card{margin:0 auto;max-width:400px}
+  .badge{font-size:.7rem;padding:4px 10px}
+  .badges{flex-wrap:wrap;gap:6px;justify-content:center}
+  .impact-list{columns:1}
+  .county-block{width:100%}
+  .measure-table{font-size:.85rem;overflow-x:auto}
+  .measure-table th,.measure-table td{padding:10px 8px}
+  .final-cta{padding:48px 16px}
+  .final-cta h2{font-size:1.6rem!important}
+  .station-checkbox{width:100%}
+  .checkbox-grid,.station-checkboxes{grid-template-columns:1fr 1fr!important}
+  .tc-content{padding:16px;font-size:.85rem;max-height:250px}
+  .faq-q{font-size:1rem;padding:16px}
+  .faq-a{padding:0 16px 16px}
+  .sponsor-tier{overflow-x:auto}
+  .nav-inner{padding:0 16px}
+  .nav-logo{font-size:1.1rem}
+  .nav-cta{padding:8px 16px;font-size:.8rem}
+}
+@media(max-width:480px){
+  h1{font-size:1.8rem!important}
+  h2{font-size:1.3rem!important}
+  .section-pad{padding:40px 0}
+  .stat-bar{grid-template-columns:1fr 1fr}
+  .stat-num{font-size:1.5rem}
+  .hero-sub{font-size:.85rem}
+  .checkbox-grid,.station-checkboxes{grid-template-columns:1fr!important}
+  .btn-primary,.btn-secondary{font-size:.9rem;padding:14px 24px}
+  .eyebrow{font-size:.7rem;letter-spacing:.15em}
+  .school-section h3{font-size:1rem}
+  .timeline-item{grid-template-columns:60px 1fr;gap:12px}
+  .footer-links{gap:12px;font-size:.85rem}
+  .sponsor-table th,.sponsor-table td{padding:8px 6px;font-size:.8rem}
+}
+
 </style>
 </head>
 <body>
